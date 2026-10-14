@@ -46,3 +46,9 @@ label{display:block;font-size:.85rem;color:var(--muted);margin:.9rem 0 .3rem}inp
 #lightbox{position:fixed;inset:0;background:#000d;display:grid;place-items:center;z-index:30;cursor:zoom-out}#lightbox img{max-width:94vw;max-height:92vh;border-radius:10px}#lightbox .close{position:absolute;top:16px;right:28px;font-size:2.2rem;color:#fff}#lightbox[hidden]{display:none}
 @media(max-width:900px){header{padding:.8rem 1rem;flex-wrap:wrap;gap:.6rem}.hero,.feature,.row,.three{grid-template-columns:1fr}.feature .ftext{order:0!important}.strip{grid-template-columns:repeat(5,1fr)}.hero h1{font-size:2.4rem}}
 .log div{word-break:break-all}
+
+/* Wardrobe stage: Dogzy Town background, character on a platform in the central plaza */
+.stage{position:relative;padding:1.2rem 1rem 1.6rem;margin:0 auto 1rem;max-width:460px;border-radius:16px;overflow:hidden;background:#1a1410 url("../assets/backgrounds/dogzy-town.jpg") 50% 75%/cover no-repeat;background-image:image-set(url("../assets/backgrounds/dogzy-town.webp") type("image/webp"),url("../assets/backgrounds/dogzy-town.jpg") type("image/jpeg"))}
+.stage .avatar{position:relative;z-index:2;width:62%;margin:0 auto;box-shadow:0 10px 24px #000a}
+.stage .platform{position:absolute;z-index:1;left:50%;bottom:.5rem;width:78%;height:2.2rem;transform:translateX(-50%);border-radius:50%;background:radial-gradient(ellipse at center,#e8b848 0%,#a07a2a 55%,#3a2a10cc 75%,transparent 76%);box-shadow:0 6px 18px #000c}
+.stage{padding-top:3.2rem}.stage .avatar{overflow:visible}.stage .avatar .base{border-radius:16px}

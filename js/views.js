@@ -75,10 +75,24 @@ const Views = {
     const st = State.data, A = D.accessories, chars = D.characters.characters;
     const ch = chars.find((c) => c.id === st.character) || chars[0];
     const avatar = h("div", { class: "avatar" }, h("img", { class: "base", src: ch.image, alt: ch.job }));
-    A.slots.forEach((s) => { const a = A.accessories.find((x) => x.id === st.equipped[s]); if (a) { const e = icon(a.icon, a.color, 64); e.classList.add("slot", s); avatar.append(e); } });
+    // Per-character anchors (fractions of the image) + size relative to the face (eye-to-neck distance).
+    const an = ch.anchors || { eyes: [0.5, 0.3], headTop: 0.12, neck: 0.48, hand: [0.2, 0.75] };
+    const img = avatar.querySelector(".base");
+    const place = () => {
+      const W = img.clientWidth, H = img.clientHeight; if (!W || !H) return;
+      const u = (an.neck - an.eyes[1]) * H; // face unit in px
+      const spec = { hat: [an.eyes[0], an.headTop + 0.12 * (an.neck - an.eyes[1]), 1.4, "-50%,-85%"],
+        glasses: [an.eyes[0], an.eyes[1], 1.05, "-50%,-50%"], neck: [an.eyes[0], an.neck, 0.8, "-50%,-50%"],
+        hand: [an.hand[0], an.hand[1], 0.85, "-50%,-50%"] };
+      avatar.querySelectorAll(".slot").forEach((e) => { const sp = spec[e.dataset.slot]; const sz = Math.round(sp[2] * u);
+        const svg = e.querySelector("svg"); if (svg) { svg.setAttribute("width", "100%"); svg.setAttribute("height", "100%"); }
+        Object.assign(e.style, { display: "block", width: sz + "px", height: sz + "px", left: sp[0] * 100 + "%", top: sp[1] * 100 + "%", right: "auto", bottom: "auto", transform: "translate(" + sp[3] + ")" }); });
+    };
+    A.slots.forEach((s) => { const a = A.accessories.find((x) => x.id === st.equipped[s]); if (a) { const e = icon(a.icon, a.color, 64); e.classList.add("slot", s); e.dataset.slot = s; avatar.append(e); } });
+    if (img.complete) requestAnimationFrame(place); img.addEventListener("load", place); window.addEventListener("resize", place);
     return h("div", {}, h("div", { class: "pagehead" }, h("h1", {}, "Wardrobe"), h("p", { class: "muted" }, "Equip accessories on your character. In the full game they unlock level by level.")),
       h("div", { class: "row" },
-        h("div", { class: "card padded center" }, avatar, h("h3", {}, ch.breed + " · " + ch.job),
+        h("div", { class: "card padded center" }, h("div", { class: "stage" }, avatar, h("div", { class: "platform" })), h("h3", {}, ch.breed + " · " + ch.job),
           h("button", { class: "ghost", onclick: () => { st.equipped = {}; State.save(); App.render(); } }, "Remove all"),
           h("p", { class: "small muted" }, h("a", { href: "#/characters" }, "Change character"))),
         h("div", {}, A.slots.map((s) => h("div", { class: "card padded", style: "margin-bottom:1rem" },
