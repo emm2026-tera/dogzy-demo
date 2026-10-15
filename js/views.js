@@ -125,7 +125,7 @@ const Views = {
   missions(D) {
     const st = State.data, chars = D.characters.characters, ch = chars.find((c) => c.id === st.character);
     const head = h("div", { class: "pagehead" }, h("h1", {}, "Avalanche Mission Board"),
-      h("p", { class: "muted" }, "Complete missions to unlock accessory purchases by level. Unlocks are recorded off-chain in this demo, then can be exported in the Bridge flow."));
+      h("p", { class: "muted" }, "Choisis ton personnage métier, avance avec la roulette, puis réussis des défis pour activer les 5 accessoires de ton niveau."));
     if (!ch || !isOwned(ch)) {
       const owned = chars.filter(isOwned);
       return h("div", {}, head, h("div", { class: "card padded center locked-prompt" },
@@ -134,41 +134,71 @@ const Views = {
         h("div", { class: "actions" }, h("a", { class: "btn", href: "#/characters" }, "Go to characters"), h("a", { class: "btn ghost", href: "#/wardrobe" }, "Open gear")),
         owned.length ? h("div", { class: "small muted", style: "margin-top:1rem" }, "Your characters: ", owned.map((c) => h("a", { href: "#/missions", style: "margin:0 .3rem", onclick: () => { st.character = c.id; State.save(); App.render(); } }, c.job))) : null));
     }
-    const levels = (D.equipment.equipment[ch.id] || []).map((L) => ({
-      level: L.level,
-      title: L.title,
-      reward: 10 + (L.level * 5),
-      objective: "Complete " + (L.items.filter((it) => !it.gold).length) + " prep tasks for level " + L.level,
-    }));
-    if (!st.missions[ch.id]) st.missions[ch.id] = {};
-    const done = st.missions[ch.id];
-    const countDone = levels.filter((L) => done[L.level]).length;
-    const completeMission = (L) => {
-      if (done[L.level]) return;
-      if (L.level > 1 && !done[L.level - 1]) return toast("Finish mission " + (L.level - 1) + " first");
-      done[L.level] = { at: new Date().toISOString(), proof: randomHex(12), reward: L.reward };
-      st.balance += L.reward;
+    const levels = (D.equipment.equipment[ch.id] || []);
+    const currentLevel = Math.min(st.level[ch.id] || 1, 5);
+    const L = levels[currentLevel - 1];
+    if (!L) return h("div", {}, head, h("p", { class: "muted" }, "No mission data for this character."));
+    if (!st.activations[ch.id]) st.activations[ch.id] = {};
+    if (!st.activations[ch.id][currentLevel]) st.activations[ch.id][currentLevel] = {};
+    if (!st.missionPos[ch.id]) st.missionPos[ch.id] = 0;
+    const board = [
+      { kind: "hidden", label: "Objets cachés", detail: "Trouve un indice secret dans une zone de mission." },
+      { kind: "quiz", label: "Quiz QI", detail: "Réponds à une question métier pour valider ta logique." },
+      { kind: "game", label: "Mini-jeu", detail: "Réussis un mini-jeu de réflexe pour progresser." },
+      { kind: "search", label: "Fouille commerce", detail: "Permission accordée pour fouiller un commerce et récupérer une activation." },
+      { kind: "hidden", label: "Objets cachés", detail: "Récupère un objet caché dans Dogzy City." },
+      { kind: "quiz", label: "Quiz QI", detail: "Défi de stratégie avec limite de temps." },
+      { kind: "game", label: "Mini-jeu", detail: "Mode arcade: termine l'objectif du tour." },
+      { kind: "search", label: "Fouille commerce", detail: "Inspection de boutique partenaire autorisée." },
+    ];
+    const activated = st.activations[ch.id][currentLevel];
+    const activatedCount = L.items.filter((it) => activated[it.id]).length;
+    const nextItem = L.items.find((it) => !activated[it.id]);
+    const pos = st.missionPos[ch.id] % board.length;
+    const tile = board[pos];
+    const spin = () => {
+      const steps = Math.floor(Math.random() * 6) + 1;
+      st.missionPos[ch.id] = (pos + steps) % board.length;
+      st.missions[ch.id] = { at: new Date().toISOString(), level: currentLevel, steps, tile: board[st.missionPos[ch.id]].kind };
       State.save();
-      toast("Mission " + L.level + " complete: +" + L.reward + " DOGZY");
+      App.render();
+    };
+    const resolve = () => {
+      if (!nextItem) return toast("Niveau " + currentLevel + " déjà activé à 100%");
+      activated[nextItem.id] = 1;
+      const reward = 6 + currentLevel;
+      st.balance += reward;
+      st.missions[ch.id] = { at: new Date().toISOString(), level: currentLevel, tile: tile.kind, unlocked: nextItem.id, proof: randomHex(10) };
+      State.save();
+      toast(nextItem.name + " activé · +" + reward + " DOGZY");
       App.render();
     };
     return h("div", {}, head,
       h("div", { class: "card padded mission-summary" },
         h("div", { class: "kicker" }, icon("chain", "#e8b848", 18), "Avalanche-ready progression"),
-        h("div", { class: "item big" }, h("span", {}, "Missions completed"), h("strong", {}, countDone + " / " + levels.length)),
-        h("p", { class: "small muted" }, "Every completed mission unlocks accessory purchases for the matching level in Gear.")),
-      h("div", { class: "grid missions" }, levels.map((L) => {
-        const prevOk = L.level === 1 || !!done[L.level - 1];
-        const isDone = !!done[L.level];
-        const lock = isDone ? "Unlocked ✓" : prevOk ? "Ready" : "Locked";
-        return h("div", { class: "card padded mission-card" + (isDone ? " done" : "") },
-          h("div", { class: "lvhead" }, h("b", {}, "Mission " + L.level), h("span", {}, L.title), h("em", { class: "status" }, lock)),
-          h("p", { class: "small muted" }, L.objective),
-          h("div", { class: "item" }, h("span", {}, "Reward"), h("strong", {}, "+" + L.reward + " DOGZY")),
-          isDone ? h("div", { class: "small gold mission-proof" }, "Proof: " + done[L.level].proof.slice(0, 18) + "…") :
-            h("button", { disabled: !prevOk, onclick: () => completeMission(L) }, "Complete mission " + L.level),
-          h("a", { class: "btn ghost smallbtn", href: "#/wardrobe" }, "Go to gear"));
-      })));
+        h("div", { class: "item big" }, h("span", {}, "Niveau actif"), h("strong", {}, "Level " + currentLevel + " · " + L.title)),
+        h("div", { class: "item big" }, h("span", {}, "Activations accessoires"), h("strong", {}, activatedCount + " / " + L.items.length)),
+        h("p", { class: "small muted" }, "Chaque activation débloque l'achat d'un accessoire spécifique du niveau en cours.")),
+      h("div", { class: "grid missions" },
+        h("div", { class: "card padded mission-board" },
+          h("h3", {}, "Roulette de progression"),
+          h("div", { class: "small muted" }, "Position actuelle: case " + (pos + 1) + "/" + board.length),
+          h("div", { class: "roulette-track" }, board.map((cell, i) => h("span", { class: "roulette-cell" + (i === pos ? " active" : "") }, cell.label))),
+          h("button", { onclick: spin }, "Lancer la roulette (1-6)"),
+          h("p", { class: "small muted" }, "Après le lancer, la case détermine le type de défi.")),
+        h("div", { class: "card padded mission-card" + (nextItem ? "" : " done") },
+          h("div", { class: "lvhead" }, h("b", {}, "Case tirée"), h("span", {}, tile.label), h("em", { class: "status" }, nextItem ? "Activation en attente" : "Niveau activé ✓")),
+          h("p", { class: "small muted" }, tile.detail),
+          h("div", { class: "item" }, h("span", {}, "Prochain accessoire"), h("strong", {}, nextItem ? nextItem.name : "Tous activés")),
+          h("div", { class: "item" }, h("span", {}, "Type d'action"), h("strong", {}, tile.kind === "hidden" ? "Mission objets cachés" : tile.kind === "quiz" ? "Quiz QI" : tile.kind === "game" ? "Mini-jeu" : "Permission fouille commerce")),
+          h("div", { class: "actions" },
+            h("button", { disabled: !nextItem, onclick: resolve }, nextItem ? "Valider le défi et activer l'accessoire" : "Niveau déjà activé"),
+            h("a", { class: "btn ghost", href: "#/wardrobe" }, "Aller au Gear"))),
+        h("div", { class: "card padded mission-card" },
+          h("h3", {}, "Accessoires du level " + currentLevel),
+          h("div", { class: "items" }, L.items.map((it) => h("div", { class: "item" },
+            h("span", {}, it.name),
+            activated[it.id] ? h("span", { class: "gold small" }, "Activation prête ✓") : h("span", { class: "muted small" }, "À activer via roulette")))))));
   },
 
   wardrobe(D) {
@@ -187,9 +217,12 @@ const Views = {
     }
     const E = (D.equipment.equipment || {})[ch.id] || [];
     const unlocked = Math.min(st.level[ch.id] || 1, 5);
-    if (!st.missions[ch.id]) st.missions[ch.id] = {};
     const complete = (L) => L.items.every((x) => st.gear[x.id]);
-    const missionDone = (level) => !!st.missions[ch.id][level];
+    if (!st.activations[ch.id]) st.activations[ch.id] = {};
+    const activeMap = (level) => {
+      if (!st.activations[ch.id][level]) st.activations[ch.id][level] = {};
+      return st.activations[ch.id][level];
+    };
     const doneCount = E.filter(complete).length;
     const lvl = doneCount >= 5 ? 6 : unlocked; // 6 = career complete
     const all = E.flatMap((L) => L.items.map((it) => Object.assign({ lv: L.level }, it)));
@@ -223,30 +256,32 @@ const Views = {
             h("p", { class: "small muted" }, h("a", { href: "#/characters" }, "Change character"))),
           h("div", { class: "card padded inventory", "data-test": "inventory" },
             h("div", { class: "kicker small" }, "Inventory Book · " + ch.job + " · " + mine.length + "/" + all.length),
-            h("p", { class: "small muted" }, "Mission unlocks: " + Object.keys(st.missions[ch.id]).length + "/5 · ", h("a", { href: "#/missions" }, "Open mission board")),
+            h("p", { class: "small muted" }, "Mission board requis pour activer les accessoires · ", h("a", { href: "#/missions" }, "Open mission board")),
             mine.length ? E.map((L) => { const got = L.items.filter((x) => st.gear[x.id]); return got.length ? h("div", { class: "book-lv" }, h("div", { class: "small gold" }, "Level " + L.level + " · " + L.title), h("div", { class: "chips" }, got.map((it) => h("span", { class: "chip" + (it.gold ? " gold" : "") }, it.gold ? "GOLD · " : "", it.name)))) : null; })
               : h("p", { class: "small muted" }, "Your Inventory Book is empty. Buy your first level-1 item."))),
         h("div", {}, E.map((L) => {
           const isDone = complete(L), isOpen = L.level <= unlocked;
-          const levelMission = missionDone(L.level);
+          const levelActive = activeMap(L.level);
+          const activationCount = L.items.filter((it) => levelActive[it.id]).length;
           const state = isDone ? "done" : isOpen ? "cur" : "locked";
           const prevDone = L.level === 1 || complete(E[L.level - 2]);
           const fee = PRICES.fee(L.level);
           return h("div", { class: "card padded level " + state, "data-level": L.level },
             h("div", { class: "lvhead" }, h("b", {}, "Level " + L.level), h("span", {}, L.title),
-              h("em", { class: "status" }, isDone ? "Completed ✓" : isOpen ? (levelMission ? "In progress" : "Mission required") : prevDone ? "Ready to unlock" : "Locked · complete level " + (L.level - 1))),
+              h("em", { class: "status" }, isDone ? "Completed ✓" : isOpen ? ("Activations " + activationCount + "/5") : prevDone ? "Ready to unlock" : "Locked · complete level " + (L.level - 1))),
             !isOpen ? h("div", { class: "levelup" },
               h("span", { class: "small" }, "Level " + L.level + " fee: " + fee + " ", COIN()),
               h("button", { class: "mini", "data-act": "levelup-" + L.level, disabled: !prevDone || st.balance < fee, onclick: () => levelUp(L) }, "Unlock level " + L.level + " · " + fee, COIN())) : null,
-            isOpen && !levelMission ? h("div", { class: "levelup mission-lock" },
-              h("span", { class: "small" }, "Complete mission " + L.level + " to unlock accessory purchases."),
+            isOpen && activationCount < 5 ? h("div", { class: "levelup mission-lock" },
+              h("span", { class: "small" }, "Accessoires activés: " + activationCount + "/5 via mission board."),
               h("a", { class: "btn mini", href: "#/missions" }, "Open missions")) : null,
             h("img", { class: "panel", src: L.panel, alt: "Level " + L.level + " equipment from the career card", loading: "lazy" }),
             h("div", { class: "items" }, L.items.map((it) => {
               const has = !!st.gear[it.id], regsDone = L.items.filter((x) => !x.gold).every((x) => st.gear[x.id]);
-              const can = isOpen && levelMission && !has && st.balance >= it.price && (!it.gold || regsDone);
+              const isActivated = !!levelActive[it.id];
+              const can = isOpen && isActivated && !has && st.balance >= it.price && (!it.gold || regsDone);
               return h("div", { class: "item" + (it.gold ? " gold" : "") + (has ? " has" : ""), "data-item": it.id },
-                h("span", {}, it.gold ? h("span", { class: "goldtag", "data-test": "gold-label" }, "GOLD") : null, it.name, it.gold ? h("small", { class: "muted" }, " · completes the level" + (regsDone || has ? "" : " (buy the 4 others first)")) : null),
+                h("span", {}, it.gold ? h("span", { class: "goldtag", "data-test": "gold-label" }, "GOLD") : null, it.name, !isActivated && !has ? h("small", { class: "muted" }, " · requires mission activation") : null, it.gold ? h("small", { class: "muted" }, " · completes the level" + (regsDone || has ? "" : " (buy the 4 others first)")) : null),
                 has ? h("span", { class: "gold small" }, "Owned ✓") :
                 h("button", { class: "mini" + (it.gold ? " goldbtn" : ""), disabled: !can, onclick: () => buy(it, L) }, String(it.price), COIN()));
             })));
