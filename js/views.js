@@ -2,12 +2,13 @@ const COIN = () => h("span", { class: "coin" });
 const Views = {
   home(D) {
     const C = D.characters.characters, B = D.businesses.businesses;
-    const strip = h("div", { class: "strip" }, C.slice(0, 9).map((c) => h("a", { href: "#/characters" }, h("img", { src: c.image, alt: c.name }))));
-    const sect = (ic, kicker, title, text, link, label, imgs) => h("section", { class: "feature" },
+    const strip = h("div", { class: "strip" }, C.slice(0, 9).map((c) => h("a", { href: "#/character/" + c.id }, h("img", { src: c.image, alt: c.name }))));
+    const sect = (ic, kicker, title, text, link, label, imgs) => h("section", { class: "feature f-" + ic },
       h("div", { class: "ftext" }, h("div", { class: "kicker" }, icon(ic, "#e8b848", 20), kicker), h("h2", {}, title), h("p", {}, text),
         h("a", { class: "btn", href: link }, label + " →")),
       h("div", { class: "fimgs" }, imgs));
     return h("div", { class: "home" },
+      h("div", { class: "hero-banner" }, h("img", { src: "assets/backgrounds/dogzy-town.jpg", alt: "Welcome to Dogzy Town" })),
       h("section", { class: "hero" },
         h("div", { class: "hero-text" },
           h("div", { class: "kicker" }, "Interactive investor demo"),
@@ -38,15 +39,41 @@ const Views = {
   characters(D) {
     const st = State.data;
     return h("div", {}, h("div", { class: "pagehead" }, h("h1", {}, "Characters"),
-        h("p", { class: "muted" }, "Every dog has a job and five career levels. Click a portrait to see the full career card.")),
-      h("div", { class: "grid chars" }, D.characters.characters.map((c) =>
-        h("div", { class: "card" + (st.character === c.id ? " selected" : "") }, pic(c),
+        h("p", { class: "muted" }, "Every dog has a job and five career levels. Tap a character to see its career, dress it up or play it.")),
+      h("div", { class: "grid chars" }, D.characters.characters.map((c) => {
+        const go = () => { location.hash = "#/character/" + c.id; };
+        const owned = isOwned(c);
+        return h("div", { class: "card tap" + (st.character === c.id ? " selected" : ""), "data-char": c.id, role: "button", tabindex: "0", onclick: go, onkeydown: (e) => { if (e.key === "Enter") go(); } },
+          h("div", { class: "pic" }, h("img", { src: c.image, alt: c.name, loading: "lazy" }), st.character === c.id ? h("span", { class: "badge" }, "Active") : owned ? h("span", { class: "badge" }, "Owned") : null),
           h("div", { class: "body" },
             h("strong", {}, c.job),
             h("div", { class: "tags" }, h("span", { class: "tag" }, c.breed), c.level5 && h("span", { class: "tag gold" }, "Lv 5 · " + c.level5)),
-            h("span", { class: "muted small" }, c.description),
-            h("button", { class: st.character === c.id ? "ghost" : "", onclick: () => { st.character = c.id; State.save(); toast(c.job + " selected"); App.render(); } },
-              st.character === c.id ? "Selected ✓" : "Play this character"))))));
+            h("span", { class: "btn small" }, "View character →")));
+      })));
+  },
+
+  character(D, id) {
+    const st = State.data, C = D.characters.characters, c = C.find((x) => x.id === id);
+    if (!c) return h("div", { class: "pagehead" }, h("h1", {}, "Character not found"), h("a", { class: "btn", href: "#/characters" }, "Back to characters"));
+    const biz = D.businesses.businesses.find((b) => b.id === c.business);
+    const owned = isOwned(c), active = st.character === c.id;
+    const levels = ["Level-1 " + c.job, "Confirmed " + c.job, "Senior " + c.job, c.level4 || "Manager", c.level5 || "Business owner"];
+    const select = () => owned ? activate(c) : buyDialog(c, biz);
+    return h("div", { class: "detail" },
+      h("a", { class: "back small", href: "#/characters" }, "← All characters"),
+      h("div", { class: "detail-grid" },
+        h("div", { class: "portrait card" }, h("img", { src: c.image, alt: c.name }), active && h("span", { class: "badge" }, "Active")),
+        h("div", { class: "card padded" },
+          h("div", { class: "kicker" }, c.breed),
+          h("h1", {}, c.name),
+          h("p", { class: "muted" }, c.description),
+          h("ol", { class: "levels" }, levels.map((l, i) => h("li", {}, h("b", {}, "Lv " + (i + 1)), h("span", {}, l)))),
+          h("div", { class: "price" }, owned ? h("span", { class: "gold" }, active ? "Active character ✓" : "Owned ✓") : h("span", {}, c.price ? "Unlock: " + c.price + " " : "Free starter", c.price ? COIN() : null)),
+          h("div", { class: "actions" },
+            h("button", { class: active ? "ghost" : "", "data-act": "select", onclick: select }, active ? "Selected ✓" : owned ? "Play this character" : "Select this character"),
+            h("button", { class: "ghost", "data-act": "wardrobe", onclick: () => { if (!owned) return buyDialog(c, biz, "wardrobe"); activate(c, true); location.hash = "#/wardrobe"; } }, "Dress up in Wardrobe"),
+            biz && h("a", { class: "btn ghost", "data-act": "city", href: "#/city/" + biz.id }, "Their business: " + biz.name),
+            h("button", { class: "ghost", onclick: () => lightbox(c.card, c.name) }, "View full career card")))));
   },
 
   city(D) {
@@ -55,7 +82,7 @@ const Views = {
         h("p", { class: "muted" }, D.businesses.note)),
       h("div", { class: "grid city" }, D.businesses.businesses.map((b) => {
         const owned = b.items.filter((it) => st.inventory[it.id]).length;
-        return h("div", { class: "card" }, pic(b),
+        return h("div", { class: "card", id: "biz-" + b.id }, pic(b),
           h("div", { class: "body" },
             h("div", { class: "kicker small" }, b.category),
             h("strong", {}, b.name),
@@ -138,3 +165,34 @@ const Views = {
         st.exports.map((e) => h("div", { class: "item" }, h("span", {}, e.amount + " tokens → " + e.out + " DOGZY"), h("span", { class: "muted small" }, e.address.slice(0, 10) + "…")))) : null);
   },
 };
+
+function isOwned(c) { const st = State.data; return !c.price || !!st.owned[c.id] || st.character === c.id; }
+function activate(c, quiet) { State.data.character = c.id; State.save(); if (!quiet) { toast(c.job + " is now your character"); App.render(); } }
+function closeModal() { const m = document.getElementById("modal"); if (m) m.remove(); }
+function modal(...kids) {
+  closeModal();
+  const m = h("div", { id: "modal", class: "modal", onclick: (e) => { if (e.target === m) closeModal(); } }, h("div", { class: "sheet", role: "dialog", "aria-modal": "true" }, kids));
+  document.body.append(m); return m;
+}
+function buyDialog(c, biz, after) {
+  const st = State.data, enough = st.balance >= c.price;
+  modal(h("div", { class: "kicker" }, "Demo purchase · in-game DOGZY tokens, no real money"),
+    h("h2", {}, "Unlock " + c.name + "?"),
+    h("div", { class: "sum" },
+      h("div", {}, h("span", {}, "Price"), h("b", {}, String(c.price), COIN())),
+      h("div", {}, h("span", {}, "Your balance"), h("b", {}, String(st.balance), COIN())),
+      h("div", {}, h("span", {}, "After purchase"), h("b", { class: enough ? "" : "bad" }, String(st.balance - c.price), COIN()))),
+    enough ? null : h("p", { class: "bad small" }, "Not enough DOGZY. You need " + (c.price - st.balance) + " more. Earn tokens by playing, or reset the demo balance in the Wallet."),
+    h("div", { class: "actions" },
+      h("button", { "data-act": "confirm", disabled: !enough, onclick: () => {
+        st.balance -= c.price; st.owned[c.id] = 1; st.character = c.id; State.save(); App.render();
+        modal(h("div", { class: "kicker" }, "Success"), h("h2", {}, c.job + " unlocked ✓"),
+          h("p", { class: "muted" }, c.price + " DOGZY spent. New balance: " + st.balance + " DOGZY. " + c.name + " is now your active character."),
+          h("div", { class: "actions" },
+            h("button", { "data-act": "go-wardrobe", onclick: () => { closeModal(); location.hash = "#/wardrobe"; } }, "Dress up in Wardrobe"),
+            biz && h("button", { class: "ghost", "data-act": "go-city", onclick: () => { closeModal(); location.hash = "#/city/" + biz.id; } }, "Go to " + biz.name),
+            h("button", { class: "ghost", onclick: closeModal }, "Close")));
+      } }, "Confirm"),
+      enough ? null : h("a", { class: "btn ghost", href: "#/wallet", onclick: closeModal }, "Open Wallet"),
+      h("button", { class: "ghost", "data-act": "cancel", onclick: closeModal }, "Cancel")));
+}

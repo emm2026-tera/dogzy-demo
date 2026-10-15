@@ -21,7 +21,9 @@
      0.17,
      0.62
     ]
-   }
+   },
+   "business": "restaurant",
+   "price": 0
   },
   {
    "id": "00c-barmaid-cavalier",
@@ -44,7 +46,9 @@
      0.1,
      0.51
     ]
-   }
+   },
+   "business": "nightclub",
+   "price": 120
   },
   {
    "id": "01-police-officer-german-shepherd",
@@ -67,7 +71,9 @@
      0.25,
      0.91
     ]
-   }
+   },
+   "business": "police-station",
+   "price": 120
   },
   {
    "id": "02-clerk-beagle",
@@ -90,7 +96,9 @@
      0.89,
      0.91
     ]
-   }
+   },
+   "business": "supermarket",
+   "price": 120
   },
   {
    "id": "03-firefighter-saint-bernard",
@@ -113,7 +121,9 @@
      0.32,
      0.81
     ]
-   }
+   },
+   "business": "fire-station",
+   "price": 120
   },
   {
    "id": "04-nurse-collie",
@@ -136,7 +146,9 @@
      0.15,
      0.6
     ]
-   }
+   },
+   "business": "hospital",
+   "price": 120
   },
   {
    "id": "05-lawyer-bulldog",
@@ -159,7 +171,9 @@
      0.28,
      0.85
     ]
-   }
+   },
+   "business": "courthouse",
+   "price": 120
   },
   {
    "id": "06-dentist-poodle",
@@ -182,7 +196,9 @@
      0.33,
      0.86
     ]
-   }
+   },
+   "business": "hospital",
+   "price": 120
   },
   {
    "id": "07-florist-yorkshire",
@@ -205,7 +221,9 @@
      0.25,
      0.65
     ]
-   }
+   },
+   "business": "flower-shop",
+   "price": 120
   },
   {
    "id": "08-construction-rottweiler",
@@ -228,7 +246,9 @@
      0.75,
      0.81
     ]
-   }
+   },
+   "business": "construction-company",
+   "price": 120
   },
   {
    "id": "09-electrician-border-collie",
@@ -251,7 +271,9 @@
      0.67,
      0.9
     ]
-   }
+   },
+   "business": "electrician-company",
+   "price": 120
   },
   {
    "id": "10-plumber-french-bulldog",
@@ -274,7 +296,9 @@
      0.18,
      0.72
     ]
-   }
+   },
+   "business": "plumbing-company",
+   "price": 120
   },
   {
    "id": "11-decorator-afghan-hound",
@@ -297,7 +321,9 @@
      0.49,
      0.79
     ]
-   }
+   },
+   "business": "hotel",
+   "price": 120
   },
   {
    "id": "12-technician-husky",
@@ -320,7 +346,9 @@
      0.36,
      0.47
     ]
-   }
+   },
+   "business": "car-repair-garage",
+   "price": 120
   },
   {
    "id": "13-architect-doberman",
@@ -343,7 +371,9 @@
      0.35,
      0.91
     ]
-   }
+   },
+   "business": "construction-company",
+   "price": 120
   },
   {
    "id": "14-banker-dachshund",
@@ -366,7 +396,9 @@
      0.72,
      0.73
     ]
-   }
+   },
+   "business": "bank",
+   "price": 120
   },
   {
    "id": "15-veterinarian-labrador",
@@ -389,7 +421,9 @@
      0.71,
      0.78
     ]
-   }
+   },
+   "business": "pet-store",
+   "price": 120
   },
   {
    "id": "16-hairstylist-shih-tzu",
@@ -412,7 +446,9 @@
      0.33,
      0.56
     ]
-   }
+   },
+   "business": "beauty-salon",
+   "price": 120
   },
   {
    "id": "17-journalist-jack-russell",
@@ -435,7 +471,9 @@
      0.3,
      0.85
     ]
-   }
+   },
+   "business": "media-studio",
+   "price": 120
   },
   {
    "id": "18-actor-boxer",
@@ -458,7 +496,9 @@
      0.25,
      0.85
     ]
-   }
+   },
+   "business": "cinema",
+   "price": 120
   },
   {
    "id": "19-fitness-coach-whippet",
@@ -481,7 +521,9 @@
      0.1,
      0.89
     ]
-   }
+   },
+   "business": "gym-fitness-center",
+   "price": 120
   },
   {
    "id": "20-painter-australian-shepherd",
@@ -504,7 +546,9 @@
      0.47,
      0.79
     ]
-   }
+   },
+   "business": "shopping-center",
+   "price": 120
   },
   {
    "id": "21-singer-shiba",
@@ -527,7 +571,9 @@
      0.69,
      0.41
     ]
-   }
+   },
+   "business": "nightclub",
+   "price": 120
   },
   {
    "id": "22-actress-pomeranian",
@@ -550,7 +596,9 @@
      0.7,
      0.72
     ]
-   }
+   },
+   "business": "cinema",
+   "price": 120
   },
   {
    "id": "23-pilot-weimaraner",
@@ -573,7 +621,9 @@
      0.31,
      0.71
     ]
-   }
+   },
+   "business": "airport",
+   "price": 120
   },
   {
    "id": "24-teacher-bernese",
@@ -596,7 +646,9 @@
      0.42,
      0.73
     ]
-   }
+   },
+   "business": "school",
+   "price": 120
   },
   {
    "id": "25-sound-tech-corgi",
@@ -619,7 +671,9 @@
      0.42,
      0.69
     ]
-   }
+   },
+   "business": "media-studio",
+   "price": 120
   }
  ]
 }

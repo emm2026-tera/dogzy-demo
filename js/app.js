@@ -7,12 +7,15 @@ const App = {
     return Object.fromEntries(names.map((n, i) => [n, res[i]]));
   },
   render() {
-    const route = (location.hash.replace(/^#\//, "") || "home");
+    const parts = (location.hash.replace(/^#\//, "") || "home").split("/");
+    const route = parts[0], arg = parts[1] ? decodeURIComponent(parts[1]) : null;
     const view = Views[route] ? route : "home";
-    document.querySelectorAll("#nav a").forEach((a) => a.classList.toggle("active", a.getAttribute("href") === "#/" + view));
+    document.querySelectorAll("#nav a").forEach((a) => a.classList.toggle("active", a.getAttribute("href") === "#/" + (view === "character" ? "characters" : view)));
     const app = document.getElementById("app");
     app.textContent = "";
-    app.append(Views[view](this.data));
+    app.append(Views[view](this.data, arg));
+    if (view === "city" && arg) { const el = document.getElementById("biz-" + arg); if (el) { el.classList.add("focus"); setTimeout(() => el.scrollIntoView({ block: "start" }), 50); } }
+    else window.scrollTo(0, 0);
     State.save();
   },
   async start() {

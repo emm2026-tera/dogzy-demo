@@ -52,3 +52,60 @@ label{display:block;font-size:.85rem;color:var(--muted);margin:.9rem 0 .3rem}inp
 .stage .avatar{position:relative;z-index:2;width:62%;margin:0 auto;box-shadow:0 10px 24px #000a}
 .stage .platform{position:absolute;z-index:1;left:50%;bottom:.5rem;width:78%;height:2.2rem;transform:translateX(-50%);border-radius:50%;background:radial-gradient(ellipse at center,#e8b848 0%,#a07a2a 55%,#3a2a10cc 75%,transparent 76%);box-shadow:0 6px 18px #000c}
 .stage{padding-top:3.2rem}.stage .avatar{overflow:visible}.stage .avatar .base{border-radius:16px}
+
+/* Character tap + detail + modal */
+.card.tap{cursor:pointer;-webkit-tap-highlight-color:transparent}.card.tap:active{transform:scale(.985)}
+.pic{position:relative}.badge{position:absolute;top:.6rem;left:.6rem;background:linear-gradient(135deg,#f3d27a,#b8862b);color:#140f05;font-weight:700;font-size:.72rem;letter-spacing:.06em;text-transform:uppercase;padding:.25rem .55rem;border-radius:999px}
+.btn.small{padding:.45rem .8rem;font-size:.82rem;align-self:flex-start;margin-top:.3rem}
+.detail{max-width:1100px;margin:0 auto}.detail .back{display:inline-block;margin-bottom:1rem;color:var(--gold)}
+.detail-grid{display:grid;grid-template-columns:minmax(260px,420px) 1fr;gap:1.4rem;align-items:start}
+.portrait{position:relative;overflow:hidden}.portrait img{display:block;width:100%}
+.detail h1{font-size:clamp(1.6rem,5vw,2.4rem);margin:.3rem 0 .6rem}
+.levels{list-style:none;padding:0;margin:1rem 0;display:grid;gap:.45rem}.levels li{display:flex;gap:.8rem;align-items:center;padding:.6rem .8rem;border:1px solid rgba(232,184,72,.22);border-radius:10px;background:rgba(232,184,72,.04)}.levels b{color:var(--gold);min-width:2.6rem}
+.price{margin:.6rem 0 1rem;font-weight:600}.actions{display:flex;flex-wrap:wrap;gap:.6rem}.actions>*{flex:1 1 200px;text-align:center;justify-content:center}
+.modal{position:fixed;inset:0;z-index:50;background:rgba(5,4,2,.72);backdrop-filter:blur(4px);display:flex;align-items:flex-end;justify-content:center}
+.sheet{width:min(520px,100%);background:linear-gradient(180deg,#1b1610,#0e0c09);border:1px solid rgba(232,184,72,.45);border-bottom:0;border-radius:20px 20px 0 0;padding:1.4rem 1.2rem calc(1.4rem + env(safe-area-inset-bottom));box-shadow:0 -10px 40px #000}
+@media(min-width:700px){.modal{align-items:center}.sheet{border-radius:20px;border-bottom:1px solid rgba(232,184,72,.45)}}
+.sheet h2{margin:.3rem 0 1rem}.sum{display:grid;gap:.5rem;margin-bottom:1rem}.sum>div{display:flex;justify-content:space-between;padding:.55rem .2rem;border-bottom:1px solid rgba(232,184,72,.15)}.sum b{display:flex;align-items:center;gap:.35rem}.bad{color:#ff8a7a}
+.card.focus{outline:2px solid var(--gold);outline-offset:3px}
+@media(max-width:700px){.detail-grid{grid-template-columns:1fr}}
+.grid.city .card{scroll-margin-top:110px}
+
+/* ===== Premium polish ===== */
+body{background:#07060a;position:relative}
+body::before{content:"";position:fixed;inset:0;z-index:-2;background:url("../assets/backgrounds/dogzy-town.jpg") 50% 60%/cover no-repeat;transform:translateZ(0)}
+body::after{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;background:
+ radial-gradient(ellipse at 50% 0%,rgba(232,184,72,.10),transparent 55%),
+ radial-gradient(ellipse at center,rgba(8,7,10,.70) 0%,rgba(8,7,10,.86) 60%,rgba(5,4,6,.95) 100%),
+ linear-gradient(180deg,rgba(8,7,10,.55),rgba(8,7,10,.80))}
+main,#app{background:transparent}
+header{background:linear-gradient(180deg,rgba(10,9,8,.92),rgba(10,9,8,.78));border-bottom:1px solid rgba(232,184,72,.28)}
+footer{background:rgba(6,5,4,.85);border-top:1px solid rgba(232,184,72,.25)}
+.card,.pillar,.feature,.sheet{background:linear-gradient(180deg,rgba(28,24,18,.88),rgba(14,12,10,.92));border:1px solid rgba(232,184,72,.22);box-shadow:0 12px 30px rgba(0,0,0,.55),inset 0 1px 0 rgba(246,213,138,.07);border-radius:16px}
+.card:hover{border-color:rgba(232,184,72,.5)}
+section.feature,.concept{position:relative}
+section+section::before,.feature::before{content:"";position:absolute;left:10%;right:10%;top:-.8rem;height:1px;background:linear-gradient(90deg,transparent,rgba(232,184,72,.55),transparent)}
+.kicker{letter-spacing:.14em}
+.acc-tile,.acc,.step{background:linear-gradient(180deg,rgba(32,27,19,.9),rgba(16,13,10,.9));border:1px solid rgba(232,184,72,.25)}
+/* Home banner above the slogan */
+.hero-banner{margin:0 auto 1.4rem;max-width:1200px;border-radius:18px;overflow:hidden;border:1px solid rgba(232,184,72,.45);box-shadow:0 18px 40px rgba(0,0,0,.6)}
+.hero-banner img{display:block;width:100%;height:auto}
+/* City photos: wide, framed, vignette — never stretched */
+.city .pic,.fimgs .bizpic{position:relative;margin:.6rem .6rem 0;border-radius:12px;overflow:hidden;border:1px solid rgba(232,184,72,.35)}
+.city .pic img{aspect-ratio:3/1.15;object-fit:cover;object-position:50% 50%}
+.city .pic::after{content:"";position:absolute;inset:0;pointer-events:none;box-shadow:inset 0 0 40px rgba(0,0,0,.55);background:linear-gradient(180deg,transparent 60%,rgba(0,0,0,.35))}
+.fimgs img{border-radius:12px;border:1px solid rgba(232,184,72,.3);object-fit:cover}
+/* Wardrobe stage: frame the central plaza */
+.stage{background:#120e09 url("../assets/backgrounds/dogzy-town.jpg") 47% 70%/240% auto no-repeat!important;border:1px solid rgba(232,184,72,.4);box-shadow:inset 0 0 60px rgba(0,0,0,.6)}
+.stage::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.15),rgba(0,0,0,.05) 50%,rgba(0,0,0,.45));pointer-events:none}
+.sheet h2{-webkit-user-select:none;user-select:none}
+html,body{overflow-x:hidden}
+.f-city .fimgs{grid-template-columns:1fr}.f-city .fimgs img{aspect-ratio:3/1.1}
+.f-chars .fimgs img{aspect-ratio:4/5}
+@media(max-width:900px){.strip{grid-template-columns:repeat(3,1fr)}.strip a:nth-child(n+7){display:none}}
+@media(max-width:900px){nav{gap:1.05rem;width:100%;justify-content:space-between;overflow-x:auto;scrollbar-width:none;font-size:.92rem}nav::-webkit-scrollbar{display:none}}
+.pic,.portrait,.fimgs img,.strip img{background:linear-gradient(135deg,#2a2216,#120f0a)}
+body::after{background:
+ radial-gradient(ellipse at 50% 0%,rgba(232,184,72,.12),transparent 55%),
+ radial-gradient(ellipse at center,rgba(8,7,10,.50) 0%,rgba(8,7,10,.70) 65%,rgba(5,4,6,.88) 100%),
+ linear-gradient(180deg,rgba(8,7,10,.35),rgba(8,7,10,.65))}

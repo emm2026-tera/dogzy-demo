@@ -23,7 +23,9 @@ window.DOGZY_DATA = {
             0.17,
             0.62
           ]
-        }
+        },
+        "business": "restaurant",
+        "price": 0
       },
       {
         "id": "00c-barmaid-cavalier",
@@ -46,7 +48,9 @@ window.DOGZY_DATA = {
             0.1,
             0.51
           ]
-        }
+        },
+        "business": "nightclub",
+        "price": 120
       },
       {
         "id": "01-police-officer-german-shepherd",
@@ -69,7 +73,9 @@ window.DOGZY_DATA = {
             0.25,
             0.91
           ]
-        }
+        },
+        "business": "police-station",
+        "price": 120
       },
       {
         "id": "02-clerk-beagle",
@@ -92,7 +98,9 @@ window.DOGZY_DATA = {
             0.89,
             0.91
           ]
-        }
+        },
+        "business": "supermarket",
+        "price": 120
       },
       {
         "id": "03-firefighter-saint-bernard",
@@ -115,7 +123,9 @@ window.DOGZY_DATA = {
             0.32,
             0.81
           ]
-        }
+        },
+        "business": "fire-station",
+        "price": 120
       },
       {
         "id": "04-nurse-collie",
@@ -138,7 +148,9 @@ window.DOGZY_DATA = {
             0.15,
             0.6
           ]
-        }
+        },
+        "business": "hospital",
+        "price": 120
       },
       {
         "id": "05-lawyer-bulldog",
@@ -161,7 +173,9 @@ window.DOGZY_DATA = {
             0.28,
             0.85
           ]
-        }
+        },
+        "business": "courthouse",
+        "price": 120
       },
       {
         "id": "06-dentist-poodle",
@@ -184,7 +198,9 @@ window.DOGZY_DATA = {
             0.33,
             0.86
           ]
-        }
+        },
+        "business": "hospital",
+        "price": 120
       },
       {
         "id": "07-florist-yorkshire",
@@ -207,7 +223,9 @@ window.DOGZY_DATA = {
             0.25,
             0.65
           ]
-        }
+        },
+        "business": "flower-shop",
+        "price": 120
       },
       {
         "id": "08-construction-rottweiler",
@@ -230,7 +248,9 @@ window.DOGZY_DATA = {
             0.75,
             0.81
           ]
-        }
+        },
+        "business": "construction-company",
+        "price": 120
       },
       {
         "id": "09-electrician-border-collie",
@@ -253,7 +273,9 @@ window.DOGZY_DATA = {
             0.67,
             0.9
           ]
-        }
+        },
+        "business": "electrician-company",
+        "price": 120
       },
       {
         "id": "10-plumber-french-bulldog",
@@ -276,7 +298,9 @@ window.DOGZY_DATA = {
             0.18,
             0.72
           ]
-        }
+        },
+        "business": "plumbing-company",
+        "price": 120
       },
       {
         "id": "11-decorator-afghan-hound",
@@ -299,7 +323,9 @@ window.DOGZY_DATA = {
             0.49,
             0.79
           ]
-        }
+        },
+        "business": "hotel",
+        "price": 120
       },
       {
         "id": "12-technician-husky",
@@ -322,7 +348,9 @@ window.DOGZY_DATA = {
             0.36,
             0.47
           ]
-        }
+        },
+        "business": "car-repair-garage",
+        "price": 120
       },
       {
         "id": "13-architect-doberman",
@@ -345,7 +373,9 @@ window.DOGZY_DATA = {
             0.35,
             0.91
           ]
-        }
+        },
+        "business": "construction-company",
+        "price": 120
       },
       {
         "id": "14-banker-dachshund",
@@ -368,7 +398,9 @@ window.DOGZY_DATA = {
             0.72,
             0.73
           ]
-        }
+        },
+        "business": "bank",
+        "price": 120
       },
       {
         "id": "15-veterinarian-labrador",
@@ -391,7 +423,9 @@ window.DOGZY_DATA = {
             0.71,
             0.78
           ]
-        }
+        },
+        "business": "pet-store",
+        "price": 120
       },
       {
         "id": "16-hairstylist-shih-tzu",
@@ -414,7 +448,9 @@ window.DOGZY_DATA = {
             0.33,
             0.56
           ]
-        }
+        },
+        "business": "beauty-salon",
+        "price": 120
       },
       {
         "id": "17-journalist-jack-russell",
@@ -437,7 +473,9 @@ window.DOGZY_DATA = {
             0.3,
             0.85
           ]
-        }
+        },
+        "business": "media-studio",
+        "price": 120
       },
       {
         "id": "18-actor-boxer",
@@ -460,7 +498,9 @@ window.DOGZY_DATA = {
             0.25,
             0.85
           ]
-        }
+        },
+        "business": "cinema",
+        "price": 120
       },
       {
         "id": "19-fitness-coach-whippet",
@@ -483,7 +523,9 @@ window.DOGZY_DATA = {
             0.1,
             0.89
           ]
-        }
+        },
+        "business": "gym-fitness-center",
+        "price": 120
       },
       {
         "id": "20-painter-australian-shepherd",
@@ -506,7 +548,9 @@ window.DOGZY_DATA = {
             0.47,
             0.79
           ]
-        }
+        },
+        "business": "shopping-center",
+        "price": 120
       },
       {
         "id": "21-singer-shiba",
@@ -529,7 +573,9 @@ window.DOGZY_DATA = {
             0.69,
             0.41
           ]
-        }
+        },
+        "business": "nightclub",
+        "price": 120
       },
       {
         "id": "22-actress-pomeranian",
@@ -552,7 +598,9 @@ window.DOGZY_DATA = {
             0.7,
             0.72
           ]
-        }
+        },
+        "business": "cinema",
+        "price": 120
       },
       {
         "id": "23-pilot-weimaraner",
@@ -575,7 +623,9 @@ window.DOGZY_DATA = {
             0.31,
             0.71
           ]
-        }
+        },
+        "business": "airport",
+        "price": 120
       },
       {
         "id": "24-teacher-bernese",
@@ -598,7 +648,9 @@ window.DOGZY_DATA = {
             0.42,
             0.73
           ]
-        }
+        },
+        "business": "school",
+        "price": 120
       },
       {
         "id": "25-sound-tech-corgi",
@@ -621,7 +673,9 @@ window.DOGZY_DATA = {
             0.42,
             0.69
           ]
-        }
+        },
+        "business": "media-studio",
+        "price": 120
       }
     ]
   },
@@ -634,7 +688,7 @@ window.DOGZY_DATA = {
         "category": "Administration",
         "unlocks": "City Administration",
         "description": "The city hall runs the city and coordinates every service in Dogzy Town.",
-        "image": "assets/businesses/01-city-hall-photo.jpg",
+        "image": "assets/businesses/01-city-hall-hd.jpg",
         "card": "assets/businesses/01-city-hall.jpg",
         "items": [
           {
@@ -670,7 +724,7 @@ window.DOGZY_DATA = {
         "category": "Public Safety",
         "unlocks": "Police Hq",
         "description": "The police station maintains law and order and keeps Dogzy Town safe.",
-        "image": "assets/businesses/02-police-station-photo.jpg",
+        "image": "assets/businesses/02-police-station-hd.jpg",
         "card": "assets/businesses/02-police-station.jpg",
         "items": [
           {
@@ -706,7 +760,7 @@ window.DOGZY_DATA = {
         "category": "Emergency Services",
         "unlocks": "Fire Hq",
         "description": "The fire station protects citizens and responds quickly to every emergency.",
-        "image": "assets/businesses/03-fire-station-photo.jpg",
+        "image": "assets/businesses/03-fire-station-hd.jpg",
         "card": "assets/businesses/03-fire-station.jpg",
         "items": [
           {
@@ -742,7 +796,7 @@ window.DOGZY_DATA = {
         "category": "Healthcare",
         "unlocks": "City Hospital",
         "description": "The hospital cares for the health of every citizen in Dogzy Town.",
-        "image": "assets/businesses/04-hospital-photo.jpg",
+        "image": "assets/businesses/04-hospital-hd.jpg",
         "card": "assets/businesses/04-hospital.jpg",
         "items": [
           {
@@ -778,7 +832,7 @@ window.DOGZY_DATA = {
         "category": "Education",
         "unlocks": "School Campus",
         "description": "The school teaches young citizens and prepares the future of the city.",
-        "image": "assets/businesses/05-school-photo.jpg",
+        "image": "assets/businesses/05-school-hd.jpg",
         "card": "assets/businesses/05-school.jpg",
         "items": [
           {
@@ -814,7 +868,7 @@ window.DOGZY_DATA = {
         "category": "Knowledge",
         "unlocks": "Grand Library",
         "description": "The library preserves knowledge and inspires minds across generations.",
-        "image": "assets/businesses/06-library-photo.jpg",
+        "image": "assets/businesses/06-library-hd.jpg",
         "card": "assets/businesses/06-library.jpg",
         "items": [
           {
@@ -850,7 +904,7 @@ window.DOGZY_DATA = {
         "category": "Justice",
         "unlocks": "Justice Center",
         "description": "The courthouse delivers fair justice for all citizens of Dogzy Town.",
-        "image": "assets/businesses/07-courthouse-photo.jpg",
+        "image": "assets/businesses/07-courthouse-hd.jpg",
         "card": "assets/businesses/07-courthouse.jpg",
         "items": [
           {
@@ -886,7 +940,7 @@ window.DOGZY_DATA = {
         "category": "Financial Services",
         "unlocks": "Main Bank",
         "description": "The bank keeps savings safe and fuels the city economy.",
-        "image": "assets/businesses/08-bank-photo.jpg",
+        "image": "assets/businesses/08-bank-hd.jpg",
         "card": "assets/businesses/08-bank.jpg",
         "items": [
           {
@@ -922,7 +976,7 @@ window.DOGZY_DATA = {
         "category": "Mail Services",
         "unlocks": "Central Hub",
         "description": "The post office connects all citizens through fast and reliable mail services.",
-        "image": "assets/businesses/09-post-office-photo.jpg",
+        "image": "assets/businesses/09-post-office-hd.jpg",
         "card": "assets/businesses/09-post-office.jpg",
         "items": [
           {
@@ -958,7 +1012,7 @@ window.DOGZY_DATA = {
         "category": "Food & Essentials",
         "unlocks": "Mega Market",
         "description": "The supermarket supplies fresh food and daily essentials to the city.",
-        "image": "assets/businesses/10-supermarket-photo.jpg",
+        "image": "assets/businesses/10-supermarket-hd.jpg",
         "card": "assets/businesses/10-supermarket.jpg",
         "items": [
           {
@@ -994,7 +1048,7 @@ window.DOGZY_DATA = {
         "category": "Food & Beverage",
         "unlocks": "Artisan Bakery",
         "description": "The bakery bakes fresh bread and treats every morning.",
-        "image": "assets/businesses/11-bakery-photo.jpg",
+        "image": "assets/businesses/11-bakery-hd.jpg",
         "card": "assets/businesses/11-bakery.jpg",
         "items": [
           {
@@ -1030,7 +1084,7 @@ window.DOGZY_DATA = {
         "category": "Food & Beverage",
         "unlocks": "Fine Dining",
         "description": "The restaurant serves delicious meals to hungry citizens.",
-        "image": "assets/businesses/12-restaurant-photo.jpg",
+        "image": "assets/businesses/12-restaurant-hd.jpg",
         "card": "assets/businesses/12-restaurant.jpg",
         "items": [
           {
@@ -1066,7 +1120,7 @@ window.DOGZY_DATA = {
         "category": "Food & Beverage",
         "unlocks": "Pizzeria",
         "description": "The pizzeria serves hot pizza to the whole neighborhood.",
-        "image": "assets/businesses/13-pizzeria-photo.jpg",
+        "image": "assets/businesses/13-pizzeria-hd.jpg",
         "card": "assets/businesses/13-pizzeria.jpg",
         "items": [
           {
@@ -1102,7 +1156,7 @@ window.DOGZY_DATA = {
         "category": "Food & Beverage",
         "unlocks": "Sushi House",
         "description": "The sushi restaurant prepares fresh sushi for citizens who love fine flavors.",
-        "image": "assets/businesses/14-sushi-restaurant-photo.jpg",
+        "image": "assets/businesses/14-sushi-restaurant-hd.jpg",
         "card": "assets/businesses/14-sushi-restaurant.jpg",
         "items": [
           {
@@ -1138,7 +1192,7 @@ window.DOGZY_DATA = {
         "category": "Food & Beverage",
         "unlocks": "Coffee Chain",
         "description": "The coffee shop keeps Dogzy Town energized one cup at a time.",
-        "image": "assets/businesses/15-coffee-shop-photo.jpg",
+        "image": "assets/businesses/15-coffee-shop-hd.jpg",
         "card": "assets/businesses/15-coffee-shop.jpg",
         "items": [
           {
@@ -1174,7 +1228,7 @@ window.DOGZY_DATA = {
         "category": "Accommodation",
         "unlocks": "Luxury Hotel",
         "description": "The hotel welcomes visitors with comfort and style.",
-        "image": "assets/businesses/16-hotel-photo.jpg",
+        "image": "assets/businesses/16-hotel-hd.jpg",
         "card": "assets/businesses/16-hotel.jpg",
         "items": [
           {
@@ -1210,7 +1264,7 @@ window.DOGZY_DATA = {
         "category": "Retail",
         "unlocks": "Fashion Hub",
         "description": "The clothing store dresses citizens in the latest styles.",
-        "image": "assets/businesses/17-clothing-store-photo.jpg",
+        "image": "assets/businesses/17-clothing-store-hd.jpg",
         "card": "assets/businesses/17-clothing-store.jpg",
         "items": [
           {
@@ -1246,7 +1300,7 @@ window.DOGZY_DATA = {
         "category": "Services",
         "unlocks": "Beauty Center",
         "description": "The beauty salon helps citizens look and feel their best.",
-        "image": "assets/businesses/18-beauty-salon-photo.jpg",
+        "image": "assets/businesses/18-beauty-salon-hd.jpg",
         "card": "assets/businesses/18-beauty-salon.jpg",
         "items": [
           {
@@ -1282,7 +1336,7 @@ window.DOGZY_DATA = {
         "category": "Pet Supplies",
         "unlocks": "Pet Paradise",
         "description": "The pet store provides everything pets need to be happy and healthy.",
-        "image": "assets/businesses/19-pet-store-photo.jpg",
+        "image": "assets/businesses/19-pet-store-hd.jpg",
         "card": "assets/businesses/19-pet-store.jpg",
         "items": [
           {
@@ -1318,7 +1372,7 @@ window.DOGZY_DATA = {
         "category": "Retail",
         "unlocks": "Floral Garden",
         "description": "The flower shop brightens the city with fresh flowers and bouquets.",
-        "image": "assets/businesses/20-flower-shop-photo.jpg",
+        "image": "assets/businesses/20-flower-shop-hd.jpg",
         "card": "assets/businesses/20-flower-shop.jpg",
         "items": [
           {
@@ -1354,7 +1408,7 @@ window.DOGZY_DATA = {
         "category": "Retail",
         "unlocks": "Mega Hardware",
         "description": "The hardware store supplies tools and materials for every project.",
-        "image": "assets/businesses/21-hardware-store-photo.jpg",
+        "image": "assets/businesses/21-hardware-store-hd.jpg",
         "card": "assets/businesses/21-hardware-store.jpg",
         "items": [
           {
@@ -1390,7 +1444,7 @@ window.DOGZY_DATA = {
         "category": "Business Services",
         "unlocks": "Construction Hq",
         "description": "The construction company builds and expands the neighborhoods of Dogzy Town.",
-        "image": "assets/businesses/22-construction-company-photo.jpg",
+        "image": "assets/businesses/22-construction-company-hd.jpg",
         "card": "assets/businesses/22-construction-company.jpg",
         "items": [
           {
@@ -1426,7 +1480,7 @@ window.DOGZY_DATA = {
         "category": "Business Services",
         "unlocks": "Plumbing Hq",
         "description": "The plumbing company keeps water flowing in every home and business.",
-        "image": "assets/businesses/23-plumbing-company-photo.jpg",
+        "image": "assets/businesses/23-plumbing-company-hd.jpg",
         "card": "assets/businesses/23-plumbing-company.jpg",
         "items": [
           {
@@ -1462,7 +1516,7 @@ window.DOGZY_DATA = {
         "category": "Business Services",
         "unlocks": "Electric Hq",
         "description": "The electrician company powers the city with safe and reliable electrical work.",
-        "image": "assets/businesses/24-electrician-company-photo.jpg",
+        "image": "assets/businesses/24-electrician-company-hd.jpg",
         "card": "assets/businesses/24-electrician-company.jpg",
         "items": [
           {
@@ -1498,7 +1552,7 @@ window.DOGZY_DATA = {
         "category": "Automotive",
         "unlocks": "Premium Dealership",
         "description": "The car dealership sells new and used vehicles to citizens.",
-        "image": "assets/businesses/25-car-dealership-photo.jpg",
+        "image": "assets/businesses/25-car-dealership-hd.jpg",
         "card": "assets/businesses/25-car-dealership.jpg",
         "items": [
           {
@@ -1534,7 +1588,7 @@ window.DOGZY_DATA = {
         "category": "Automotive",
         "unlocks": "Custom Garage",
         "description": "The car repair garage keeps every vehicle in Dogzy Town running smoothly.",
-        "image": "assets/businesses/26-car-repair-garage-photo.jpg",
+        "image": "assets/businesses/26-car-repair-garage-hd.jpg",
         "card": "assets/businesses/26-car-repair-garage.jpg",
         "items": [
           {
@@ -1570,7 +1624,7 @@ window.DOGZY_DATA = {
         "category": "Automotive",
         "unlocks": "Full Service",
         "description": "The gas station keeps vehicles fueled and travelers on the move.",
-        "image": "assets/businesses/27-gas-station-photo.jpg",
+        "image": "assets/businesses/27-gas-station-hd.jpg",
         "card": "assets/businesses/27-gas-station.jpg",
         "items": [
           {
@@ -1606,7 +1660,7 @@ window.DOGZY_DATA = {
         "category": "Health & Fitness",
         "unlocks": "Fitness Hub",
         "description": "The gym / fitness center keeps citizens strong, fit and healthy.",
-        "image": "assets/businesses/28-gym-fitness-center-photo.jpg",
+        "image": "assets/businesses/28-gym-fitness-center-hd.jpg",
         "card": "assets/businesses/28-gym-fitness-center.jpg",
         "items": [
           {
@@ -1642,7 +1696,7 @@ window.DOGZY_DATA = {
         "category": "Retail",
         "unlocks": "Mega Mall",
         "description": "The shopping center provides the best shopping experience in Dogzy Town.",
-        "image": "assets/businesses/29-shopping-center-photo.jpg",
+        "image": "assets/businesses/29-shopping-center-hd.jpg",
         "card": "assets/businesses/29-shopping-center.jpg",
         "items": [
           {
@@ -1678,7 +1732,7 @@ window.DOGZY_DATA = {
         "category": "Entertainment",
         "unlocks": "Multiplex",
         "description": "The cinema brings the latest movies to the big screen.",
-        "image": "assets/businesses/30-cinema-photo.jpg",
+        "image": "assets/businesses/30-cinema-hd.jpg",
         "card": "assets/businesses/30-cinema.jpg",
         "items": [
           {
@@ -1714,7 +1768,7 @@ window.DOGZY_DATA = {
         "category": "Entertainment",
         "unlocks": "Game Center",
         "description": "The arcade offers games and fun for players of all ages.",
-        "image": "assets/businesses/31-arcade-photo.jpg",
+        "image": "assets/businesses/31-arcade-hd.jpg",
         "card": "assets/businesses/31-arcade.jpg",
         "items": [
           {
@@ -1750,7 +1804,7 @@ window.DOGZY_DATA = {
         "category": "Entertainment",
         "unlocks": "Nightlife Hub",
         "description": "The nightclub brings music and nightlife to Dogzy Town.",
-        "image": "assets/businesses/32-nightclub-photo.jpg",
+        "image": "assets/businesses/32-nightclub-hd.jpg",
         "card": "assets/businesses/32-nightclub.jpg",
         "items": [
           {
@@ -1786,7 +1840,7 @@ window.DOGZY_DATA = {
         "category": "Entertainment",
         "unlocks": "Stadium",
         "description": "The sports arena hosts big games and events for the whole city.",
-        "image": "assets/businesses/33-sports-arena-photo.jpg",
+        "image": "assets/businesses/33-sports-arena-hd.jpg",
         "card": "assets/businesses/33-sports-arena.jpg",
         "items": [
           {
@@ -1822,7 +1876,7 @@ window.DOGZY_DATA = {
         "category": "Media & Content",
         "unlocks": "Media Network",
         "description": "The media studio creates shows, music and news for Dogzy Town.",
-        "image": "assets/businesses/34-media-studio-photo.jpg",
+        "image": "assets/businesses/34-media-studio-hd.jpg",
         "card": "assets/businesses/34-media-studio.jpg",
         "items": [
           {
@@ -1858,7 +1912,7 @@ window.DOGZY_DATA = {
         "category": "City Services",
         "unlocks": "Eco Center",
         "description": "The recycling center keeps the city clean and green.",
-        "image": "assets/businesses/35-recycling-center-photo.jpg",
+        "image": "assets/businesses/35-recycling-center-hd.jpg",
         "card": "assets/businesses/35-recycling-center.jpg",
         "items": [
           {
@@ -1894,7 +1948,7 @@ window.DOGZY_DATA = {
         "category": "Transportation",
         "unlocks": "International Airport",
         "description": "The airport connects Dogzy Town to the rest of the world.",
-        "image": "assets/businesses/36-airport-photo.jpg",
+        "image": "assets/businesses/36-airport-hd.jpg",
         "card": "assets/businesses/36-airport.jpg",
         "items": [
           {
