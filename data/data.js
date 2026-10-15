@@ -15,17 +15,18 @@ window.DOGZY_DATA = {
         "anchors": {
           "eyes": [
             0.5,
-            0.33
+            0.3626
           ],
-          "headTop": 0.22,
-          "neck": 0.55,
+          "headTop": 0.2418,
+          "neck": 0.6044,
           "hand": [
             0.17,
-            0.62
+            0.6813
           ]
         },
         "business": "restaurant",
-        "price": 0
+        "price": 15,
+        "demo": true
       },
       {
         "id": "00c-barmaid-cavalier",
@@ -40,17 +41,18 @@ window.DOGZY_DATA = {
         "anchors": {
           "eyes": [
             0.42,
-            0.11
+            0.1209
           ],
-          "headTop": 0.02,
-          "neck": 0.44,
+          "headTop": 0.022,
+          "neck": 0.4835,
           "hand": [
             0.1,
-            0.51
+            0.5604
           ]
         },
         "business": "nightclub",
-        "price": 120
+        "price": 15,
+        "demo": true
       },
       {
         "id": "01-police-officer-german-shepherd",
@@ -65,17 +67,18 @@ window.DOGZY_DATA = {
         "anchors": {
           "eyes": [
             0.51,
-            0.32
+            0.3516
           ],
-          "headTop": 0.12,
-          "neck": 0.47,
+          "headTop": 0.1319,
+          "neck": 0.5165,
           "hand": [
             0.25,
-            0.91
+            0.97
           ]
         },
         "business": "police-station",
-        "price": 120
+        "price": 15,
+        "demo": true
       },
       {
         "id": "02-clerk-beagle",
@@ -90,17 +93,18 @@ window.DOGZY_DATA = {
         "anchors": {
           "eyes": [
             0.5,
-            0.34
+            0.3736
           ],
-          "headTop": 0.22,
-          "neck": 0.52,
+          "headTop": 0.2418,
+          "neck": 0.5714,
           "hand": [
             0.89,
-            0.91
+            0.97
           ]
         },
         "business": "supermarket",
-        "price": 120
+        "price": 15,
+        "demo": false
       },
       {
         "id": "03-firefighter-saint-bernard",
@@ -115,17 +119,18 @@ window.DOGZY_DATA = {
         "anchors": {
           "eyes": [
             0.54,
-            0.36
+            0.3956
           ],
-          "headTop": 0.22,
-          "neck": 0.48,
+          "headTop": 0.2418,
+          "neck": 0.5275,
           "hand": [
             0.32,
-            0.81
+            0.8901
           ]
         },
         "business": "fire-station",
-        "price": 120
+        "price": 15,
+        "demo": true
       },
       {
         "id": "04-nurse-collie",
@@ -140,17 +145,18 @@ window.DOGZY_DATA = {
         "anchors": {
           "eyes": [
             0.47,
-            0.29
+            0.3187
           ],
-          "headTop": 0.15,
-          "neck": 0.55,
+          "headTop": 0.1648,
+          "neck": 0.6044,
           "hand": [
             0.15,
-            0.6
+            0.6593
           ]
         },
         "business": "hospital",
-        "price": 120
+        "price": 15,
+        "demo": true
       },
       {
         "id": "05-lawyer-bulldog",
@@ -165,17 +171,18 @@ window.DOGZY_DATA = {
         "anchors": {
           "eyes": [
             0.47,
-            0.3
+            0.3297
           ],
-          "headTop": 0.21,
-          "neck": 0.52,
+          "headTop": 0.2308,
+          "neck": 0.5714,
           "hand": [
             0.28,
-            0.85
+            0.9341
           ]
         },
         "business": "courthouse",
-        "price": 120
+        "price": 15,
+        "demo": false
       },
       {
         "id": "06-dentist-poodle",
@@ -190,17 +197,18 @@ window.DOGZY_DATA = {
         "anchors": {
           "eyes": [
             0.51,
-            0.4
+            0.4396
           ],
-          "headTop": 0.19,
-          "neck": 0.59,
+          "headTop": 0.2088,
+          "neck": 0.6484,
           "hand": [
             0.33,
-            0.86
+            0.9451
           ]
         },
         "business": "hospital",
-        "price": 120
+        "price": 15,
+        "demo": false
       },
       {
         "id": "07-florist-yorkshire",
@@ -215,17 +223,18 @@ window.DOGZY_DATA = {
         "anchors": {
           "eyes": [
             0.42,
-            0.39
+            0.4286
           ],
-          "headTop": 0.22,
-          "neck": 0.55,
+          "headTop": 0.2418,
+          "neck": 0.6044,
           "hand": [
             0.25,
-            0.65
+            0.7143
           ]
         },
         "business": "flower-shop",
-        "price": 120
+        "price": 15,
+        "demo": true
       },
       {
         "id": "08-construction-rottweiler",
@@ -240,17 +249,18 @@ window.DOGZY_DATA = {
         "anchors": {
           "eyes": [
             0.56,
-            0.39
+            0.4286
           ],
-          "headTop": 0.22,
-          "neck": 0.52,
+          "headTop": 0.2418,
+          "neck": 0.5714,
           "hand": [
             0.75,
-            0.81
+            0.8901
           ]
         },
         "business": "construction-company",
-        "price": 120
+        "price": 15,
+        "demo": true
       },
       {
         "id": "09-electrician-border-collie",
@@ -265,17 +275,18 @@ window.DOGZY_DATA = {
         "anchors": {
           "eyes": [
             0.46,
-            0.47
+            0.5165
           ],
-          "headTop": 0.32,
-          "neck": 0.62,
+          "headTop": 0.3516,
+          "neck": 0.6813,
           "hand": [
             0.67,
-            0.9
+            0.97
           ]
         },
         "business": "electrician-company",
-        "price": 120
+        "price": 15,
+        "demo": false
       },
       {
         "id": "10-plumber-french-bulldog",
@@ -290,17 +301,18 @@ window.DOGZY_DATA = {
         "anchors": {
           "eyes": [
             0.51,
-            0.52
+            0.5714
           ],
-          "headTop": 0.36,
-          "neck": 0.68,
+          "headTop": 0.3956,
+          "neck": 0.7473,
           "hand": [
             0.18,
-            0.72
+            0.7912
           ]
         },
         "business": "plumbing-company",
-        "price": 120
+        "price": 15,
+        "demo": false
       },
       {
         "id": "11-decorator-afghan-hound",
@@ -315,17 +327,18 @@ window.DOGZY_DATA = {
         "anchors": {
           "eyes": [
             0.49,
-            0.23
+            0.2527
           ],
-          "headTop": 0.05,
-          "neck": 0.47,
+          "headTop": 0.0549,
+          "neck": 0.5165,
           "hand": [
             0.49,
-            0.79
+            0.8681
           ]
         },
         "business": "hotel",
-        "price": 120
+        "price": 15,
+        "demo": false
       },
       {
         "id": "12-technician-husky",
@@ -340,17 +353,18 @@ window.DOGZY_DATA = {
         "anchors": {
           "eyes": [
             0.64,
-            0.35
+            0.3846
           ],
-          "headTop": 0.1,
-          "neck": 0.5,
+          "headTop": 0.1099,
+          "neck": 0.5495,
           "hand": [
             0.36,
-            0.47
+            0.5165
           ]
         },
         "business": "car-repair-garage",
-        "price": 120
+        "price": 15,
+        "demo": false
       },
       {
         "id": "13-architect-doberman",
@@ -365,17 +379,18 @@ window.DOGZY_DATA = {
         "anchors": {
           "eyes": [
             0.54,
-            0.38
+            0.4176
           ],
-          "headTop": 0.23,
-          "neck": 0.56,
+          "headTop": 0.2527,
+          "neck": 0.6154,
           "hand": [
             0.35,
-            0.91
+            0.97
           ]
         },
         "business": "construction-company",
-        "price": 120
+        "price": 15,
+        "demo": false
       },
       {
         "id": "14-banker-dachshund",
@@ -390,17 +405,18 @@ window.DOGZY_DATA = {
         "anchors": {
           "eyes": [
             0.5,
-            0.26
+            0.2857
           ],
-          "headTop": 0.1,
-          "neck": 0.45,
+          "headTop": 0.1099,
+          "neck": 0.4945,
           "hand": [
             0.72,
-            0.73
+            0.8022
           ]
         },
         "business": "bank",
-        "price": 120
+        "price": 15,
+        "demo": true
       },
       {
         "id": "15-veterinarian-labrador",
@@ -415,17 +431,18 @@ window.DOGZY_DATA = {
         "anchors": {
           "eyes": [
             0.42,
-            0.28
+            0.3077
           ],
-          "headTop": 0.08,
-          "neck": 0.45,
+          "headTop": 0.0879,
+          "neck": 0.4945,
           "hand": [
             0.71,
-            0.78
+            0.8571
           ]
         },
         "business": "pet-store",
-        "price": 120
+        "price": 15,
+        "demo": false
       },
       {
         "id": "16-hairstylist-shih-tzu",
@@ -440,17 +457,18 @@ window.DOGZY_DATA = {
         "anchors": {
           "eyes": [
             0.51,
-            0.34
+            0.3736
           ],
-          "headTop": 0.12,
-          "neck": 0.52,
+          "headTop": 0.1319,
+          "neck": 0.5714,
           "hand": [
             0.33,
-            0.56
+            0.6154
           ]
         },
         "business": "beauty-salon",
-        "price": 120
+        "price": 15,
+        "demo": false
       },
       {
         "id": "17-journalist-jack-russell",
@@ -465,17 +483,18 @@ window.DOGZY_DATA = {
         "anchors": {
           "eyes": [
             0.46,
-            0.38
+            0.4176
           ],
-          "headTop": 0.23,
-          "neck": 0.58,
+          "headTop": 0.2527,
+          "neck": 0.6374,
           "hand": [
             0.3,
-            0.85
+            0.9341
           ]
         },
         "business": "media-studio",
-        "price": 120
+        "price": 15,
+        "demo": false
       },
       {
         "id": "18-actor-boxer",
@@ -490,17 +509,18 @@ window.DOGZY_DATA = {
         "anchors": {
           "eyes": [
             0.53,
-            0.33
+            0.3626
           ],
-          "headTop": 0.22,
-          "neck": 0.52,
+          "headTop": 0.2418,
+          "neck": 0.5714,
           "hand": [
             0.25,
-            0.85
+            0.9341
           ]
         },
         "business": "cinema",
-        "price": 120
+        "price": 15,
+        "demo": false
       },
       {
         "id": "19-fitness-coach-whippet",
@@ -515,17 +535,18 @@ window.DOGZY_DATA = {
         "anchors": {
           "eyes": [
             0.54,
-            0.32
+            0.3516
           ],
-          "headTop": 0.17,
-          "neck": 0.52,
+          "headTop": 0.1868,
+          "neck": 0.5714,
           "hand": [
             0.1,
-            0.89
+            0.97
           ]
         },
         "business": "gym-fitness-center",
-        "price": 120
+        "price": 15,
+        "demo": false
       },
       {
         "id": "20-painter-australian-shepherd",
@@ -540,17 +561,18 @@ window.DOGZY_DATA = {
         "anchors": {
           "eyes": [
             0.64,
-            0.27
+            0.2967
           ],
-          "headTop": 0.1,
-          "neck": 0.45,
+          "headTop": 0.1099,
+          "neck": 0.4945,
           "hand": [
             0.47,
-            0.79
+            0.8681
           ]
         },
         "business": "shopping-center",
-        "price": 120
+        "price": 15,
+        "demo": false
       },
       {
         "id": "21-singer-shiba",
@@ -565,17 +587,18 @@ window.DOGZY_DATA = {
         "anchors": {
           "eyes": [
             0.53,
-            0.26
+            0.2857
           ],
-          "headTop": 0.12,
-          "neck": 0.4,
+          "headTop": 0.1319,
+          "neck": 0.4396,
           "hand": [
             0.69,
-            0.41
+            0.4505
           ]
         },
-        "business": "nightclub",
-        "price": 120
+        "business": "sports-arena",
+        "price": 15,
+        "demo": true
       },
       {
         "id": "22-actress-pomeranian",
@@ -590,17 +613,18 @@ window.DOGZY_DATA = {
         "anchors": {
           "eyes": [
             0.56,
-            0.53
+            0.5824
           ],
-          "headTop": 0.38,
-          "neck": 0.66,
+          "headTop": 0.4176,
+          "neck": 0.7253,
           "hand": [
             0.7,
-            0.72
+            0.7912
           ]
         },
         "business": "cinema",
-        "price": 120
+        "price": 15,
+        "demo": false
       },
       {
         "id": "23-pilot-weimaraner",
@@ -615,17 +639,18 @@ window.DOGZY_DATA = {
         "anchors": {
           "eyes": [
             0.54,
-            0.38
+            0.4176
           ],
-          "headTop": 0.22,
-          "neck": 0.52,
+          "headTop": 0.2418,
+          "neck": 0.5714,
           "hand": [
             0.31,
-            0.71
+            0.7802
           ]
         },
         "business": "airport",
-        "price": 120
+        "price": 15,
+        "demo": true
       },
       {
         "id": "24-teacher-bernese",
@@ -640,17 +665,18 @@ window.DOGZY_DATA = {
         "anchors": {
           "eyes": [
             0.53,
-            0.38
+            0.4176
           ],
-          "headTop": 0.22,
-          "neck": 0.5,
+          "headTop": 0.2418,
+          "neck": 0.5495,
           "hand": [
             0.42,
-            0.73
+            0.8022
           ]
         },
         "business": "school",
-        "price": 120
+        "price": 15,
+        "demo": false
       },
       {
         "id": "25-sound-tech-corgi",
@@ -665,17 +691,18 @@ window.DOGZY_DATA = {
         "anchors": {
           "eyes": [
             0.5,
-            0.41
+            0.4505
           ],
-          "headTop": 0.28,
-          "neck": 0.57,
+          "headTop": 0.3077,
+          "neck": 0.6264,
           "hand": [
             0.42,
-            0.69
+            0.7582
           ]
         },
         "business": "media-studio",
-        "price": 120
+        "price": 15,
+        "demo": false
       }
     ]
   },
@@ -1980,77 +2007,5095 @@ window.DOGZY_DATA = {
       }
     ]
   },
-  "accessories": {
-    "slots": [
-      "hat",
-      "glasses",
-      "neck",
-      "hand"
-    ],
-    "accessories": [
+  "equipment": {
+    "note": "Career equipment from each character's card. Prices come from data/prices.json.",
+    "equipment": {
+      "00a-chef-golden-retriever": [
+        {
+          "level": 1,
+          "title": "Cook / Apprentice",
+          "panel": "assets/equipment/00a-chef-golden-retriever-L1.jpg",
+          "items": [
+            {
+              "id": "00a-chef-golden-retriever-L1-1",
+              "name": "Chef's hat",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "00a-chef-golden-retriever-L1-2",
+              "name": "Basic apron",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "00a-chef-golden-retriever-L1-3",
+              "name": "Wooden spoon",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "00a-chef-golden-retriever-L1-4",
+              "name": "Cutting board",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "00a-chef-golden-retriever-L1-5",
+              "name": "Chef's knife",
+              "gold": true,
+              "price": 10
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "title": "Head Chef / Specialized Chef",
+          "panel": "assets/equipment/00a-chef-golden-retriever-L2.jpg",
+          "items": [
+            {
+              "id": "00a-chef-golden-retriever-L2-1",
+              "name": "Specialized chef's jacket",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "00a-chef-golden-retriever-L2-2",
+              "name": "Professional frying pan",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "00a-chef-golden-retriever-L2-3",
+              "name": "Knife set",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "00a-chef-golden-retriever-L2-4",
+              "name": "Cooking thermometer",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "00a-chef-golden-retriever-L2-5",
+              "name": "Specialized utensils",
+              "gold": true,
+              "price": 10
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "title": "Master Chef / Executive Chef",
+          "panel": "assets/equipment/00a-chef-golden-retriever-L3.jpg",
+          "items": [
+            {
+              "id": "00a-chef-golden-retriever-L3-1",
+              "name": "Master chef's hat",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "00a-chef-golden-retriever-L3-2",
+              "name": "Medal or insignia",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "00a-chef-golden-retriever-L3-3",
+              "name": "Honorary chef's coat",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "00a-chef-golden-retriever-L3-4",
+              "name": "Recipe book",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "00a-chef-golden-retriever-L3-5",
+              "name": "Signature plate",
+              "gold": true,
+              "price": 10
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "title": "Restaurant Owner / Restaurateur",
+          "panel": "assets/equipment/00a-chef-golden-retriever-L4.jpg",
+          "items": [
+            {
+              "id": "00a-chef-golden-retriever-L4-1",
+              "name": "Owner's suit",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "00a-chef-golden-retriever-L4-2",
+              "name": "Management tablet",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "00a-chef-golden-retriever-L4-3",
+              "name": "Restaurant keys",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "00a-chef-golden-retriever-L4-4",
+              "name": "Business contract",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "00a-chef-golden-retriever-L4-5",
+              "name": "Staff team",
+              "gold": true,
+              "price": 10
+            }
+          ]
+        },
+        {
+          "level": 5,
+          "title": "Restaurant Chain Owner / Franchise & Expansion",
+          "panel": "assets/equipment/00a-chef-golden-retriever-L5.jpg",
+          "items": [
+            {
+              "id": "00a-chef-golden-retriever-L5-1",
+              "name": "Restaurant logo and signage",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "00a-chef-golden-retriever-L5-2",
+              "name": "Delivery truck",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "00a-chef-golden-retriever-L5-3",
+              "name": "Franchise at a new location",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "00a-chef-golden-retriever-L5-4",
+              "name": "Marketing campaign",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "00a-chef-golden-retriever-L5-5",
+              "name": "International expansion",
+              "gold": true,
+              "price": 20
+            }
+          ]
+        }
+      ],
+      "00c-barmaid-cavalier": [
+        {
+          "level": 1,
+          "title": "Barmaid / Apprentice",
+          "panel": "assets/equipment/00c-barmaid-cavalier-L1.jpg",
+          "items": [
+            {
+              "id": "00c-barmaid-cavalier-L1-1",
+              "name": "Basic uniform (shirt + apron)",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "00c-barmaid-cavalier-L1-2",
+              "name": "Cocktail shaker",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "00c-barmaid-cavalier-L1-3",
+              "name": "Jigger",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "00c-barmaid-cavalier-L1-4",
+              "name": "Bar towel",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "00c-barmaid-cavalier-L1-5",
+              "name": "Non-slip shoes",
+              "gold": true,
+              "price": 10
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "title": "Specialized Barmaid / Cocktails & Mixology",
+          "panel": "assets/equipment/00c-barmaid-cavalier-L2.jpg",
+          "items": [
+            {
+              "id": "00c-barmaid-cavalier-L2-1",
+              "name": "Specialized uniform (vest)",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "00c-barmaid-cavalier-L2-2",
+              "name": "Professional shaker set",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "00c-barmaid-cavalier-L2-3",
+              "name": "Mixology tools",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "00c-barmaid-cavalier-L2-4",
+              "name": "Garnish kit",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "00c-barmaid-cavalier-L2-5",
+              "name": "Cocktail recipe book",
+              "gold": true,
+              "price": 10
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "title": "Head Barmaid / Supervisor",
+          "panel": "assets/equipment/00c-barmaid-cavalier-L3.jpg",
+          "items": [
+            {
+              "id": "00c-barmaid-cavalier-L3-1",
+              "name": "Supervisor jacket",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "00c-barmaid-cavalier-L3-2",
+              "name": "Tablet (inventory)",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "00c-barmaid-cavalier-L3-3",
+              "name": "Earpiece/communication",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "00c-barmaid-cavalier-L3-4",
+              "name": "Staff schedule",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "00c-barmaid-cavalier-L3-5",
+              "name": "Key to bar",
+              "gold": true,
+              "price": 10
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "title": "Bar Manager / Operations",
+          "panel": "assets/equipment/00c-barmaid-cavalier-L4.jpg",
+          "items": [
+            {
+              "id": "00c-barmaid-cavalier-L4-1",
+              "name": "Manager suit",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "00c-barmaid-cavalier-L4-2",
+              "name": "Management tablet",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "00c-barmaid-cavalier-L4-3",
+              "name": "Keys (bar & stock)",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "00c-barmaid-cavalier-L4-4",
+              "name": "Staff handbook",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "00c-barmaid-cavalier-L4-5",
+              "name": "Budget planner",
+              "gold": true,
+              "price": 10
+            }
+          ]
+        },
+        {
+          "level": 5,
+          "title": "Bar Owner / Bar Chain / Franchise",
+          "panel": "assets/equipment/00c-barmaid-cavalier-L5.jpg",
+          "items": [
+            {
+              "id": "00c-barmaid-cavalier-L5-1",
+              "name": "Logo & branding",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "00c-barmaid-cavalier-L5-2",
+              "name": "Delivery truck",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "00c-barmaid-cavalier-L5-3",
+              "name": "New bar location",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "00c-barmaid-cavalier-L5-4",
+              "name": "Marketing campaign",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "00c-barmaid-cavalier-L5-5",
+              "name": "Franchise contract",
+              "gold": true,
+              "price": 20
+            }
+          ]
+        }
+      ],
+      "01-police-officer-german-shepherd": [
+        {
+          "level": 1,
+          "title": "Rookie Officer",
+          "panel": "assets/equipment/01-police-officer-german-shepherd-L1.jpg",
+          "items": [
+            {
+              "id": "01-police-officer-german-shepherd-L1-1",
+              "name": "Uniform",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "01-police-officer-german-shepherd-L1-2",
+              "name": "Cap",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "01-police-officer-german-shepherd-L1-3",
+              "name": "Radio",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "01-police-officer-german-shepherd-L1-4",
+              "name": "Flashlight",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "01-police-officer-german-shepherd-L1-5",
+              "name": "Notebook",
+              "gold": true,
+              "price": 10
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "title": "Detective",
+          "panel": "assets/equipment/01-police-officer-german-shepherd-L2.jpg",
+          "items": [
+            {
+              "id": "01-police-officer-german-shepherd-L2-1",
+              "name": "Trench coat",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "01-police-officer-german-shepherd-L2-2",
+              "name": "Magnifying glass",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "01-police-officer-german-shepherd-L2-3",
+              "name": "Case file",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "01-police-officer-german-shepherd-L2-4",
+              "name": "Camera",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "01-police-officer-german-shepherd-L2-5",
+              "name": "Detective badge",
+              "gold": true,
+              "price": 10
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "title": "Sergeant Supervisor",
+          "panel": "assets/equipment/01-police-officer-german-shepherd-L3.jpg",
+          "items": [
+            {
+              "id": "01-police-officer-german-shepherd-L3-1",
+              "name": "Stripes",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "01-police-officer-german-shepherd-L3-2",
+              "name": "Tablet",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "01-police-officer-german-shepherd-L3-3",
+              "name": "Whistle",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "01-police-officer-german-shepherd-L3-4",
+              "name": "Team schedule",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "01-police-officer-german-shepherd-L3-5",
+              "name": "Vehicle key",
+              "gold": true,
+              "price": 10
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "title": "Police Chief",
+          "panel": "assets/equipment/01-police-officer-german-shepherd-L4.jpg",
+          "items": [
+            {
+              "id": "01-police-officer-german-shepherd-L4-1",
+              "name": "Chief uniform",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "01-police-officer-german-shepherd-L4-2",
+              "name": "Gold insignia",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "01-police-officer-german-shepherd-L4-3",
+              "name": "Office",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "01-police-officer-german-shepherd-L4-4",
+              "name": "Phone",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "01-police-officer-german-shepherd-L4-5",
+              "name": "Case files",
+              "gold": true,
+              "price": 10
+            }
+          ]
+        },
+        {
+          "level": 5,
+          "title": "Police Station Commander",
+          "panel": "assets/equipment/01-police-officer-german-shepherd-L5.jpg",
+          "items": [
+            {
+              "id": "01-police-officer-german-shepherd-L5-1",
+              "name": "Logo & sign",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "01-police-officer-german-shepherd-L5-2",
+              "name": "Patrol car",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "01-police-officer-german-shepherd-L5-3",
+              "name": "New station",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "01-police-officer-german-shepherd-L5-4",
+              "name": "Officer team",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "01-police-officer-german-shepherd-L5-5",
+              "name": "Regional expansion",
+              "gold": true,
+              "price": 20
+            }
+          ]
+        }
+      ],
+      "02-clerk-beagle": [
+        {
+          "level": 1,
+          "title": "Apprentice Clerk",
+          "panel": "assets/equipment/02-clerk-beagle-L1.jpg",
+          "items": [
+            {
+              "id": "02-clerk-beagle-L1-1",
+              "name": "Apron",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "02-clerk-beagle-L1-2",
+              "name": "Name badge",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "02-clerk-beagle-L1-3",
+              "name": "Box cutter",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "02-clerk-beagle-L1-4",
+              "name": "Cart",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "02-clerk-beagle-L1-5",
+              "name": "Labels",
+              "gold": true,
+              "price": 10
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "title": "Specialized Clerk",
+          "panel": "assets/equipment/02-clerk-beagle-L2.jpg",
+          "items": [
+            {
+              "id": "02-clerk-beagle-L2-1",
+              "name": "Vest",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "02-clerk-beagle-L2-2",
+              "name": "Price scanner",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "02-clerk-beagle-L2-3",
+              "name": "Label maker",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "02-clerk-beagle-L2-4",
+              "name": "Gloves",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "02-clerk-beagle-L2-5",
+              "name": "Inventory",
+              "gold": true,
+              "price": 10
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "title": "Manager",
+          "panel": "assets/equipment/02-clerk-beagle-L3.jpg",
+          "items": [
+            {
+              "id": "02-clerk-beagle-L3-1",
+              "name": "Shirt & tie",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "02-clerk-beagle-L3-2",
+              "name": "Clipboard",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "02-clerk-beagle-L3-3",
+              "name": "Store keys",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "02-clerk-beagle-L3-4",
+              "name": "Team schedule",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "02-clerk-beagle-L3-5",
+              "name": "Cash register",
+              "gold": true,
+              "price": 10
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "title": "Shop Owner",
+          "panel": "assets/equipment/02-clerk-beagle-L4.jpg",
+          "items": [
+            {
+              "id": "02-clerk-beagle-L4-1",
+              "name": "Blazer",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "02-clerk-beagle-L4-2",
+              "name": "Management tablet",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "02-clerk-beagle-L4-3",
+              "name": "Counter",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "02-clerk-beagle-L4-4",
+              "name": "Shop sign",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "02-clerk-beagle-L4-5",
+              "name": "Lease contract",
+              "gold": true,
+              "price": 10
+            }
+          ]
+        },
+        {
+          "level": 5,
+          "title": "Franchise",
+          "panel": "assets/equipment/02-clerk-beagle-L5.jpg",
+          "items": [
+            {
+              "id": "02-clerk-beagle-L5-1",
+              "name": "Logo & sign",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "02-clerk-beagle-L5-2",
+              "name": "Delivery truck",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "02-clerk-beagle-L5-3",
+              "name": "New store",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "02-clerk-beagle-L5-4",
+              "name": "Marketing campaign",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "02-clerk-beagle-L5-5",
+              "name": "Franchise contract",
+              "gold": true,
+              "price": 20
+            }
+          ]
+        }
+      ],
+      "03-firefighter-saint-bernard": [
+        {
+          "level": 1,
+          "title": "Rookie Firefighter",
+          "panel": "assets/equipment/03-firefighter-saint-bernard-L1.jpg",
+          "items": [
+            {
+              "id": "03-firefighter-saint-bernard-L1-1",
+              "name": "Helmet",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "03-firefighter-saint-bernard-L1-2",
+              "name": "Gloves",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "03-firefighter-saint-bernard-L1-3",
+              "name": "Boots",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "03-firefighter-saint-bernard-L1-4",
+              "name": "Bucket",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "03-firefighter-saint-bernard-L1-5",
+              "name": "Whistle",
+              "gold": true,
+              "price": 10
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "title": "Firefighter",
+          "panel": "assets/equipment/03-firefighter-saint-bernard-L2.jpg",
+          "items": [
+            {
+              "id": "03-firefighter-saint-bernard-L2-1",
+              "name": "Turnout gear",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "03-firefighter-saint-bernard-L2-2",
+              "name": "Fire hose",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "03-firefighter-saint-bernard-L2-3",
+              "name": "Axe",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "03-firefighter-saint-bernard-L2-4",
+              "name": "Oxygen mask",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "03-firefighter-saint-bernard-L2-5",
+              "name": "Headlamp",
+              "gold": true,
+              "price": 10
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "title": "Supervisor",
+          "panel": "assets/equipment/03-firefighter-saint-bernard-L3.jpg",
+          "items": [
+            {
+              "id": "03-firefighter-saint-bernard-L3-1",
+              "name": "Supervisor coat",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "03-firefighter-saint-bernard-L3-2",
+              "name": "Radio",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "03-firefighter-saint-bernard-L3-3",
+              "name": "Clipboard",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "03-firefighter-saint-bernard-L3-4",
+              "name": "Thermal camera",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "03-firefighter-saint-bernard-L3-5",
+              "name": "Team schedule",
+              "gold": true,
+              "price": 10
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "title": "Captain",
+          "panel": "assets/equipment/03-firefighter-saint-bernard-L4.jpg",
+          "items": [
+            {
+              "id": "03-firefighter-saint-bernard-L4-1",
+              "name": "Captain helmet",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "03-firefighter-saint-bernard-L4-2",
+              "name": "Gold badge",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "03-firefighter-saint-bernard-L4-3",
+              "name": "Megaphone",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "03-firefighter-saint-bernard-L4-4",
+              "name": "Action plan",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "03-firefighter-saint-bernard-L4-5",
+              "name": "Truck key",
+              "gold": true,
+              "price": 10
+            }
+          ]
+        },
+        {
+          "level": 5,
+          "title": "Fire Chief",
+          "panel": "assets/equipment/03-firefighter-saint-bernard-L5.jpg",
+          "items": [
+            {
+              "id": "03-firefighter-saint-bernard-L5-1",
+              "name": "Logo & sign",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "03-firefighter-saint-bernard-L5-2",
+              "name": "Fire truck",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "03-firefighter-saint-bernard-L5-3",
+              "name": "New station",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "03-firefighter-saint-bernard-L5-4",
+              "name": "Firefighter team",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "03-firefighter-saint-bernard-L5-5",
+              "name": "Regional expansion",
+              "gold": true,
+              "price": 20
+            }
+          ]
+        }
+      ],
+      "04-nurse-collie": [
+        {
+          "level": 1,
+          "title": "Nurse",
+          "panel": "assets/equipment/04-nurse-collie-L1.jpg",
+          "items": [
+            {
+              "id": "04-nurse-collie-L1-1",
+              "name": "Uniform",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "04-nurse-collie-L1-2",
+              "name": "Thermometer",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "04-nurse-collie-L1-3",
+              "name": "First aid kit",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "04-nurse-collie-L1-4",
+              "name": "Bandages",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "04-nurse-collie-L1-5",
+              "name": "Watch",
+              "gold": true,
+              "price": 10
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "title": "Intern",
+          "panel": "assets/equipment/04-nurse-collie-L2.jpg",
+          "items": [
+            {
+              "id": "04-nurse-collie-L2-1",
+              "name": "Short lab coat",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "04-nurse-collie-L2-2",
+              "name": "Clipboard",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "04-nurse-collie-L2-3",
+              "name": "Penlight",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "04-nurse-collie-L2-4",
+              "name": "Medical notebook",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "04-nurse-collie-L2-5",
+              "name": "Intern badge",
+              "gold": true,
+              "price": 10
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "title": "Doctor",
+          "panel": "assets/equipment/04-nurse-collie-L3.jpg",
+          "items": [
+            {
+              "id": "04-nurse-collie-L3-1",
+              "name": "Doctor coat",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "04-nurse-collie-L3-2",
+              "name": "Stethoscope",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "04-nurse-collie-L3-3",
+              "name": "Medical tablet",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "04-nurse-collie-L3-4",
+              "name": "Prescription pad",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "04-nurse-collie-L3-5",
+              "name": "Office",
+              "gold": true,
+              "price": 10
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "title": "Surgeon",
+          "panel": "assets/equipment/04-nurse-collie-L4.jpg",
+          "items": [
+            {
+              "id": "04-nurse-collie-L4-1",
+              "name": "Surgical scrubs",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "04-nurse-collie-L4-2",
+              "name": "Mask & cap",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "04-nurse-collie-L4-3",
+              "name": "Instruments",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "04-nurse-collie-L4-4",
+              "name": "Surgical loupe",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "04-nurse-collie-L4-5",
+              "name": "Operating room",
+              "gold": true,
+              "price": 10
+            }
+          ]
+        },
+        {
+          "level": 5,
+          "title": "Clinic Director",
+          "panel": "assets/equipment/04-nurse-collie-L5.jpg",
+          "items": [
+            {
+              "id": "04-nurse-collie-L5-1",
+              "name": "Logo & sign",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "04-nurse-collie-L5-2",
+              "name": "Ambulance",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "04-nurse-collie-L5-3",
+              "name": "New clinic",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "04-nurse-collie-L5-4",
+              "name": "Medical team",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "04-nurse-collie-L5-5",
+              "name": "Regional expansion",
+              "gold": true,
+              "price": 20
+            }
+          ]
+        }
+      ],
+      "05-lawyer-bulldog": [
+        {
+          "level": 1,
+          "title": "Legal Assistant",
+          "panel": "assets/equipment/05-lawyer-bulldog-L1.jpg",
+          "items": [
+            {
+              "id": "05-lawyer-bulldog-L1-1",
+              "name": "Shirt & tie",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "05-lawyer-bulldog-L1-2",
+              "name": "Case files",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "05-lawyer-bulldog-L1-3",
+              "name": "Civil code",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "05-lawyer-bulldog-L1-4",
+              "name": "Pen",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "05-lawyer-bulldog-L1-5",
+              "name": "Planner",
+              "gold": true,
+              "price": 10
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "title": "Lawyer",
+          "panel": "assets/equipment/05-lawyer-bulldog-L2.jpg",
+          "items": [
+            {
+              "id": "05-lawyer-bulldog-L2-1",
+              "name": "Suit",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "05-lawyer-bulldog-L2-2",
+              "name": "Briefcase",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "05-lawyer-bulldog-L2-3",
+              "name": "Lawyer's robe",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "05-lawyer-bulldog-L2-4",
+              "name": "Closing argument",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "05-lawyer-bulldog-L2-5",
+              "name": "Business card",
+              "gold": true,
+              "price": 10
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "title": "Judge",
+          "panel": "assets/equipment/05-lawyer-bulldog-L3.jpg",
+          "items": [
+            {
+              "id": "05-lawyer-bulldog-L3-1",
+              "name": "Judge's robe",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "05-lawyer-bulldog-L3-2",
+              "name": "Gavel",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "05-lawyer-bulldog-L3-3",
+              "name": "Judge's bench",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "05-lawyer-bulldog-L3-4",
+              "name": "Law book",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "05-lawyer-bulldog-L3-5",
+              "name": "Seal",
+              "gold": true,
+              "price": 10
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "title": "Supreme Court / Justice",
+          "panel": "assets/equipment/05-lawyer-bulldog-L4.jpg",
+          "items": [
+            {
+              "id": "05-lawyer-bulldog-L4-1",
+              "name": "Red robe",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "05-lawyer-bulldog-L4-2",
+              "name": "Medal of honor",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "05-lawyer-bulldog-L4-3",
+              "name": "Court office",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "05-lawyer-bulldog-L4-4",
+              "name": "Law library",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "05-lawyer-bulldog-L4-5",
+              "name": "Landmark ruling",
+              "gold": true,
+              "price": 10
+            }
+          ]
+        },
+        {
+          "level": 5,
+          "title": "Dogzy Law Firm",
+          "panel": "assets/equipment/05-lawyer-bulldog-L5.jpg",
+          "items": [
+            {
+              "id": "05-lawyer-bulldog-L5-1",
+              "name": "Logo & sign",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "05-lawyer-bulldog-L5-2",
+              "name": "Luxury car",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "05-lawyer-bulldog-L5-3",
+              "name": "New office",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "05-lawyer-bulldog-L5-4",
+              "name": "Team of lawyers",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "05-lawyer-bulldog-L5-5",
+              "name": "International expansion",
+              "gold": true,
+              "price": 20
+            }
+          ]
+        }
+      ],
+      "06-dentist-poodle": [
+        {
+          "level": 1,
+          "title": "Dental Assistant",
+          "panel": "assets/equipment/06-dentist-poodle-L1.jpg",
+          "items": [
+            {
+              "id": "06-dentist-poodle-L1-1",
+              "name": "Uniform",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "06-dentist-poodle-L1-2",
+              "name": "Toothbrush",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "06-dentist-poodle-L1-3",
+              "name": "Gloves",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "06-dentist-poodle-L1-4",
+              "name": "Mask",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "06-dentist-poodle-L1-5",
+              "name": "Tray",
+              "gold": true,
+              "price": 10
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "title": "Dentist",
+          "panel": "assets/equipment/06-dentist-poodle-L2.jpg",
+          "items": [
+            {
+              "id": "06-dentist-poodle-L2-1",
+              "name": "Dental coat",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "06-dentist-poodle-L2-2",
+              "name": "Dental mirror",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "06-dentist-poodle-L2-3",
+              "name": "Dental chair",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "06-dentist-poodle-L2-4",
+              "name": "Lamp",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "06-dentist-poodle-L2-5",
+              "name": "X-ray",
+              "gold": true,
+              "price": 10
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "title": "Oral Surgeon",
+          "panel": "assets/equipment/06-dentist-poodle-L3.jpg",
+          "items": [
+            {
+              "id": "06-dentist-poodle-L3-1",
+              "name": "Surgical scrubs",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "06-dentist-poodle-L3-2",
+              "name": "Head mirror",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "06-dentist-poodle-L3-3",
+              "name": "Otoscope",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "06-dentist-poodle-L3-4",
+              "name": "Instruments",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "06-dentist-poodle-L3-5",
+              "name": "Operating room",
+              "gold": true,
+              "price": 10
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "title": "Clinic Owner",
+          "panel": "assets/equipment/06-dentist-poodle-L4.jpg",
+          "items": [
+            {
+              "id": "06-dentist-poodle-L4-1",
+              "name": "Blazer",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "06-dentist-poodle-L4-2",
+              "name": "Management tablet",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "06-dentist-poodle-L4-3",
+              "name": "Clinic key",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "06-dentist-poodle-L4-4",
+              "name": "Team",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "06-dentist-poodle-L4-5",
+              "name": "Patient schedule",
+              "gold": true,
+              "price": 10
+            }
+          ]
+        },
+        {
+          "level": 5,
+          "title": "Dental Clinic Chain",
+          "panel": "assets/equipment/06-dentist-poodle-L5.jpg",
+          "items": [
+            {
+              "id": "06-dentist-poodle-L5-1",
+              "name": "Logo & sign",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "06-dentist-poodle-L5-2",
+              "name": "Mobile clinic",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "06-dentist-poodle-L5-3",
+              "name": "New clinic",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "06-dentist-poodle-L5-4",
+              "name": "Marketing campaign",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "06-dentist-poodle-L5-5",
+              "name": "Franchise contract",
+              "gold": true,
+              "price": 20
+            }
+          ]
+        }
+      ],
+      "07-florist-yorkshire": [
+        {
+          "level": 1,
+          "title": "Florist Assistant",
+          "panel": "assets/equipment/07-florist-yorkshire-L1.jpg",
+          "items": [
+            {
+              "id": "07-florist-yorkshire-L1-1",
+              "name": "Apron",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "07-florist-yorkshire-L1-2",
+              "name": "Watering can",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "07-florist-yorkshire-L1-3",
+              "name": "Garden gloves",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "07-florist-yorkshire-L1-4",
+              "name": "Pruning shears",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "07-florist-yorkshire-L1-5",
+              "name": "Pots",
+              "gold": true,
+              "price": 10
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "title": "Florist",
+          "panel": "assets/equipment/07-florist-yorkshire-L2.jpg",
+          "items": [
+            {
+              "id": "07-florist-yorkshire-L2-1",
+              "name": "Floral apron",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "07-florist-yorkshire-L2-2",
+              "name": "Scissors",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "07-florist-yorkshire-L2-3",
+              "name": "Ribbon",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "07-florist-yorkshire-L2-4",
+              "name": "Vase",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "07-florist-yorkshire-L2-5",
+              "name": "Signature bouquet",
+              "gold": true,
+              "price": 10
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "title": "Botanist",
+          "panel": "assets/equipment/07-florist-yorkshire-L3.jpg",
+          "items": [
+            {
+              "id": "07-florist-yorkshire-L3-1",
+              "name": "Explorer jacket",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "07-florist-yorkshire-L3-2",
+              "name": "Magnifying glass",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "07-florist-yorkshire-L3-3",
+              "name": "Botanical notebook",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "07-florist-yorkshire-L3-4",
+              "name": "Rare plants",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "07-florist-yorkshire-L3-5",
+              "name": "Microscope",
+              "gold": true,
+              "price": 10
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "title": "Shop Owner",
+          "panel": "assets/equipment/07-florist-yorkshire-L4.jpg",
+          "items": [
+            {
+              "id": "07-florist-yorkshire-L4-1",
+              "name": "Elegant dress",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "07-florist-yorkshire-L4-2",
+              "name": "Management tablet",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "07-florist-yorkshire-L4-3",
+              "name": "Counter",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "07-florist-yorkshire-L4-4",
+              "name": "Shop sign",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "07-florist-yorkshire-L4-5",
+              "name": "Lease contract",
+              "gold": true,
+              "price": 10
+            }
+          ]
+        },
+        {
+          "level": 5,
+          "title": "Dogzy Greenhouse",
+          "panel": "assets/equipment/07-florist-yorkshire-L5.jpg",
+          "items": [
+            {
+              "id": "07-florist-yorkshire-L5-1",
+              "name": "Logo & sign",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "07-florist-yorkshire-L5-2",
+              "name": "Delivery truck",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "07-florist-yorkshire-L5-3",
+              "name": "New greenhouse",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "07-florist-yorkshire-L5-4",
+              "name": "Marketing campaign",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "07-florist-yorkshire-L5-5",
+              "name": "International expansion",
+              "gold": true,
+              "price": 20
+            }
+          ]
+        }
+      ],
+      "08-construction-rottweiler": [
+        {
+          "level": 1,
+          "title": "Construction Worker",
+          "panel": "assets/equipment/08-construction-rottweiler-L1.jpg",
+          "items": [
+            {
+              "id": "08-construction-rottweiler-L1-1",
+              "name": "Hard hat",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "08-construction-rottweiler-L1-2",
+              "name": "Safety vest",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "08-construction-rottweiler-L1-3",
+              "name": "Safety boots",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "08-construction-rottweiler-L1-4",
+              "name": "Hammer",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "08-construction-rottweiler-L1-5",
+              "name": "Tool belt",
+              "gold": true,
+              "price": 10
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "title": "Site Foreman",
+          "panel": "assets/equipment/08-construction-rottweiler-L2.jpg",
+          "items": [
+            {
+              "id": "08-construction-rottweiler-L2-1",
+              "name": "White hard hat",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "08-construction-rottweiler-L2-2",
+              "name": "Walkie-talkie",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "08-construction-rottweiler-L2-3",
+              "name": "Blueprints",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "08-construction-rottweiler-L2-4",
+              "name": "Laser level",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "08-construction-rottweiler-L2-5",
+              "name": "Team schedule",
+              "gold": true,
+              "price": 10
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "title": "Contractor",
+          "panel": "assets/equipment/08-construction-rottweiler-L3.jpg",
+          "items": [
+            {
+              "id": "08-construction-rottweiler-L3-1",
+              "name": "Tablet",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "08-construction-rottweiler-L3-2",
+              "name": "Pickup truck",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "08-construction-rottweiler-L3-3",
+              "name": "Bids",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "08-construction-rottweiler-L3-4",
+              "name": "Permits",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "08-construction-rottweiler-L3-5",
+              "name": "Team",
+              "gold": true,
+              "price": 10
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "title": "Company Owner",
+          "panel": "assets/equipment/08-construction-rottweiler-L4.jpg",
+          "items": [
+            {
+              "id": "08-construction-rottweiler-L4-1",
+              "name": "Office",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "08-construction-rottweiler-L4-2",
+              "name": "Contract",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "08-construction-rottweiler-L4-3",
+              "name": "Company keys",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "08-construction-rottweiler-L4-4",
+              "name": "Machinery",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "08-construction-rottweiler-L4-5",
+              "name": "Contractor license",
+              "gold": true,
+              "price": 10
+            }
+          ]
+        },
+        {
+          "level": 5,
+          "title": "Expansion",
+          "panel": "assets/equipment/08-construction-rottweiler-L5.jpg",
+          "items": [
+            {
+              "id": "08-construction-rottweiler-L5-1",
+              "name": "Logo & sign",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "08-construction-rottweiler-L5-2",
+              "name": "Truck fleet",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "08-construction-rottweiler-L5-3",
+              "name": "Crane",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "08-construction-rottweiler-L5-4",
+              "name": "New projects",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "08-construction-rottweiler-L5-5",
+              "name": "Regional expansion",
+              "gold": true,
+              "price": 20
+            }
+          ]
+        }
+      ],
+      "09-electrician-border-collie": [
+        {
+          "level": 1,
+          "title": "Electrician Assistant",
+          "panel": "assets/equipment/09-electrician-border-collie-L1.jpg",
+          "items": [
+            {
+              "id": "09-electrician-border-collie-L1-1",
+              "name": "Overalls",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "09-electrician-border-collie-L1-2",
+              "name": "Tool belt",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "09-electrician-border-collie-L1-3",
+              "name": "Pliers",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "09-electrician-border-collie-L1-4",
+              "name": "Wire spool",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "09-electrician-border-collie-L1-5",
+              "name": "Insulated gloves",
+              "gold": true,
+              "price": 10
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "title": "Electrician",
+          "panel": "assets/equipment/09-electrician-border-collie-L2.jpg",
+          "items": [
+            {
+              "id": "09-electrician-border-collie-L2-1",
+              "name": "Hard hat",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "09-electrician-border-collie-L2-2",
+              "name": "Safety glasses",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "09-electrician-border-collie-L2-3",
+              "name": "Multimeter",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "09-electrician-border-collie-L2-4",
+              "name": "Screwdriver",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "09-electrician-border-collie-L2-5",
+              "name": "Electrical panel",
+              "gold": true,
+              "price": 10
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "title": "Instructor",
+          "panel": "assets/equipment/09-electrician-border-collie-L3.jpg",
+          "items": [
+            {
+              "id": "09-electrician-border-collie-L3-1",
+              "name": "Instructor polo",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "09-electrician-border-collie-L3-2",
+              "name": "Whiteboard",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "09-electrician-border-collie-L3-3",
+              "name": "Diagrams",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "09-electrician-border-collie-L3-4",
+              "name": "Manual",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "09-electrician-border-collie-L3-5",
+              "name": "Certificates",
+              "gold": true,
+              "price": 10
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "title": "Entrepreneur",
+          "panel": "assets/equipment/09-electrician-border-collie-L4.jpg",
+          "items": [
+            {
+              "id": "09-electrician-border-collie-L4-1",
+              "name": "Blazer",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "09-electrician-border-collie-L4-2",
+              "name": "Tablet",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "09-electrician-border-collie-L4-3",
+              "name": "Van",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "09-electrician-border-collie-L4-4",
+              "name": "Bids",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "09-electrician-border-collie-L4-5",
+              "name": "License",
+              "gold": true,
+              "price": 10
+            }
+          ]
+        },
+        {
+          "level": 5,
+          "title": "Dogzy Electric Company",
+          "panel": "assets/equipment/09-electrician-border-collie-L5.jpg",
+          "items": [
+            {
+              "id": "09-electrician-border-collie-L5-1",
+              "name": "Logo & sign",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "09-electrician-border-collie-L5-2",
+              "name": "Van fleet",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "09-electrician-border-collie-L5-3",
+              "name": "New office",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "09-electrician-border-collie-L5-4",
+              "name": "Electrician team",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "09-electrician-border-collie-L5-5",
+              "name": "Regional expansion",
+              "gold": true,
+              "price": 20
+            }
+          ]
+        }
+      ],
+      "10-plumber-french-bulldog": [
+        {
+          "level": 1,
+          "title": "Plumber / Assistant",
+          "panel": "assets/equipment/10-plumber-french-bulldog-L1.jpg",
+          "items": [
+            {
+              "id": "10-plumber-french-bulldog-L1-1",
+              "name": "Overalls",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "10-plumber-french-bulldog-L1-2",
+              "name": "Plunger",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "10-plumber-french-bulldog-L1-3",
+              "name": "Toolbox",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "10-plumber-french-bulldog-L1-4",
+              "name": "Gloves",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "10-plumber-french-bulldog-L1-5",
+              "name": "Flashlight",
+              "gold": true,
+              "price": 10
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "title": "Plumber",
+          "panel": "assets/equipment/10-plumber-french-bulldog-L2.jpg",
+          "items": [
+            {
+              "id": "10-plumber-french-bulldog-L2-1",
+              "name": "Pipe wrench",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "10-plumber-french-bulldog-L2-2",
+              "name": "Torch",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "10-plumber-french-bulldog-L2-3",
+              "name": "Pipes",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "10-plumber-french-bulldog-L2-4",
+              "name": "Inspection camera",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "10-plumber-french-bulldog-L2-5",
+              "name": "Teflon tape",
+              "gold": true,
+              "price": 10
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "title": "Instructor",
+          "panel": "assets/equipment/10-plumber-french-bulldog-L3.jpg",
+          "items": [
+            {
+              "id": "10-plumber-french-bulldog-L3-1",
+              "name": "Instructor polo",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "10-plumber-french-bulldog-L3-2",
+              "name": "Models",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "10-plumber-french-bulldog-L3-3",
+              "name": "Manual",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "10-plumber-french-bulldog-L3-4",
+              "name": "Whiteboard",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "10-plumber-french-bulldog-L3-5",
+              "name": "Certificates",
+              "gold": true,
+              "price": 10
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "title": "Entrepreneur",
+          "panel": "assets/equipment/10-plumber-french-bulldog-L4.jpg",
+          "items": [
+            {
+              "id": "10-plumber-french-bulldog-L4-1",
+              "name": "Blazer",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "10-plumber-french-bulldog-L4-2",
+              "name": "Tablet",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "10-plumber-french-bulldog-L4-3",
+              "name": "Van",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "10-plumber-french-bulldog-L4-4",
+              "name": "Bids",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "10-plumber-french-bulldog-L4-5",
+              "name": "License",
+              "gold": true,
+              "price": 10
+            }
+          ]
+        },
+        {
+          "level": 5,
+          "title": "Dogzy / Plumbing",
+          "panel": "assets/equipment/10-plumber-french-bulldog-L5.jpg",
+          "items": [
+            {
+              "id": "10-plumber-french-bulldog-L5-1",
+              "name": "Logo & sign",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "10-plumber-french-bulldog-L5-2",
+              "name": "Van fleet",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "10-plumber-french-bulldog-L5-3",
+              "name": "New office",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "10-plumber-french-bulldog-L5-4",
+              "name": "Plumber team",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "10-plumber-french-bulldog-L5-5",
+              "name": "Regional expansion",
+              "gold": true,
+              "price": 20
+            }
+          ]
+        }
+      ],
+      "11-decorator-afghan-hound": [
+        {
+          "level": 1,
+          "title": "Advisor",
+          "panel": "assets/equipment/11-decorator-afghan-hound-L1.jpg",
+          "items": [
+            {
+              "id": "11-decorator-afghan-hound-L1-1",
+              "name": "Blouse",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "11-decorator-afghan-hound-L1-2",
+              "name": "Fabric samples",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "11-decorator-afghan-hound-L1-3",
+              "name": "Catalog",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "11-decorator-afghan-hound-L1-4",
+              "name": "Badge",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "11-decorator-afghan-hound-L1-5",
+              "name": "Notebook",
+              "gold": true,
+              "price": 10
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "title": "Decorator",
+          "panel": "assets/equipment/11-decorator-afghan-hound-L2.jpg",
+          "items": [
+            {
+              "id": "11-decorator-afghan-hound-L2-1",
+              "name": "Color swatches",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "11-decorator-afghan-hound-L2-2",
+              "name": "Measuring tape",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "11-decorator-afghan-hound-L2-3",
+              "name": "Cushions",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "11-decorator-afghan-hound-L2-4",
+              "name": "Designer lamp",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "11-decorator-afghan-hound-L2-5",
+              "name": "Mood board",
+              "gold": true,
+              "price": 10
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "title": "Designer",
+          "panel": "assets/equipment/11-decorator-afghan-hound-L3.jpg",
+          "items": [
+            {
+              "id": "11-decorator-afghan-hound-L3-1",
+              "name": "Design tablet",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "11-decorator-afghan-hound-L3-2",
+              "name": "3D software",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "11-decorator-afghan-hound-L3-3",
+              "name": "Sketches",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "11-decorator-afghan-hound-L3-4",
+              "name": "Materials",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "11-decorator-afghan-hound-L3-5",
+              "name": "Portfolio",
+              "gold": true,
+              "price": 10
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "title": "Studio Owner",
+          "panel": "assets/equipment/11-decorator-afghan-hound-L4.jpg",
+          "items": [
+            {
+              "id": "11-decorator-afghan-hound-L4-1",
+              "name": "Blazer",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "11-decorator-afghan-hound-L4-2",
+              "name": "Studio",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "11-decorator-afghan-hound-L4-3",
+              "name": "Keys",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "11-decorator-afghan-hound-L4-4",
+              "name": "Team",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "11-decorator-afghan-hound-L4-5",
+              "name": "Lease contract",
+              "gold": true,
+              "price": 10
+            }
+          ]
+        },
+        {
+          "level": 5,
+          "title": "Dogzy Decor Store",
+          "panel": "assets/equipment/11-decorator-afghan-hound-L5.jpg",
+          "items": [
+            {
+              "id": "11-decorator-afghan-hound-L5-1",
+              "name": "Logo & sign",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "11-decorator-afghan-hound-L5-2",
+              "name": "Delivery truck",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "11-decorator-afghan-hound-L5-3",
+              "name": "New store",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "11-decorator-afghan-hound-L5-4",
+              "name": "Marketing campaign",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "11-decorator-afghan-hound-L5-5",
+              "name": "Franchise contract",
+              "gold": true,
+              "price": 20
+            }
+          ]
+        }
+      ],
+      "12-technician-husky": [
+        {
+          "level": 1,
+          "title": "Technician",
+          "panel": "assets/equipment/12-technician-husky-L1.jpg",
+          "items": [
+            {
+              "id": "12-technician-husky-L1-1",
+              "name": "Coveralls",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "12-technician-husky-L1-2",
+              "name": "Toolbox",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "12-technician-husky-L1-3",
+              "name": "Screwdriver",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "12-technician-husky-L1-4",
+              "name": "Headlamp",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "12-technician-husky-L1-5",
+              "name": "Technical manual",
+              "gold": true,
+              "price": 10
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "title": "Site Foreman",
+          "panel": "assets/equipment/12-technician-husky-L2.jpg",
+          "items": [
+            {
+              "id": "12-technician-husky-L2-1",
+              "name": "Hard hat",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "12-technician-husky-L2-2",
+              "name": "Walkie-talkie",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "12-technician-husky-L2-3",
+              "name": "Checklist",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "12-technician-husky-L2-4",
+              "name": "Blueprints",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "12-technician-husky-L2-5",
+              "name": "Team schedule",
+              "gold": true,
+              "price": 10
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "title": "Contractor",
+          "panel": "assets/equipment/12-technician-husky-L3.jpg",
+          "items": [
+            {
+              "id": "12-technician-husky-L3-1",
+              "name": "Tablet",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "12-technician-husky-L3-2",
+              "name": "Pickup truck",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "12-technician-husky-L3-3",
+              "name": "Bids",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "12-technician-husky-L3-4",
+              "name": "Permits",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "12-technician-husky-L3-5",
+              "name": "Team",
+              "gold": true,
+              "price": 10
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "title": "Owner",
+          "panel": "assets/equipment/12-technician-husky-L4.jpg",
+          "items": [
+            {
+              "id": "12-technician-husky-L4-1",
+              "name": "Blazer",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "12-technician-husky-L4-2",
+              "name": "Workshop",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "12-technician-husky-L4-3",
+              "name": "Business keys",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "12-technician-husky-L4-4",
+              "name": "Service counter",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "12-technician-husky-L4-5",
+              "name": "Lease contract",
+              "gold": true,
+              "price": 10
+            }
+          ]
+        },
+        {
+          "level": 5,
+          "title": "Dogzy Tech Business",
+          "panel": "assets/equipment/12-technician-husky-L5.jpg",
+          "items": [
+            {
+              "id": "12-technician-husky-L5-1",
+              "name": "Logo & sign",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "12-technician-husky-L5-2",
+              "name": "Truck fleet",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "12-technician-husky-L5-3",
+              "name": "New center",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "12-technician-husky-L5-4",
+              "name": "Marketing campaign",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "12-technician-husky-L5-5",
+              "name": "Franchise contract",
+              "gold": true,
+              "price": 20
+            }
+          ]
+        }
+      ],
+      "13-architect-doberman": [
+        {
+          "level": 1,
+          "title": "Draftsman",
+          "panel": "assets/equipment/13-architect-doberman-L1.jpg",
+          "items": [
+            {
+              "id": "13-architect-doberman-L1-1",
+              "name": "Pencil",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "13-architect-doberman-L1-2",
+              "name": "Ruler",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "13-architect-doberman-L1-3",
+              "name": "Drafting table",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "13-architect-doberman-L1-4",
+              "name": "Eraser",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "13-architect-doberman-L1-5",
+              "name": "Sketchbook",
+              "gold": true,
+              "price": 10
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "title": "Technician",
+          "panel": "assets/equipment/13-architect-doberman-L2.jpg",
+          "items": [
+            {
+              "id": "13-architect-doberman-L2-1",
+              "name": "Computer",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "13-architect-doberman-L2-2",
+              "name": "Design software",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "13-architect-doberman-L2-3",
+              "name": "Calculator",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "13-architect-doberman-L2-4",
+              "name": "Printer",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "13-architect-doberman-L2-5",
+              "name": "Glasses",
+              "gold": true,
+              "price": 10
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "title": "Architect",
+          "panel": "assets/equipment/13-architect-doberman-L3.jpg",
+          "items": [
+            {
+              "id": "13-architect-doberman-L3-1",
+              "name": "Blueprints",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "13-architect-doberman-L3-2",
+              "name": "Scale model",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "13-architect-doberman-L3-3",
+              "name": "Hard hat",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "13-architect-doberman-L3-4",
+              "name": "Building permit",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "13-architect-doberman-L3-5",
+              "name": "Portfolio",
+              "gold": true,
+              "price": 10
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "title": "Partner",
+          "panel": "assets/equipment/13-architect-doberman-L4.jpg",
+          "items": [
+            {
+              "id": "13-architect-doberman-L4-1",
+              "name": "Suit",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "13-architect-doberman-L4-2",
+              "name": "Partner's office",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "13-architect-doberman-L4-3",
+              "name": "Partnership contract",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "13-architect-doberman-L4-4",
+              "name": "Tablet",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "13-architect-doberman-L4-5",
+              "name": "Architecture award",
+              "gold": true,
+              "price": 10
+            }
+          ]
+        },
+        {
+          "level": 5,
+          "title": "Dogzy Architects / Firm",
+          "panel": "assets/equipment/13-architect-doberman-L5.jpg",
+          "items": [
+            {
+              "id": "13-architect-doberman-L5-1",
+              "name": "Logo & sign",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "13-architect-doberman-L5-2",
+              "name": "Headquarters",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "13-architect-doberman-L5-3",
+              "name": "Major projects",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "13-architect-doberman-L5-4",
+              "name": "Architect team",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "13-architect-doberman-L5-5",
+              "name": "International expansion",
+              "gold": true,
+              "price": 20
+            }
+          ]
+        }
+      ],
+      "14-banker-dachshund": [
+        {
+          "level": 1,
+          "title": "Teller",
+          "panel": "assets/equipment/14-banker-dachshund-L1.jpg",
+          "items": [
+            {
+              "id": "14-banker-dachshund-L1-1",
+              "name": "Teller vest",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "14-banker-dachshund-L1-2",
+              "name": "Cash drawer",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "14-banker-dachshund-L1-3",
+              "name": "Calculator",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "14-banker-dachshund-L1-4",
+              "name": "Badge",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "14-banker-dachshund-L1-5",
+              "name": "Stamp",
+              "gold": true,
+              "price": 10
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "title": "Supervisor",
+          "panel": "assets/equipment/14-banker-dachshund-L2.jpg",
+          "items": [
+            {
+              "id": "14-banker-dachshund-L2-1",
+              "name": "Cardigan",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "14-banker-dachshund-L2-2",
+              "name": "Clipboard",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "14-banker-dachshund-L2-3",
+              "name": "Vault key",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "14-banker-dachshund-L2-4",
+              "name": "Team schedule",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "14-banker-dachshund-L2-5",
+              "name": "Daily report",
+              "gold": true,
+              "price": 10
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "title": "Banker",
+          "panel": "assets/equipment/14-banker-dachshund-L3.jpg",
+          "items": [
+            {
+              "id": "14-banker-dachshund-L3-1",
+              "name": "Tailored suit",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "14-banker-dachshund-L3-2",
+              "name": "Office",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "14-banker-dachshund-L3-3",
+              "name": "Client files",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "14-banker-dachshund-L3-4",
+              "name": "Computer",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "14-banker-dachshund-L3-5",
+              "name": "Fine pen",
+              "gold": true,
+              "price": 10
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "title": "Director",
+          "panel": "assets/equipment/14-banker-dachshund-L4.jpg",
+          "items": [
+            {
+              "id": "14-banker-dachshund-L4-1",
+              "name": "Director suit",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "14-banker-dachshund-L4-2",
+              "name": "Executive office",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "14-banker-dachshund-L4-3",
+              "name": "Branch key",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "14-banker-dachshund-L4-4",
+              "name": "Tablet",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "14-banker-dachshund-L4-5",
+              "name": "Board meeting",
+              "gold": true,
+              "price": 10
+            }
+          ]
+        },
+        {
+          "level": 5,
+          "title": "Dogzy Bank",
+          "panel": "assets/equipment/14-banker-dachshund-L5.jpg",
+          "items": [
+            {
+              "id": "14-banker-dachshund-L5-1",
+              "name": "Logo & sign",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "14-banker-dachshund-L5-2",
+              "name": "Headquarters",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "14-banker-dachshund-L5-3",
+              "name": "New branch",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "14-banker-dachshund-L5-4",
+              "name": "Marketing campaign",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "14-banker-dachshund-L5-5",
+              "name": "International expansion",
+              "gold": true,
+              "price": 20
+            }
+          ]
+        }
+      ],
+      "15-veterinarian-labrador": [
+        {
+          "level": 1,
+          "title": "Vet Technician",
+          "panel": "assets/equipment/15-veterinarian-labrador-L1.jpg",
+          "items": [
+            {
+              "id": "15-veterinarian-labrador-L1-1",
+              "name": "Uniform",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "15-veterinarian-labrador-L1-2",
+              "name": "Leash",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "15-veterinarian-labrador-L1-3",
+              "name": "Brush",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "15-veterinarian-labrador-L1-4",
+              "name": "Bowl",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "15-veterinarian-labrador-L1-5",
+              "name": "First aid kit",
+              "gold": true,
+              "price": 10
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "title": "Veterinarian",
+          "panel": "assets/equipment/15-veterinarian-labrador-L2.jpg",
+          "items": [
+            {
+              "id": "15-veterinarian-labrador-L2-1",
+              "name": "Lab coat",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "15-veterinarian-labrador-L2-2",
+              "name": "Stethoscope",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "15-veterinarian-labrador-L2-3",
+              "name": "Exam table",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "15-veterinarian-labrador-L2-4",
+              "name": "Syringe",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "15-veterinarian-labrador-L2-5",
+              "name": "Patient file",
+              "gold": true,
+              "price": 10
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "title": "Veterinary Surgeon",
+          "panel": "assets/equipment/15-veterinarian-labrador-L3.jpg",
+          "items": [
+            {
+              "id": "15-veterinarian-labrador-L3-1",
+              "name": "Surgical scrubs",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "15-veterinarian-labrador-L3-2",
+              "name": "Instruments",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "15-veterinarian-labrador-L3-3",
+              "name": "Monitor",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "15-veterinarian-labrador-L3-4",
+              "name": "Operating room",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "15-veterinarian-labrador-L3-5",
+              "name": "Surgical lamp",
+              "gold": true,
+              "price": 10
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "title": "Owner",
+          "panel": "assets/equipment/15-veterinarian-labrador-L4.jpg",
+          "items": [
+            {
+              "id": "15-veterinarian-labrador-L4-1",
+              "name": "Blazer",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "15-veterinarian-labrador-L4-2",
+              "name": "Management tablet",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "15-veterinarian-labrador-L4-3",
+              "name": "Reception desk",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "15-veterinarian-labrador-L4-4",
+              "name": "Clinic keys",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "15-veterinarian-labrador-L4-5",
+              "name": "Team",
+              "gold": true,
+              "price": 10
+            }
+          ]
+        },
+        {
+          "level": 5,
+          "title": "Dogzy Vet Clinic",
+          "panel": "assets/equipment/15-veterinarian-labrador-L5.jpg",
+          "items": [
+            {
+              "id": "15-veterinarian-labrador-L5-1",
+              "name": "Logo & sign",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "15-veterinarian-labrador-L5-2",
+              "name": "Animal ambulance",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "15-veterinarian-labrador-L5-3",
+              "name": "New clinic",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "15-veterinarian-labrador-L5-4",
+              "name": "Marketing campaign",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "15-veterinarian-labrador-L5-5",
+              "name": "Regional expansion",
+              "gold": true,
+              "price": 20
+            }
+          ]
+        }
+      ],
+      "16-hairstylist-shih-tzu": [
+        {
+          "level": 1,
+          "title": "Assistant / Hairstylist",
+          "panel": "assets/equipment/16-hairstylist-shih-tzu-L1.jpg",
+          "items": [
+            {
+              "id": "16-hairstylist-shih-tzu-L1-1",
+              "name": "Apron",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "16-hairstylist-shih-tzu-L1-2",
+              "name": "Broom",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "16-hairstylist-shih-tzu-L1-3",
+              "name": "Towels",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "16-hairstylist-shih-tzu-L1-4",
+              "name": "Comb",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "16-hairstylist-shih-tzu-L1-5",
+              "name": "Spray bottle",
+              "gold": true,
+              "price": 10
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "title": "Hairstylist",
+          "panel": "assets/equipment/16-hairstylist-shih-tzu-L2.jpg",
+          "items": [
+            {
+              "id": "16-hairstylist-shih-tzu-L2-1",
+              "name": "Scissors",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "16-hairstylist-shih-tzu-L2-2",
+              "name": "Hair dryer",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "16-hairstylist-shih-tzu-L2-3",
+              "name": "Curling iron",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "16-hairstylist-shih-tzu-L2-4",
+              "name": "Salon chair",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "16-hairstylist-shih-tzu-L2-5",
+              "name": "Mirror",
+              "gold": true,
+              "price": 10
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "title": "Stylist",
+          "panel": "assets/equipment/16-hairstylist-shih-tzu-L3.jpg",
+          "items": [
+            {
+              "id": "16-hairstylist-shih-tzu-L3-1",
+              "name": "Trendy jacket",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "16-hairstylist-shih-tzu-L3-2",
+              "name": "Stylist kit",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "16-hairstylist-shih-tzu-L3-3",
+              "name": "Signature products",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "16-hairstylist-shih-tzu-L3-4",
+              "name": "Trend notebook",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "16-hairstylist-shih-tzu-L3-5",
+              "name": "Fashion show",
+              "gold": true,
+              "price": 10
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "title": "Salon Owner",
+          "panel": "assets/equipment/16-hairstylist-shih-tzu-L4.jpg",
+          "items": [
+            {
+              "id": "16-hairstylist-shih-tzu-L4-1",
+              "name": "Velvet blazer",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "16-hairstylist-shih-tzu-L4-2",
+              "name": "Salon",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "16-hairstylist-shih-tzu-L4-3",
+              "name": "Salon keys",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "16-hairstylist-shih-tzu-L4-4",
+              "name": "Team",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "16-hairstylist-shih-tzu-L4-5",
+              "name": "Lease contract",
+              "gold": true,
+              "price": 10
+            }
+          ]
+        },
+        {
+          "level": 5,
+          "title": "Dogzy Style Chain",
+          "panel": "assets/equipment/16-hairstylist-shih-tzu-L5.jpg",
+          "items": [
+            {
+              "id": "16-hairstylist-shih-tzu-L5-1",
+              "name": "Logo & sign",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "16-hairstylist-shih-tzu-L5-2",
+              "name": "Product line",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "16-hairstylist-shih-tzu-L5-3",
+              "name": "New salon",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "16-hairstylist-shih-tzu-L5-4",
+              "name": "Marketing campaign",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "16-hairstylist-shih-tzu-L5-5",
+              "name": "Franchise contract",
+              "gold": true,
+              "price": 20
+            }
+          ]
+        }
+      ],
+      "17-journalist-jack-russell": [
+        {
+          "level": 1,
+          "title": "Assistant",
+          "panel": "assets/equipment/17-journalist-jack-russell-L1.jpg",
+          "items": [
+            {
+              "id": "17-journalist-jack-russell-L1-1",
+              "name": "Blazer",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "17-journalist-jack-russell-L1-2",
+              "name": "Notebook",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "17-journalist-jack-russell-L1-3",
+              "name": "Pen",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "17-journalist-jack-russell-L1-4",
+              "name": "Coffee",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "17-journalist-jack-russell-L1-5",
+              "name": "Press badge",
+              "gold": true,
+              "price": 10
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "title": "Journalist",
+          "panel": "assets/equipment/17-journalist-jack-russell-L2.jpg",
+          "items": [
+            {
+              "id": "17-journalist-jack-russell-L2-1",
+              "name": "Trench coat",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "17-journalist-jack-russell-L2-2",
+              "name": "Microphone",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "17-journalist-jack-russell-L2-3",
+              "name": "Camera",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "17-journalist-jack-russell-L2-4",
+              "name": "Voice recorder",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "17-journalist-jack-russell-L2-5",
+              "name": "Press card",
+              "gold": true,
+              "price": 10
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "title": "News Anchor",
+          "panel": "assets/equipment/17-journalist-jack-russell-L3.jpg",
+          "items": [
+            {
+              "id": "17-journalist-jack-russell-L3-1",
+              "name": "On-air dress",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "17-journalist-jack-russell-L3-2",
+              "name": "Earpiece",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "17-journalist-jack-russell-L3-3",
+              "name": "Teleprompter",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "17-journalist-jack-russell-L3-4",
+              "name": "News desk",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "17-journalist-jack-russell-L3-5",
+              "name": "Makeup",
+              "gold": true,
+              "price": 10
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "title": "Broadcast Director",
+          "panel": "assets/equipment/17-journalist-jack-russell-L4.jpg",
+          "items": [
+            {
+              "id": "17-journalist-jack-russell-L4-1",
+              "name": "Tailored suit",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "17-journalist-jack-russell-L4-2",
+              "name": "Headset",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "17-journalist-jack-russell-L4-3",
+              "name": "Control room",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "17-journalist-jack-russell-L4-4",
+              "name": "Broadcast schedule",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "17-journalist-jack-russell-L4-5",
+              "name": "Team",
+              "gold": true,
+              "price": 10
+            }
+          ]
+        },
+        {
+          "level": 5,
+          "title": "Dogzy Media / Newsroom",
+          "panel": "assets/equipment/17-journalist-jack-russell-L5.jpg",
+          "items": [
+            {
+              "id": "17-journalist-jack-russell-L5-1",
+              "name": "Logo & sign",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "17-journalist-jack-russell-L5-2",
+              "name": "Satellite truck",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "17-journalist-jack-russell-L5-3",
+              "name": "New studio",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "17-journalist-jack-russell-L5-4",
+              "name": "Marketing campaign",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "17-journalist-jack-russell-L5-5",
+              "name": "International broadcast",
+              "gold": true,
+              "price": 20
+            }
+          ]
+        }
+      ],
+      "18-actor-boxer": [
+        {
+          "level": 1,
+          "title": "Extra",
+          "panel": "assets/equipment/18-actor-boxer-L1.jpg",
+          "items": [
+            {
+              "id": "18-actor-boxer-L1-1",
+              "name": "Simple costume",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "18-actor-boxer-L1-2",
+              "name": "Extra badge",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "18-actor-boxer-L1-3",
+              "name": "Water bottle",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "18-actor-boxer-L1-4",
+              "name": "Shooting schedule",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "18-actor-boxer-L1-5",
+              "name": "Folding chair",
+              "gold": true,
+              "price": 10
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "title": "Actor",
+          "panel": "assets/equipment/18-actor-boxer-L2.jpg",
+          "items": [
+            {
+              "id": "18-actor-boxer-L2-1",
+              "name": "Script",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "18-actor-boxer-L2-2",
+              "name": "Role costume",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "18-actor-boxer-L2-3",
+              "name": "Dressing room",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "18-actor-boxer-L2-4",
+              "name": "Makeup",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "18-actor-boxer-L2-5",
+              "name": "Contract",
+              "gold": true,
+              "price": 10
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "title": "International / Actor",
+          "panel": "assets/equipment/18-actor-boxer-L3.jpg",
+          "items": [
+            {
+              "id": "18-actor-boxer-L3-1",
+              "name": "Passport",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "18-actor-boxer-L3-2",
+              "name": "Premiere jacket",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "18-actor-boxer-L3-3",
+              "name": "Agent",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "18-actor-boxer-L3-4",
+              "name": "Suitcase",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "18-actor-boxer-L3-5",
+              "name": "Plane ticket",
+              "gold": true,
+              "price": 10
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "title": "Movie Star",
+          "panel": "assets/equipment/18-actor-boxer-L4.jpg",
+          "items": [
+            {
+              "id": "18-actor-boxer-L4-1",
+              "name": "Star sunglasses",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "18-actor-boxer-L4-2",
+              "name": "Tuxedo",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "18-actor-boxer-L4-3",
+              "name": "Limousine",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "18-actor-boxer-L4-4",
+              "name": "Autograph pen",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "18-actor-boxer-L4-5",
+              "name": "Bodyguard",
+              "gold": true,
+              "price": 10
+            }
+          ]
+        },
+        {
+          "level": 5,
+          "title": "Award Ceremony",
+          "panel": "assets/equipment/18-actor-boxer-L5.jpg",
+          "items": [
+            {
+              "id": "18-actor-boxer-L5-1",
+              "name": "Golden trophy",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "18-actor-boxer-L5-2",
+              "name": "Red carpet",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "18-actor-boxer-L5-3",
+              "name": "Speech",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "18-actor-boxer-L5-4",
+              "name": "Personal studio",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "18-actor-boxer-L5-5",
+              "name": "Star on the Dogzy Walk",
+              "gold": true,
+              "price": 20
+            }
+          ]
+        }
+      ],
+      "19-fitness-coach-whippet": [
+        {
+          "level": 1,
+          "title": "Advisor",
+          "panel": "assets/equipment/19-fitness-coach-whippet-L1.jpg",
+          "items": [
+            {
+              "id": "19-fitness-coach-whippet-L1-1",
+              "name": "Polo",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "19-fitness-coach-whippet-L1-2",
+              "name": "Water bottle",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "19-fitness-coach-whippet-L1-3",
+              "name": "Brochure",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "19-fitness-coach-whippet-L1-4",
+              "name": "Badge",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "19-fitness-coach-whippet-L1-5",
+              "name": "Towel",
+              "gold": true,
+              "price": 10
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "title": "Coach",
+          "panel": "assets/equipment/19-fitness-coach-whippet-L2.jpg",
+          "items": [
+            {
+              "id": "19-fitness-coach-whippet-L2-1",
+              "name": "Sportswear",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "19-fitness-coach-whippet-L2-2",
+              "name": "Whistle",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "19-fitness-coach-whippet-L2-3",
+              "name": "Stopwatch",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "19-fitness-coach-whippet-L2-4",
+              "name": "Dumbbells",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "19-fitness-coach-whippet-L2-5",
+              "name": "Yoga mat",
+              "gold": true,
+              "price": 10
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "title": "Physiotherapist",
+          "panel": "assets/equipment/19-fitness-coach-whippet-L3.jpg",
+          "items": [
+            {
+              "id": "19-fitness-coach-whippet-L3-1",
+              "name": "Clinic polo",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "19-fitness-coach-whippet-L3-2",
+              "name": "Resistance band",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "19-fitness-coach-whippet-L3-3",
+              "name": "Treatment table",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "19-fitness-coach-whippet-L3-4",
+              "name": "Exercise ball",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "19-fitness-coach-whippet-L3-5",
+              "name": "Patient file",
+              "gold": true,
+              "price": 10
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "title": "Gym Owner",
+          "panel": "assets/equipment/19-fitness-coach-whippet-L4.jpg",
+          "items": [
+            {
+              "id": "19-fitness-coach-whippet-L4-1",
+              "name": "Sports blazer",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "19-fitness-coach-whippet-L4-2",
+              "name": "Gym",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "19-fitness-coach-whippet-L4-3",
+              "name": "Gym keys",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "19-fitness-coach-whippet-L4-4",
+              "name": "Coach team",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "19-fitness-coach-whippet-L4-5",
+              "name": "Lease contract",
+              "gold": true,
+              "price": 10
+            }
+          ]
+        },
+        {
+          "level": 5,
+          "title": "Dogzy Fit Chain",
+          "panel": "assets/equipment/19-fitness-coach-whippet-L5.jpg",
+          "items": [
+            {
+              "id": "19-fitness-coach-whippet-L5-1",
+              "name": "Logo & sign",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "19-fitness-coach-whippet-L5-2",
+              "name": "Clothing line",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "19-fitness-coach-whippet-L5-3",
+              "name": "New gym",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "19-fitness-coach-whippet-L5-4",
+              "name": "Marketing campaign",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "19-fitness-coach-whippet-L5-5",
+              "name": "Franchise contract",
+              "gold": true,
+              "price": 20
+            }
+          ]
+        }
+      ],
+      "20-painter-australian-shepherd": [
+        {
+          "level": 1,
+          "title": "Painter",
+          "panel": "assets/equipment/20-painter-australian-shepherd-L1.jpg",
+          "items": [
+            {
+              "id": "20-painter-australian-shepherd-L1-1",
+              "name": "Overalls",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "20-painter-australian-shepherd-L1-2",
+              "name": "Brushes",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "20-painter-australian-shepherd-L1-3",
+              "name": "Palette",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "20-painter-australian-shepherd-L1-4",
+              "name": "Easel",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "20-painter-australian-shepherd-L1-5",
+              "name": "Blank canvas",
+              "gold": true,
+              "price": 10
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "title": "Professional Painter",
+          "panel": "assets/equipment/20-painter-australian-shepherd-L2.jpg",
+          "items": [
+            {
+              "id": "20-painter-australian-shepherd-L2-1",
+              "name": "Artist smock",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "20-painter-australian-shepherd-L2-2",
+              "name": "Gold leaf",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "20-painter-australian-shepherd-L2-3",
+              "name": "Large canvas",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "20-painter-australian-shepherd-L2-4",
+              "name": "Studio",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "20-painter-australian-shepherd-L2-5",
+              "name": "Certificate of authenticity",
+              "gold": true,
+              "price": 10
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "title": "International Painter",
+          "panel": "assets/equipment/20-painter-australian-shepherd-L3.jpg",
+          "items": [
+            {
+              "id": "20-painter-australian-shepherd-L3-1",
+              "name": "Artist passport",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "20-painter-australian-shepherd-L3-2",
+              "name": "Shipping crate",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "20-painter-australian-shepherd-L3-3",
+              "name": "Exhibition catalog",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "20-painter-australian-shepherd-L3-4",
+              "name": "Suitcase",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "20-painter-australian-shepherd-L3-5",
+              "name": "Plane ticket",
+              "gold": true,
+              "price": 10
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "title": "Famous Painter",
+          "panel": "assets/equipment/20-painter-australian-shepherd-L4.jpg",
+          "items": [
+            {
+              "id": "20-painter-australian-shepherd-L4-1",
+              "name": "Gala gown",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "20-painter-australian-shepherd-L4-2",
+              "name": "Art award",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "20-painter-australian-shepherd-L4-3",
+              "name": "Interview",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "20-painter-australian-shepherd-L4-4",
+              "name": "Collectors",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "20-painter-australian-shepherd-L4-5",
+              "name": "Art book",
+              "gold": true,
+              "price": 10
+            }
+          ]
+        },
+        {
+          "level": 5,
+          "title": "Dogzy Gallery",
+          "panel": "assets/equipment/20-painter-australian-shepherd-L5.jpg",
+          "items": [
+            {
+              "id": "20-painter-australian-shepherd-L5-1",
+              "name": "Logo & sign",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "20-painter-australian-shepherd-L5-2",
+              "name": "Gallery",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "20-painter-australian-shepherd-L5-3",
+              "name": "New exhibition",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "20-painter-australian-shepherd-L5-4",
+              "name": "Marketing campaign",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "20-painter-australian-shepherd-L5-5",
+              "name": "International expansion",
+              "gold": true,
+              "price": 20
+            }
+          ]
+        }
+      ],
+      "21-singer-shiba": [
+        {
+          "level": 1,
+          "title": "Singer",
+          "panel": "assets/equipment/21-singer-shiba-L1.jpg",
+          "items": [
+            {
+              "id": "21-singer-shiba-L1-1",
+              "name": "Microphone",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "21-singer-shiba-L1-2",
+              "name": "Guitar",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "21-singer-shiba-L1-3",
+              "name": "Songbook",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "21-singer-shiba-L1-4",
+              "name": "Small stage",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "21-singer-shiba-L1-5",
+              "name": "Speaker",
+              "gold": true,
+              "price": 10
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "title": "Professional / Singer",
+          "panel": "assets/equipment/21-singer-shiba-L2.jpg",
+          "items": [
+            {
+              "id": "21-singer-shiba-L2-1",
+              "name": "Recording studio",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "21-singer-shiba-L2-2",
+              "name": "Headphones",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "21-singer-shiba-L2-3",
+              "name": "Record deal",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "21-singer-shiba-L2-4",
+              "name": "Stage jacket",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "21-singer-shiba-L2-5",
+              "name": "First album",
+              "gold": true,
+              "price": 10
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "title": "International / Singer",
+          "panel": "assets/equipment/21-singer-shiba-L3.jpg",
+          "items": [
+            {
+              "id": "21-singer-shiba-L3-1",
+              "name": "Artist passport",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "21-singer-shiba-L3-2",
+              "name": "Plane ticket",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "21-singer-shiba-L3-3",
+              "name": "Tour suitcase",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "21-singer-shiba-L3-4",
+              "name": "International radio",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "21-singer-shiba-L3-5",
+              "name": "Fans",
+              "gold": true,
+              "price": 10
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "title": "Famous / Singer",
+          "panel": "assets/equipment/21-singer-shiba-L4.jpg",
+          "items": [
+            {
+              "id": "21-singer-shiba-L4-1",
+              "name": "Gold record",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "21-singer-shiba-L4-2",
+              "name": "Gala outfit",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "21-singer-shiba-L4-3",
+              "name": "Music award",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "21-singer-shiba-L4-4",
+              "name": "TV interview",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "21-singer-shiba-L4-5",
+              "name": "Red carpet",
+              "gold": true,
+              "price": 10
+            }
+          ]
+        },
+        {
+          "level": 5,
+          "title": "World Tour",
+          "panel": "assets/equipment/21-singer-shiba-L5.jpg",
+          "items": [
+            {
+              "id": "21-singer-shiba-L5-1",
+              "name": "Tour bus",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "21-singer-shiba-L5-2",
+              "name": "Stadium",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "21-singer-shiba-L5-3",
+              "name": "Stage crew",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "21-singer-shiba-L5-4",
+              "name": "Private jet",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "21-singer-shiba-L5-5",
+              "name": "World tour",
+              "gold": true,
+              "price": 20
+            }
+          ]
+        }
+      ],
+      "22-actress-pomeranian": [
+        {
+          "level": 1,
+          "title": "Actress / Audition",
+          "panel": "assets/equipment/22-actress-pomeranian-L1.jpg",
+          "items": [
+            {
+              "id": "22-actress-pomeranian-L1-1",
+              "name": "Script",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "22-actress-pomeranian-L1-2",
+              "name": "Photo portfolio",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "22-actress-pomeranian-L1-3",
+              "name": "Audition",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "22-actress-pomeranian-L1-4",
+              "name": "Acting classes",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "22-actress-pomeranian-L1-5",
+              "name": "Small stage",
+              "gold": true,
+              "price": 10
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "title": "Professional Actress",
+          "panel": "assets/equipment/22-actress-pomeranian-L2.jpg",
+          "items": [
+            {
+              "id": "22-actress-pomeranian-L2-1",
+              "name": "Role contract",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "22-actress-pomeranian-L2-2",
+              "name": "Dressing room",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "22-actress-pomeranian-L2-3",
+              "name": "Costume",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "22-actress-pomeranian-L2-4",
+              "name": "Makeup",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "22-actress-pomeranian-L2-5",
+              "name": "Camera",
+              "gold": true,
+              "price": 10
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "title": "International Actress",
+          "panel": "assets/equipment/22-actress-pomeranian-L3.jpg",
+          "items": [
+            {
+              "id": "22-actress-pomeranian-L3-1",
+              "name": "Artist passport",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "22-actress-pomeranian-L3-2",
+              "name": "Plane ticket",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "22-actress-pomeranian-L3-3",
+              "name": "Premiere",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "22-actress-pomeranian-L3-4",
+              "name": "Suitcase",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "22-actress-pomeranian-L3-5",
+              "name": "Agent",
+              "gold": true,
+              "price": 10
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "title": "Famous Actress",
+          "panel": "assets/equipment/22-actress-pomeranian-L4.jpg",
+          "items": [
+            {
+              "id": "22-actress-pomeranian-L4-1",
+              "name": "Gala gown",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "22-actress-pomeranian-L4-2",
+              "name": "Trophy",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "22-actress-pomeranian-L4-3",
+              "name": "Red carpet",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "22-actress-pomeranian-L4-4",
+              "name": "TV interview",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "22-actress-pomeranian-L4-5",
+              "name": "Fans",
+              "gold": true,
+              "price": 10
+            }
+          ]
+        },
+        {
+          "level": 5,
+          "title": "Film Studio",
+          "panel": "assets/equipment/22-actress-pomeranian-L5.jpg",
+          "items": [
+            {
+              "id": "22-actress-pomeranian-L5-1",
+              "name": "Logo & sign",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "22-actress-pomeranian-L5-2",
+              "name": "Film studio",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "22-actress-pomeranian-L5-3",
+              "name": "Film set",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "22-actress-pomeranian-L5-4",
+              "name": "Production team",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "22-actress-pomeranian-L5-5",
+              "name": "First film",
+              "gold": true,
+              "price": 20
+            }
+          ]
+        }
+      ],
+      "23-pilot-weimaraner": [
+        {
+          "level": 1,
+          "title": "Flight Attendant",
+          "panel": "assets/equipment/23-pilot-weimaraner-L1.jpg",
+          "items": [
+            {
+              "id": "23-pilot-weimaraner-L1-1",
+              "name": "Attendant uniform",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "23-pilot-weimaraner-L1-2",
+              "name": "Badge",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "23-pilot-weimaraner-L1-3",
+              "name": "Service cart",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "23-pilot-weimaraner-L1-4",
+              "name": "Safety kit",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "23-pilot-weimaraner-L1-5",
+              "name": "Cabin suitcase",
+              "gold": true,
+              "price": 10
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "title": "Pilot",
+          "panel": "assets/equipment/23-pilot-weimaraner-L2.jpg",
+          "items": [
+            {
+              "id": "23-pilot-weimaraner-L2-1",
+              "name": "Pilot cap",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "23-pilot-weimaraner-L2-2",
+              "name": "Aviator glasses",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "23-pilot-weimaraner-L2-3",
+              "name": "Pilot license",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "23-pilot-weimaraner-L2-4",
+              "name": "Logbook",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "23-pilot-weimaraner-L2-5",
+              "name": "Small plane",
+              "gold": true,
+              "price": 10
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "title": "Captain",
+          "panel": "assets/equipment/23-pilot-weimaraner-L3.jpg",
+          "items": [
+            {
+              "id": "23-pilot-weimaraner-L3-1",
+              "name": "Captain stripes",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "23-pilot-weimaraner-L3-2",
+              "name": "Jumbo jet",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "23-pilot-weimaraner-L3-3",
+              "name": "Flight plan",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "23-pilot-weimaraner-L3-4",
+              "name": "Radio",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "23-pilot-weimaraner-L3-5",
+              "name": "Crew",
+              "gold": true,
+              "price": 10
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "title": "Air Traffic Controller",
+          "panel": "assets/equipment/23-pilot-weimaraner-L4.jpg",
+          "items": [
+            {
+              "id": "23-pilot-weimaraner-L4-1",
+              "name": "Radio headset",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "23-pilot-weimaraner-L4-2",
+              "name": "Radar screen",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "23-pilot-weimaraner-L4-3",
+              "name": "Control tower",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "23-pilot-weimaraner-L4-4",
+              "name": "Binoculars",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "23-pilot-weimaraner-L4-5",
+              "name": "Runway",
+              "gold": true,
+              "price": 10
+            }
+          ]
+        },
+        {
+          "level": 5,
+          "title": "Dogzy Airport",
+          "panel": "assets/equipment/23-pilot-weimaraner-L5.jpg",
+          "items": [
+            {
+              "id": "23-pilot-weimaraner-L5-1",
+              "name": "Logo & sign",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "23-pilot-weimaraner-L5-2",
+              "name": "Terminal",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "23-pilot-weimaraner-L5-3",
+              "name": "Aircraft fleet",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "23-pilot-weimaraner-L5-4",
+              "name": "Airline",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "23-pilot-weimaraner-L5-5",
+              "name": "International flights",
+              "gold": true,
+              "price": 20
+            }
+          ]
+        }
+      ],
+      "24-teacher-bernese": [
+        {
+          "level": 1,
+          "title": "Teaching Assistant",
+          "panel": "assets/equipment/24-teacher-bernese-L1.jpg",
+          "items": [
+            {
+              "id": "24-teacher-bernese-L1-1",
+              "name": "Cardigan",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "24-teacher-bernese-L1-2",
+              "name": "Notebooks",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "24-teacher-bernese-L1-3",
+              "name": "Pencil case",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "24-teacher-bernese-L1-4",
+              "name": "Name badge",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "24-teacher-bernese-L1-5",
+              "name": "Lunch bag",
+              "gold": true,
+              "price": 10
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "title": "Teacher",
+          "panel": "assets/equipment/24-teacher-bernese-L2.jpg",
+          "items": [
+            {
+              "id": "24-teacher-bernese-L2-1",
+              "name": "Glasses",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "24-teacher-bernese-L2-2",
+              "name": "Chalkboard",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "24-teacher-bernese-L2-3",
+              "name": "Lesson plan",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "24-teacher-bernese-L2-4",
+              "name": "Gold star stickers",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "24-teacher-bernese-L2-5",
+              "name": "Teacher's desk",
+              "gold": true,
+              "price": 10
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "title": "Head Of Department",
+          "panel": "assets/equipment/24-teacher-bernese-L3.jpg",
+          "items": [
+            {
+              "id": "24-teacher-bernese-L3-1",
+              "name": "Blazer",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "24-teacher-bernese-L3-2",
+              "name": "Clipboard",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "24-teacher-bernese-L3-3",
+              "name": "Globe",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "24-teacher-bernese-L3-4",
+              "name": "Microscope",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "24-teacher-bernese-L3-5",
+              "name": "Curriculum binder",
+              "gold": true,
+              "price": 10
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "title": "School Principal",
+          "panel": "assets/equipment/24-teacher-bernese-L4.jpg",
+          "items": [
+            {
+              "id": "24-teacher-bernese-L4-1",
+              "name": "Office keys",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "24-teacher-bernese-L4-2",
+              "name": "School bell",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "24-teacher-bernese-L4-3",
+              "name": "Principal's office",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "24-teacher-bernese-L4-4",
+              "name": "Teaching staff",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "24-teacher-bernese-L4-5",
+              "name": "Trophy case",
+              "gold": true,
+              "price": 10
+            }
+          ]
+        },
+        {
+          "level": 5,
+          "title": "Dogzy Academy",
+          "panel": "assets/equipment/24-teacher-bernese-L5.jpg",
+          "items": [
+            {
+              "id": "24-teacher-bernese-L5-1",
+              "name": "Logo & sign",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "24-teacher-bernese-L5-2",
+              "name": "School building",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "24-teacher-bernese-L5-3",
+              "name": "School bus",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "24-teacher-bernese-L5-4",
+              "name": "Library",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "24-teacher-bernese-L5-5",
+              "name": "Graduation ceremony",
+              "gold": true,
+              "price": 20
+            }
+          ]
+        }
+      ],
+      "25-sound-tech-corgi": [
+        {
+          "level": 1,
+          "title": "Assistant Sound Tech",
+          "panel": "assets/equipment/25-sound-tech-corgi-L1.jpg",
+          "items": [
+            {
+              "id": "25-sound-tech-corgi-L1-1",
+              "name": "Crew t-shirt",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "25-sound-tech-corgi-L1-2",
+              "name": "Cables",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "25-sound-tech-corgi-L1-3",
+              "name": "Microphone stand",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "25-sound-tech-corgi-L1-4",
+              "name": "Toolbox",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "25-sound-tech-corgi-L1-5",
+              "name": "Backstage pass",
+              "gold": true,
+              "price": 10
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "title": "Sound Technician",
+          "panel": "assets/equipment/25-sound-tech-corgi-L2.jpg",
+          "items": [
+            {
+              "id": "25-sound-tech-corgi-L2-1",
+              "name": "Headphones",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "25-sound-tech-corgi-L2-2",
+              "name": "Mixing console",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "25-sound-tech-corgi-L2-3",
+              "name": "Microphones",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "25-sound-tech-corgi-L2-4",
+              "name": "Speakers",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "25-sound-tech-corgi-L2-5",
+              "name": "Sound check",
+              "gold": true,
+              "price": 10
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "title": "Stage Manager",
+          "panel": "assets/equipment/25-sound-tech-corgi-L3.jpg",
+          "items": [
+            {
+              "id": "25-sound-tech-corgi-L3-1",
+              "name": "Headset",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "25-sound-tech-corgi-L3-2",
+              "name": "Clipboard",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "25-sound-tech-corgi-L3-3",
+              "name": "Stage lights",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "25-sound-tech-corgi-L3-4",
+              "name": "Crew team",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "25-sound-tech-corgi-L3-5",
+              "name": "Show schedule",
+              "gold": true,
+              "price": 10
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "title": "Production Director",
+          "panel": "assets/equipment/25-sound-tech-corgi-L4.jpg",
+          "items": [
+            {
+              "id": "25-sound-tech-corgi-L4-1",
+              "name": "Director's blazer",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "25-sound-tech-corgi-L4-2",
+              "name": "Recording studio",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "25-sound-tech-corgi-L4-3",
+              "name": "Studio monitors",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "25-sound-tech-corgi-L4-4",
+              "name": "Production team",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "25-sound-tech-corgi-L4-5",
+              "name": "Tour contract",
+              "gold": true,
+              "price": 10
+            }
+          ]
+        },
+        {
+          "level": 5,
+          "title": "Dogzy Sound Studio",
+          "panel": "assets/equipment/25-sound-tech-corgi-L5.jpg",
+          "items": [
+            {
+              "id": "25-sound-tech-corgi-L5-1",
+              "name": "Logo & sign",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "25-sound-tech-corgi-L5-2",
+              "name": "Studio building",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "25-sound-tech-corgi-L5-3",
+              "name": "Concert hall",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "25-sound-tech-corgi-L5-4",
+              "name": "Tour bus",
+              "gold": false,
+              "price": 5
+            },
+            {
+              "id": "25-sound-tech-corgi-L5-5",
+              "name": "Music label",
+              "gold": true,
+              "price": 20
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "prices": {
+    "note": "Configurable DOGZY price table, same for every character. fee = price to unlock the level (level 1 fee = character unlock). item = items 1-4. gold = item 5 (GOLD). Owning all 5 items of a level completes it and allows paying the next level's fee. business = price of each purchasable business (Businesses tab).",
+    "startingBalance": 100,
+    "levels": [
       {
-        "id": "chef-hat",
-        "name": "Chef Hat",
-        "slot": "hat",
-        "icon": "chefhat",
-        "color": "#f5f1e8"
+        "level": 1,
+        "fee": 15,
+        "item": 5,
+        "gold": 10
       },
       {
-        "id": "crown",
-        "name": "Golden Crown",
-        "slot": "hat",
-        "icon": "crown",
-        "color": "#e8b848"
+        "level": 2,
+        "fee": 10,
+        "item": 5,
+        "gold": 10
       },
       {
-        "id": "cap",
-        "name": "Police Cap",
-        "slot": "hat",
-        "icon": "cap",
-        "color": "#3b5bdb"
+        "level": 3,
+        "fee": 15,
+        "item": 5,
+        "gold": 10
       },
       {
-        "id": "shades",
-        "name": "Star Shades",
-        "slot": "glasses",
-        "icon": "shades",
-        "color": "#cfd4da"
+        "level": 4,
+        "fee": 15,
+        "item": 5,
+        "gold": 10
       },
       {
-        "id": "specs",
-        "name": "Architect Specs",
-        "slot": "glasses",
-        "icon": "specs",
-        "color": "#e8b848"
-      },
-      {
-        "id": "bowtie",
-        "name": "Bow Tie",
-        "slot": "neck",
-        "icon": "bowtie",
-        "color": "#e03131"
-      },
-      {
-        "id": "medal",
-        "name": "Hero Medal",
-        "slot": "neck",
-        "icon": "medal",
-        "color": "#e8b848"
-      },
-      {
-        "id": "mic",
-        "name": "Stage Mic",
-        "slot": "hand",
-        "icon": "mic",
-        "color": "#ced4da"
-      },
-      {
-        "id": "brush",
-        "name": "Paint Brush",
-        "slot": "hand",
-        "icon": "brush",
-        "color": "#e8b848"
+        "level": 5,
+        "fee": 15,
+        "item": 5,
+        "gold": 20
       }
-    ]
+    ],
+    "business": 50
   }
 };

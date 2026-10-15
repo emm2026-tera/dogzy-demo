@@ -34,11 +34,9 @@ function randomHex(bytes) {
 // Clean line icons for accessories (static constant markup, never user data).
 const ICONS = {
   chefhat: '<path d="M7 17h10v3H7zM7 17c-3-1-4-5-1-7 0-3 4-5 6-3 2-2 6 0 6 3 3 2 2 6-1 7"/>',
-  crown: '<path d="M3 18h18M4 18 3 7l5 4 4-6 4 6 5-4-1 11z"/>',
   cap: '<path d="M4 15c0-5 3-8 8-8s8 3 8 8zM4 15h17l2 2H4z"/>',
   shades: '<path d="M2 10h20M3 10c0 4 1 6 4 6s4-2 4-5m2 0c0 3 1 5 4 5s4-2 4-6"/>',
   specs: '<circle cx="7" cy="13" r="4"/><circle cx="17" cy="13" r="4"/><path d="M11 13h2M3 12 1 9M21 12l2-3"/>',
-  bowtie: '<path d="M12 12 3 7v10zM12 12l9-5v10z"/><circle cx="12" cy="12" r="2"/>',
   medal: '<path d="M8 2l4 7 4-7"/><circle cx="12" cy="15" r="6"/><path d="m12 12 1 2h2l-1.5 1.5.5 2-2-1-2 1 .5-2L9 14h2z"/>',
   mic: '<rect x="9" y="2" width="6" height="11" rx="3"/><path d="M5 11a7 7 0 0 0 14 0M12 18v4M8 22h8"/>',
   brush: '<path d="M14 3l7 7-8 8-7-7zM6 11l-3 7 4 3 6-3"/>',
@@ -50,6 +48,16 @@ const ICONS = {
   palette: '<path d="M12 3a9 9 0 0 0 0 18c2 0 2-2 1-3s0-3 2-3h2a4 4 0 0 0 4-4c0-5-4-8-9-8z"/><circle cx="7.5" cy="11" r="1"/><circle cx="11" cy="7" r="1"/><circle cx="16" cy="8" r="1"/>',
   game: '<rect x="2" y="7" width="20" height="11" rx="5"/><path d="M7 11v3M5.5 12.5h3M15 12h.01M18 13h.01"/>',
 };
+// Wide, detailed glasses drawings (viewBox 64x24) so they span both eyes.
+const GLASSES = {
+  shades: '<path d="M2 7h60" stroke="#d9dde2" stroke-width="2.2"/><path d="M5 7h22c1 0 1.5.6 1.4 1.6-.6 6-3.6 10.4-10.4 10.4C11 19 6.3 15 4.6 9 4.3 7.8 4.6 7 5 7zM59 7H37c-1 0-1.5.6-1.4 1.6.6 6 3.6 10.4 10.4 10.4 7 0 11.7-4 13.4-10 .3-1.2 0-2-.4-2z" fill="#0d0f14" fill-opacity=".78" stroke="#cfd4da" stroke-width="1.8"/><path d="M28.5 9.5c2-1.6 5-1.6 7 0" fill="none" stroke="#cfd4da" stroke-width="1.8"/><path d="M9 10c2-.8 5-.9 8-.5M41 10c2-.8 5-.9 8-.5" stroke="#fff" stroke-opacity=".55" stroke-width="1.3" fill="none"/>',
+  specs: '<circle cx="17" cy="12" r="9" fill="#ffffff" fill-opacity=".14" stroke="#e8b848" stroke-width="2.2"/><circle cx="47" cy="12" r="9" fill="#ffffff" fill-opacity=".14" stroke="#e8b848" stroke-width="2.2"/><path d="M26 11.5c3-2.4 9-2.4 12 0" fill="none" stroke="#e8b848" stroke-width="2.2"/><path d="M8 10 1.5 7.5M56 10l6.5-2.5" stroke="#e8b848" stroke-width="2.2" stroke-linecap="round"/><path d="M12 8.5c1.6-1.4 4-2 6-1.6M42 8.5c1.6-1.4 4-2 6-1.6" stroke="#fff" stroke-opacity=".6" stroke-width="1.2" fill="none" stroke-linecap="round"/>',
+};
+function glassesArt(name) {
+  const s = document.createElement("span"); s.className = "ico glasses-art";
+  s.innerHTML = '<svg viewBox="0 0 64 24" width="100%" height="100%" preserveAspectRatio="xMidYMid meet">' + (GLASSES[name] || "") + "</svg>";
+  return s;
+}
 function icon(name, color, size) {
   const s = document.createElement("span");
   s.className = "ico";

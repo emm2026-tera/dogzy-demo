@@ -23,15 +23,15 @@ const Views = {
         h("h2", { class: "center" }, "One universe, three layers"),
         h("div", { class: "three" },
           [["palette", "Original art", "Every character, shop and scene comes from the artist Valkyrie's own visual universe: a recognizable IP, not stock assets."],
-           ["game", "A career game", "Players pick a dog with a job, level it up from apprentice to owner, equip accessories and run their own business in Dogzy City."],
+           ["game", "A career game", "Players pick a dog with a job, level it up from apprentice to owner, buy career equipment and run their own business in Dogzy City."],
            ["chain", "Blockchain bridge", "In-game tokens stay off-chain while playing. When a player chooses, they export them as DOGZY tokens to their Avalanche wallet through a secured bridge contract."]]
             .map(([i, t, d]) => h("div", { class: "pillar" }, icon(i, "#e8b848", 34), h("h3", {}, t), h("p", {}, d))))),
-      sect("chars", "Characters", C.length + " dogs, " + C.length + " careers", "From the golden retriever chef to the corgi sound tech, each character has five levels, its own accessories and its own environment.", "#/characters", "Browse characters",
+      sect("chars", "Characters", C.length + " demo characters, " + C.length + " careers", "From the golden retriever chef to the weimaraner pilot, each character has five levels, its own career equipment and its own environment.", "#/characters", "Browse characters",
         C.slice(1, 4).map((c) => h("img", { src: c.image, alt: c.name }))),
       sect("city", "City", B.length + " businesses to build", "Level 5 of every job is a business. The first player to complete it owns it; the next players can buy a franchise.", "#/city", "Explore the city",
         B.slice(11, 14).map((b) => h("img", { src: b.image, alt: b.name }))),
-      sect("ward", "Wardrobe", "Accessories that show progress", "Hats, glasses, medals and tools are unlocked level by level and equipped on your character.", "#/wardrobe", "Try the wardrobe",
-        D.accessories.accessories.slice(0, 3).map((a) => h("div", { class: "acc-tile" }, icon(a.icon, a.color, 56)))),
+      sect("ward", "Inventory", "Career equipment, level by level", "Every character has its own equipment from its career card: 5 items per level, 25 in all. Each level has 4 items plus a GOLD item; owning all 5 completes the level and opens the next one. Prices come from a configurable table.", "#/wardrobe", "Open the inventory",
+        [h("img", { class: "panelprev", src: (D.equipment.equipment[C[0].id] || [{}])[0].panel, alt: "Chef level-1 equipment" })]),
       sect("wallet", "Wallet", "Export to Avalanche", "A walkthrough of the real bridge flow: game debit, signed voucher, on-chain claim. In this demo nothing leaves your browser.", "#/wallet", "Open the wallet",
         [h("div", { class: "flow" }, ["Game tokens", "Signed voucher", "DOGZY on Avalanche"].map((t, i) => h("div", { class: "step" }, h("b", {}, String(i + 1)), t)))]));
   },
@@ -57,7 +57,8 @@ const Views = {
     if (!c) return h("div", { class: "pagehead" }, h("h1", {}, "Character not found"), h("a", { class: "btn", href: "#/characters" }, "Back to characters"));
     const biz = D.businesses.businesses.find((b) => b.id === c.business);
     const owned = isOwned(c), active = st.character === c.id;
-    const levels = ["Level-1 " + c.job, "Confirmed " + c.job, "Senior " + c.job, c.level4 || "Manager", c.level5 || "Business owner"];
+    const EQ = (D.equipment.equipment || {})[c.id] || [];
+    const levels = EQ.length === 5 ? EQ.map((L) => L.title + " — " + L.items.map((x) => x.name).join(", ")) : ["Level-1 " + c.job, "Confirmed " + c.job, "Senior " + c.job, c.level4 || "Manager", c.level5 || "Business owner"];
     const select = () => owned ? activate(c) : buyDialog(c, biz);
     return h("div", { class: "detail" },
       h("a", { class: "back small", href: "#/characters" }, "← All characters"),
@@ -68,12 +69,32 @@ const Views = {
           h("h1", {}, c.name),
           h("p", { class: "muted" }, c.description),
           h("ol", { class: "levels" }, levels.map((l, i) => h("li", {}, h("b", {}, "Lv " + (i + 1)), h("span", {}, l)))),
-          h("div", { class: "price" }, owned ? h("span", { class: "gold" }, active ? "Active character ✓" : "Owned ✓") : h("span", {}, c.price ? "Unlock: " + c.price + " " : "Free starter", c.price ? COIN() : null)),
+          h("div", { class: "price" }, owned ? h("span", { class: "gold" }, active ? "Active character ✓" : "Owned ✓") : h("span", {}, "Unlock: " + c.price + " ", COIN())),
           h("div", { class: "actions" },
             h("button", { class: active ? "ghost" : "", "data-act": "select", onclick: select }, active ? "Selected ✓" : owned ? "Play this character" : "Select this character"),
-            h("button", { class: "ghost", "data-act": "wardrobe", onclick: () => { if (!owned) return buyDialog(c, biz, "wardrobe"); activate(c, true); location.hash = "#/wardrobe"; } }, "Dress up in Wardrobe"),
-            biz && h("a", { class: "btn ghost", "data-act": "city", href: "#/city/" + biz.id }, "Their business: " + biz.name),
+            h("button", { class: "ghost", "data-act": "wardrobe", onclick: () => { if (!owned) return buyDialog(c, biz, "wardrobe"); activate(c, true); location.hash = "#/wardrobe"; } }, "Open in Inventory"),
+            biz && h("a", { class: "bizlink", "data-act": "city", href: "#/city/" + biz.id }, h("span", { class: "bizimg" }, h("img", { src: biz.image, alt: biz.name, loading: "eager" }), h("span", { class: "bizlabel" }, biz.name)), h("span", {}, h("small", { class: "kicker" }, "Their building"), h("b", {}, biz.name + " →"))),
             h("button", { class: "ghost", onclick: () => lightbox(c.card, c.name) }, "View full career card")))));
+  },
+
+  businesses(D) {
+    const st = State.data, price = PRICES.business();
+    const list = D.characters.characters.map((c) => ({ c, b: D.businesses.businesses.find((x) => x.id === c.business) })).filter((x) => x.b);
+    return h("div", {}, h("div", { class: "pagehead" }, h("h1", {}, "Businesses"),
+        h("p", { class: "muted" }, "Buy the building that goes with each demo character. Each business is a separate collectible (NFT-style) in your inventory. Price: " + price + " DOGZY each (configurable).")),
+      h("div", { class: "grid bizgrid" }, list.map(({ c, b }) => {
+        const owned = !!st.biz[b.id];
+        return h("div", { class: "card bizcard" + (owned ? " owned" : ""), "data-biz": b.id },
+          h("div", { class: "bizimg" }, h("img", { src: b.image, alt: b.name, loading: "lazy" }), h("span", { class: "bizlabel" }, b.name)),
+          h("div", { class: "body" },
+            h("div", { class: "kicker small" }, b.category),
+            h("strong", {}, b.name),
+            h("span", { class: "muted small" }, "Paired with " + c.name),
+            owned ? h("span", { class: "nftbadge" }, "OWNED · NFT") :
+            h("button", { "data-act": "buy-biz", disabled: st.balance < price, onclick: () => {
+              if (st.balance < price) return toast("Not enough DOGZY");
+              st.balance -= price; st.biz[b.id] = 1; State.save(); toast(b.name + " bought"); App.render(); } }, "Buy · " + price, COIN())));
+      })));
   },
 
   city(D) {
@@ -99,35 +120,78 @@ const Views = {
   },
 
   wardrobe(D) {
-    const st = State.data, A = D.accessories, chars = D.characters.characters;
-    const ch = chars.find((c) => c.id === st.character) || chars[0];
-    const avatar = h("div", { class: "avatar" }, h("img", { class: "base", src: ch.image, alt: ch.job }));
-    // Per-character anchors (fractions of the image) + size relative to the face (eye-to-neck distance).
-    const an = ch.anchors || { eyes: [0.5, 0.3], headTop: 0.12, neck: 0.48, hand: [0.2, 0.75] };
-    const img = avatar.querySelector(".base");
-    const place = () => {
-      const W = img.clientWidth, H = img.clientHeight; if (!W || !H) return;
-      const u = (an.neck - an.eyes[1]) * H; // face unit in px
-      const spec = { hat: [an.eyes[0], an.headTop + 0.12 * (an.neck - an.eyes[1]), 1.4, "-50%,-85%"],
-        glasses: [an.eyes[0], an.eyes[1], 1.05, "-50%,-50%"], neck: [an.eyes[0], an.neck, 0.8, "-50%,-50%"],
-        hand: [an.hand[0], an.hand[1], 0.85, "-50%,-50%"] };
-      avatar.querySelectorAll(".slot").forEach((e) => { const sp = spec[e.dataset.slot]; const sz = Math.round(sp[2] * u);
-        const svg = e.querySelector("svg"); if (svg) { svg.setAttribute("width", "100%"); svg.setAttribute("height", "100%"); }
-        Object.assign(e.style, { display: "block", width: sz + "px", height: sz + "px", left: sp[0] * 100 + "%", top: sp[1] * 100 + "%", right: "auto", bottom: "auto", transform: "translate(" + sp[3] + ")" }); });
+    const st = State.data, chars = D.characters.characters;
+    const ch = chars.find((c) => c.id === st.character);
+    const head = h("div", { class: "pagehead" }, h("h1", {}, "Inventory"), h("p", { class: "muted" }, "Each character's own career equipment, from its career card. Own all 5 items of a level (4 + GOLD) to complete it, then pay the next level's fee."));
+    if (!ch || !isOwned(ch)) {
+      const owned = chars.filter(isOwned);
+      return h("div", {}, head, h("div", { class: "card padded center locked-prompt", "data-test": "unlock-first" },
+        h("h2", {}, ch ? "Unlock " + ch.job + " first" : "Unlock a character first"),
+        h("p", { class: "muted" }, ch ? "This character is not yours yet. Unlock it for " + ch.price + " DOGZY to use its inventory." : "Pick a character and unlock it with DOGZY to open its inventory."),
+        h("div", { class: "actions" },
+          ch ? h("button", { onclick: () => buyDialog(ch, D.businesses.businesses.find((b) => b.id === ch.business)) }, "Unlock " + ch.job + " · " + ch.price + " DOGZY") : null,
+          h("a", { class: "btn ghost", href: "#/characters" }, "Browse characters")),
+        owned.length ? h("div", { class: "small muted", style: "margin-top:1rem" }, "Your characters: ", owned.map((c) => h("a", { href: "#/wardrobe", style: "margin:0 .3rem", onclick: () => { st.character = c.id; State.save(); App.render(); } }, c.job))) : null));
+    }
+    const E = (D.equipment.equipment || {})[ch.id] || [];
+    const unlocked = Math.min(st.level[ch.id] || 1, 5);
+    const complete = (L) => L.items.every((x) => st.gear[x.id]);
+    const doneCount = E.filter(complete).length;
+    const lvl = doneCount >= 5 ? 6 : unlocked; // 6 = career complete
+    const all = E.flatMap((L) => L.items.map((it) => Object.assign({ lv: L.level }, it)));
+    const mine = all.filter((it) => st.gear[it.id]);
+    const buy = (it, L) => modal(h("div", { class: "kicker" }, "Demo purchase · in-game DOGZY, no real money"),
+      h("h2", {}, it.gold ? "GOLD item: " + it.name : it.name),
+      h("div", { class: "sum" }, h("div", {}, h("span", {}, "Price"), h("b", { "data-test": "item-price" }, String(it.price), COIN())), h("div", {}, h("span", {}, "Your balance"), h("b", {}, String(st.balance), COIN())), h("div", {}, h("span", {}, "After purchase"), h("b", {}, String(st.balance - it.price), COIN()))),
+      h("div", { class: "actions" }, h("button", { "data-act": "confirm-item", disabled: st.balance < it.price, onclick: () => { closeModal(); doBuy(it, L); } }, "Confirm"), h("button", { class: "ghost", "data-act": "cancel", onclick: closeModal }, "Cancel")));
+    const doBuy = (it, L) => {
+      if (st.balance < it.price) { toast("Not enough DOGZY"); return; }
+      st.balance -= it.price; st.gear[it.id] = 1;
+      toast(it.gold ? "GOLD " + it.name + " bought · level " + L.level + " complete" + (L.level < 5 ? "! Unlock level " + (L.level + 1) + " next." : " · career complete!") : it.name + " bought");
+      State.save(); App.render();
     };
-    A.slots.forEach((s) => { const a = A.accessories.find((x) => x.id === st.equipped[s]); if (a) { const e = icon(a.icon, a.color, 64); e.classList.add("slot", s); e.dataset.slot = s; avatar.append(e); } });
-    if (img.complete) requestAnimationFrame(place); img.addEventListener("load", place); window.addEventListener("resize", place);
-    return h("div", {}, h("div", { class: "pagehead" }, h("h1", {}, "Wardrobe"), h("p", { class: "muted" }, "Equip accessories on your character. In the full game they unlock level by level.")),
-      h("div", { class: "row" },
-        h("div", { class: "card padded center" }, h("div", { class: "stage" }, avatar, h("div", { class: "platform" })), h("h3", {}, ch.breed + " · " + ch.job),
-          h("button", { class: "ghost", onclick: () => { st.equipped = {}; State.save(); App.render(); } }, "Remove all"),
-          h("p", { class: "small muted" }, h("a", { href: "#/characters" }, "Change character"))),
-        h("div", {}, A.slots.map((s) => h("div", { class: "card padded", style: "margin-bottom:1rem" },
-          h("div", { class: "kicker small" }, s),
-          h("div", { class: "accs" }, A.accessories.filter((a) => a.slot === s).map((a) =>
-            h("button", { class: "acc" + (st.equipped[s] === a.id ? " on" : ""), onclick: () => {
-              if (st.equipped[s] === a.id) delete st.equipped[s]; else st.equipped[s] = a.id; State.save(); App.render();
-            } }, icon(a.icon, a.color, 36), h("span", {}, a.name)))))))));
+    const levelUp = (L) => { const fee = PRICES.fee(L.level); modal(h("div", { class: "kicker" }, "Level-up fee · in-game DOGZY"), h("h2", {}, "Unlock level " + L.level + ": " + L.title),
+      h("div", { class: "sum" }, h("div", {}, h("span", {}, "Fee"), h("b", { "data-test": "fee-price" }, String(fee), COIN())), h("div", {}, h("span", {}, "Your balance"), h("b", {}, String(st.balance), COIN()))),
+      h("div", { class: "actions" }, h("button", { "data-act": "confirm-fee", disabled: st.balance < fee, onclick: () => { closeModal(); doLevelUp(L); } }, "Confirm"), h("button", { class: "ghost", "data-act": "cancel", onclick: closeModal }, "Cancel"))); };
+    const doLevelUp = (L) => {
+      const fee = PRICES.fee(L.level);
+      if (st.balance < fee) { toast("Not enough DOGZY"); return; }
+      st.balance -= fee; st.level[ch.id] = L.level; State.save(); toast(ch.job + " reached level " + L.level + "!"); App.render();
+    };
+    const stage = h("div", { class: "stage" }, h("div", { class: "avatar" }, h("img", { class: "base", src: ch.image, alt: ch.job })), h("div", { class: "platform" }));
+    return h("div", {}, head,
+      h("div", { class: "row wardrobe" },
+        h("div", {},
+          h("div", { class: "card padded center" }, stage,
+            h("h3", {}, ch.name),
+            h("div", { class: "lvlbar" }, [1, 2, 3, 4, 5].map((n) => h("i", { class: n < lvl ? "done" : n === lvl ? "cur" : "" }))),
+            h("p", { class: "small", "data-test": "level" }, lvl > 5 ? "Career complete · all 5 levels" : "Level " + lvl + " · " + (E[lvl - 1] ? E[lvl - 1].title : "")),
+            h("p", { class: "small muted" }, h("a", { href: "#/characters" }, "Change character"))),
+          h("div", { class: "card padded inventory", "data-test": "inventory" },
+            h("div", { class: "kicker small" }, "Inventory Book · " + ch.job + " · " + mine.length + "/" + all.length),
+            mine.length ? E.map((L) => { const got = L.items.filter((x) => st.gear[x.id]); return got.length ? h("div", { class: "book-lv" }, h("div", { class: "small gold" }, "Level " + L.level + " · " + L.title), h("div", { class: "chips" }, got.map((it) => h("span", { class: "chip" + (it.gold ? " gold" : "") }, it.gold ? "GOLD · " : "", it.name)))) : null; })
+              : h("p", { class: "small muted" }, "Your Inventory Book is empty. Buy your first level-1 item."))),
+        h("div", {}, E.map((L) => {
+          const isDone = complete(L), isOpen = L.level <= unlocked;
+          const state = isDone ? "done" : isOpen ? "cur" : "locked";
+          const prevDone = L.level === 1 || complete(E[L.level - 2]);
+          const fee = PRICES.fee(L.level);
+          return h("div", { class: "card padded level " + state, "data-level": L.level },
+            h("div", { class: "lvhead" }, h("b", {}, "Level " + L.level), h("span", {}, L.title),
+              h("em", { class: "status" }, isDone ? "Completed ✓" : isOpen ? "In progress" : prevDone ? "Ready to unlock" : "Locked · complete level " + (L.level - 1))),
+            !isOpen ? h("div", { class: "levelup" },
+              h("span", { class: "small" }, "Level " + L.level + " fee: " + fee + " ", COIN()),
+              h("button", { class: "mini", "data-act": "levelup-" + L.level, disabled: !prevDone || st.balance < fee, onclick: () => levelUp(L) }, "Unlock level " + L.level + " · " + fee, COIN())) : null,
+            h("img", { class: "panel", src: L.panel, alt: "Level " + L.level + " equipment from the career card", loading: "lazy" }),
+            h("div", { class: "items" }, L.items.map((it) => {
+              const has = !!st.gear[it.id], regsDone = L.items.filter((x) => !x.gold).every((x) => st.gear[x.id]);
+              const can = isOpen && !has && st.balance >= it.price && (!it.gold || regsDone);
+              return h("div", { class: "item" + (it.gold ? " gold" : "") + (has ? " has" : ""), "data-item": it.id },
+                h("span", {}, it.gold ? h("span", { class: "goldtag", "data-test": "gold-label" }, "GOLD") : null, it.name, it.gold ? h("small", { class: "muted" }, " · completes the level" + (regsDone || has ? "" : " (buy the 4 others first)")) : null),
+                has ? h("span", { class: "gold small" }, "Owned ✓") :
+                h("button", { class: "mini" + (it.gold ? " goldbtn" : ""), disabled: !can, onclick: () => buy(it, L) }, String(it.price), COIN()));
+            })));
+        }))));
   },
 
   wallet(D) {
@@ -166,7 +230,7 @@ const Views = {
   },
 };
 
-function isOwned(c) { const st = State.data; return !c.price || !!st.owned[c.id] || st.character === c.id; }
+function isOwned(c) { return !!(c && State.data.owned[c.id]); }
 function activate(c, quiet) { State.data.character = c.id; State.save(); if (!quiet) { toast(c.job + " is now your character"); App.render(); } }
 function closeModal() { const m = document.getElementById("modal"); if (m) m.remove(); }
 function modal(...kids) {
@@ -189,7 +253,7 @@ function buyDialog(c, biz, after) {
         modal(h("div", { class: "kicker" }, "Success"), h("h2", {}, c.job + " unlocked ✓"),
           h("p", { class: "muted" }, c.price + " DOGZY spent. New balance: " + st.balance + " DOGZY. " + c.name + " is now your active character."),
           h("div", { class: "actions" },
-            h("button", { "data-act": "go-wardrobe", onclick: () => { closeModal(); location.hash = "#/wardrobe"; } }, "Dress up in Wardrobe"),
+            h("button", { "data-act": "go-wardrobe", onclick: () => { closeModal(); location.hash = "#/wardrobe"; } }, "Open in Inventory"),
             biz && h("button", { class: "ghost", "data-act": "go-city", onclick: () => { closeModal(); location.hash = "#/city/" + biz.id; } }, "Go to " + biz.name),
             h("button", { class: "ghost", onclick: closeModal }, "Close")));
       } }, "Confirm"),

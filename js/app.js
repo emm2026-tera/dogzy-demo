@@ -2,7 +2,7 @@ const App = {
   data: null,
   async loadData() {
     if (window.DOGZY_DATA) return window.DOGZY_DATA;
-    const names = ["characters", "businesses", "accessories"];
+    const names = ["characters", "businesses", "equipment", "prices"];
     const res = await Promise.all(names.map((n) => fetch("data/" + n + ".json").then((r) => r.json())));
     return Object.fromEntries(names.map((n, i) => [n, res[i]]));
   },
@@ -20,7 +20,7 @@ const App = {
   },
   async start() {
     State.load();
-    try { this.data = await this.loadData(); }
+    try { this.data = await this.loadData(); PRICES.apply(this.data); }
     catch (e) {
       document.getElementById("app").append(h("p", { class: "err" },
         "Could not load data/*.json (browsers block this on file://). Run `node demo/tools/build-data.js` or serve the folder."));

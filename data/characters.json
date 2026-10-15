@@ -13,17 +13,18 @@
    "anchors": {
     "eyes": [
      0.5,
-     0.33
+     0.3626
     ],
-    "headTop": 0.22,
-    "neck": 0.55,
+    "headTop": 0.2418,
+    "neck": 0.6044,
     "hand": [
      0.17,
-     0.62
+     0.6813
     ]
    },
    "business": "restaurant",
-   "price": 0
+   "price": 15,
+   "demo": true
   },
   {
    "id": "00c-barmaid-cavalier",
@@ -38,17 +39,18 @@
    "anchors": {
     "eyes": [
      0.42,
-     0.11
+     0.1209
     ],
-    "headTop": 0.02,
-    "neck": 0.44,
+    "headTop": 0.022,
+    "neck": 0.4835,
     "hand": [
      0.1,
-     0.51
+     0.5604
     ]
    },
    "business": "nightclub",
-   "price": 120
+   "price": 15,
+   "demo": true
   },
   {
    "id": "01-police-officer-german-shepherd",
@@ -63,17 +65,18 @@
    "anchors": {
     "eyes": [
      0.51,
-     0.32
+     0.3516
     ],
-    "headTop": 0.12,
-    "neck": 0.47,
+    "headTop": 0.1319,
+    "neck": 0.5165,
     "hand": [
      0.25,
-     0.91
+     0.97
     ]
    },
    "business": "police-station",
-   "price": 120
+   "price": 15,
+   "demo": true
   },
   {
    "id": "02-clerk-beagle",
@@ -88,17 +91,18 @@
    "anchors": {
     "eyes": [
      0.5,
-     0.34
+     0.3736
     ],
-    "headTop": 0.22,
-    "neck": 0.52,
+    "headTop": 0.2418,
+    "neck": 0.5714,
     "hand": [
      0.89,
-     0.91
+     0.97
     ]
    },
    "business": "supermarket",
-   "price": 120
+   "price": 15,
+   "demo": false
   },
   {
    "id": "03-firefighter-saint-bernard",
@@ -113,17 +117,18 @@
    "anchors": {
     "eyes": [
      0.54,
-     0.36
+     0.3956
     ],
-    "headTop": 0.22,
-    "neck": 0.48,
+    "headTop": 0.2418,
+    "neck": 0.5275,
     "hand": [
      0.32,
-     0.81
+     0.8901
     ]
    },
    "business": "fire-station",
-   "price": 120
+   "price": 15,
+   "demo": true
   },
   {
    "id": "04-nurse-collie",
@@ -138,17 +143,18 @@
    "anchors": {
     "eyes": [
      0.47,
-     0.29
+     0.3187
     ],
-    "headTop": 0.15,
-    "neck": 0.55,
+    "headTop": 0.1648,
+    "neck": 0.6044,
     "hand": [
      0.15,
-     0.6
+     0.6593
     ]
    },
    "business": "hospital",
-   "price": 120
+   "price": 15,
+   "demo": true
   },
   {
    "id": "05-lawyer-bulldog",
@@ -163,17 +169,18 @@
    "anchors": {
     "eyes": [
      0.47,
-     0.3
+     0.3297
     ],
-    "headTop": 0.21,
-    "neck": 0.52,
+    "headTop": 0.2308,
+    "neck": 0.5714,
     "hand": [
      0.28,
-     0.85
+     0.9341
     ]
    },
    "business": "courthouse",
-   "price": 120
+   "price": 15,
+   "demo": false
   },
   {
    "id": "06-dentist-poodle",
@@ -188,17 +195,18 @@
    "anchors": {
     "eyes": [
      0.51,
-     0.4
+     0.4396
     ],
-    "headTop": 0.19,
-    "neck": 0.59,
+    "headTop": 0.2088,
+    "neck": 0.6484,
     "hand": [
      0.33,
-     0.86
+     0.9451
     ]
    },
    "business": "hospital",
-   "price": 120
+   "price": 15,
+   "demo": false
   },
   {
    "id": "07-florist-yorkshire",
@@ -213,17 +221,18 @@
    "anchors": {
     "eyes": [
      0.42,
-     0.39
+     0.4286
     ],
-    "headTop": 0.22,
-    "neck": 0.55,
+    "headTop": 0.2418,
+    "neck": 0.6044,
     "hand": [
      0.25,
-     0.65
+     0.7143
     ]
    },
    "business": "flower-shop",
-   "price": 120
+   "price": 15,
+   "demo": true
   },
   {
    "id": "08-construction-rottweiler",
@@ -238,17 +247,18 @@
    "anchors": {
     "eyes": [
      0.56,
-     0.39
+     0.4286
     ],
-    "headTop": 0.22,
-    "neck": 0.52,
+    "headTop": 0.2418,
+    "neck": 0.5714,
     "hand": [
      0.75,
-     0.81
+     0.8901
     ]
    },
    "business": "construction-company",
-   "price": 120
+   "price": 15,
+   "demo": true
   },
   {
    "id": "09-electrician-border-collie",
@@ -263,17 +273,18 @@
    "anchors": {
     "eyes": [
      0.46,
-     0.47
+     0.5165
     ],
-    "headTop": 0.32,
-    "neck": 0.62,
+    "headTop": 0.3516,
+    "neck": 0.6813,
     "hand": [
      0.67,
-     0.9
+     0.97
     ]
    },
    "business": "electrician-company",
-   "price": 120
+   "price": 15,
+   "demo": false
   },
   {
    "id": "10-plumber-french-bulldog",
@@ -288,17 +299,18 @@
    "anchors": {
     "eyes": [
      0.51,
-     0.52
+     0.5714
     ],
-    "headTop": 0.36,
-    "neck": 0.68,
+    "headTop": 0.3956,
+    "neck": 0.7473,
     "hand": [
      0.18,
-     0.72
+     0.7912
     ]
    },
    "business": "plumbing-company",
-   "price": 120
+   "price": 15,
+   "demo": false
   },
   {
    "id": "11-decorator-afghan-hound",
@@ -313,17 +325,18 @@
    "anchors": {
     "eyes": [
      0.49,
-     0.23
+     0.2527
     ],
-    "headTop": 0.05,
-    "neck": 0.47,
+    "headTop": 0.0549,
+    "neck": 0.5165,
     "hand": [
      0.49,
-     0.79
+     0.8681
     ]
    },
    "business": "hotel",
-   "price": 120
+   "price": 15,
+   "demo": false
   },
   {
    "id": "12-technician-husky",
@@ -338,17 +351,18 @@
    "anchors": {
     "eyes": [
      0.64,
-     0.35
+     0.3846
     ],
-    "headTop": 0.1,
-    "neck": 0.5,
+    "headTop": 0.1099,
+    "neck": 0.5495,
     "hand": [
      0.36,
-     0.47
+     0.5165
     ]
    },
    "business": "car-repair-garage",
-   "price": 120
+   "price": 15,
+   "demo": false
   },
   {
    "id": "13-architect-doberman",
@@ -363,17 +377,18 @@
    "anchors": {
     "eyes": [
      0.54,
-     0.38
+     0.4176
     ],
-    "headTop": 0.23,
-    "neck": 0.56,
+    "headTop": 0.2527,
+    "neck": 0.6154,
     "hand": [
      0.35,
-     0.91
+     0.97
     ]
    },
    "business": "construction-company",
-   "price": 120
+   "price": 15,
+   "demo": false
   },
   {
    "id": "14-banker-dachshund",
@@ -388,17 +403,18 @@
    "anchors": {
     "eyes": [
      0.5,
-     0.26
+     0.2857
     ],
-    "headTop": 0.1,
-    "neck": 0.45,
+    "headTop": 0.1099,
+    "neck": 0.4945,
     "hand": [
      0.72,
-     0.73
+     0.8022
     ]
    },
    "business": "bank",
-   "price": 120
+   "price": 15,
+   "demo": true
   },
   {
    "id": "15-veterinarian-labrador",
@@ -413,17 +429,18 @@
    "anchors": {
     "eyes": [
      0.42,
-     0.28
+     0.3077
     ],
-    "headTop": 0.08,
-    "neck": 0.45,
+    "headTop": 0.0879,
+    "neck": 0.4945,
     "hand": [
      0.71,
-     0.78
+     0.8571
     ]
    },
    "business": "pet-store",
-   "price": 120
+   "price": 15,
+   "demo": false
   },
   {
    "id": "16-hairstylist-shih-tzu",
@@ -438,17 +455,18 @@
    "anchors": {
     "eyes": [
      0.51,
-     0.34
+     0.3736
     ],
-    "headTop": 0.12,
-    "neck": 0.52,
+    "headTop": 0.1319,
+    "neck": 0.5714,
     "hand": [
      0.33,
-     0.56
+     0.6154
     ]
    },
    "business": "beauty-salon",
-   "price": 120
+   "price": 15,
+   "demo": false
   },
   {
    "id": "17-journalist-jack-russell",
@@ -463,17 +481,18 @@
    "anchors": {
     "eyes": [
      0.46,
-     0.38
+     0.4176
     ],
-    "headTop": 0.23,
-    "neck": 0.58,
+    "headTop": 0.2527,
+    "neck": 0.6374,
     "hand": [
      0.3,
-     0.85
+     0.9341
     ]
    },
    "business": "media-studio",
-   "price": 120
+   "price": 15,
+   "demo": false
   },
   {
    "id": "18-actor-boxer",
@@ -488,17 +507,18 @@
    "anchors": {
     "eyes": [
      0.53,
-     0.33
+     0.3626
     ],
-    "headTop": 0.22,
-    "neck": 0.52,
+    "headTop": 0.2418,
+    "neck": 0.5714,
     "hand": [
      0.25,
-     0.85
+     0.9341
     ]
    },
    "business": "cinema",
-   "price": 120
+   "price": 15,
+   "demo": false
   },
   {
    "id": "19-fitness-coach-whippet",
@@ -513,17 +533,18 @@
    "anchors": {
     "eyes": [
      0.54,
-     0.32
+     0.3516
     ],
-    "headTop": 0.17,
-    "neck": 0.52,
+    "headTop": 0.1868,
+    "neck": 0.5714,
     "hand": [
      0.1,
-     0.89
+     0.97
     ]
    },
    "business": "gym-fitness-center",
-   "price": 120
+   "price": 15,
+   "demo": false
   },
   {
    "id": "20-painter-australian-shepherd",
@@ -538,17 +559,18 @@
    "anchors": {
     "eyes": [
      0.64,
-     0.27
+     0.2967
     ],
-    "headTop": 0.1,
-    "neck": 0.45,
+    "headTop": 0.1099,
+    "neck": 0.4945,
     "hand": [
      0.47,
-     0.79
+     0.8681
     ]
    },
    "business": "shopping-center",
-   "price": 120
+   "price": 15,
+   "demo": false
   },
   {
    "id": "21-singer-shiba",
@@ -563,17 +585,18 @@
    "anchors": {
     "eyes": [
      0.53,
-     0.26
+     0.2857
     ],
-    "headTop": 0.12,
-    "neck": 0.4,
+    "headTop": 0.1319,
+    "neck": 0.4396,
     "hand": [
      0.69,
-     0.41
+     0.4505
     ]
    },
-   "business": "nightclub",
-   "price": 120
+   "business": "sports-arena",
+   "price": 15,
+   "demo": true
   },
   {
    "id": "22-actress-pomeranian",
@@ -588,17 +611,18 @@
    "anchors": {
     "eyes": [
      0.56,
-     0.53
+     0.5824
     ],
-    "headTop": 0.38,
-    "neck": 0.66,
+    "headTop": 0.4176,
+    "neck": 0.7253,
     "hand": [
      0.7,
-     0.72
+     0.7912
     ]
    },
    "business": "cinema",
-   "price": 120
+   "price": 15,
+   "demo": false
   },
   {
    "id": "23-pilot-weimaraner",
@@ -613,17 +637,18 @@
    "anchors": {
     "eyes": [
      0.54,
-     0.38
+     0.4176
     ],
-    "headTop": 0.22,
-    "neck": 0.52,
+    "headTop": 0.2418,
+    "neck": 0.5714,
     "hand": [
      0.31,
-     0.71
+     0.7802
     ]
    },
    "business": "airport",
-   "price": 120
+   "price": 15,
+   "demo": true
   },
   {
    "id": "24-teacher-bernese",
@@ -638,17 +663,18 @@
    "anchors": {
     "eyes": [
      0.53,
-     0.38
+     0.4176
     ],
-    "headTop": 0.22,
-    "neck": 0.5,
+    "headTop": 0.2418,
+    "neck": 0.5495,
     "hand": [
      0.42,
-     0.73
+     0.8022
     ]
    },
    "business": "school",
-   "price": 120
+   "price": 15,
+   "demo": false
   },
   {
    "id": "25-sound-tech-corgi",
@@ -663,17 +689,18 @@
    "anchors": {
     "eyes": [
      0.5,
-     0.41
+     0.4505
     ],
-    "headTop": 0.28,
-    "neck": 0.57,
+    "headTop": 0.3077,
+    "neck": 0.6264,
     "hand": [
      0.42,
-     0.69
+     0.7582
     ]
    },
    "business": "media-studio",
-   "price": 120
+   "price": 15,
+   "demo": false
   }
  ]
 }
