@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Valkyrie Creator Tool</title>
+  <style>
+    body { font-family: Inter, system-ui, sans-serif; margin: 0; background: #0f1115; color: #f3f4f6; }
+    .wrap { max-width: 1024px; margin: 0 auto; padding: 24px; }
+    .card { background: #171a21; border: 1px solid #2a2f3b; border-radius: 12px; padding: 16px; margin-bottom: 16px; }
+    h1 { margin-top: 0; }
+    label { display: block; margin-top: 10px; font-size: 14px; color: #c8ced9; }
+    input, textarea, select, button { width: 100%; margin-top: 6px; border-radius: 8px; border: 1px solid #3b4352; background: #0f131b; color: #f3f4f6; padding: 10px; }
+    button { background: #f2b84b; color: #1b1408; border: 0; font-weight: 700; cursor: pointer; }
+    .row { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 10px; }
+    .muted { color: #9aa4b2; font-size: 13px; }
+    pre { white-space: pre-wrap; background: #0b0e14; border: 1px solid #2a2f3b; border-radius: 8px; padding: 10px; }
+    a { color: #f2b84b; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>Valkyrie Creator Tool · V1</h1>
+      <p class="muted">Image -> Vidéo -> Voix -> Lip-sync -> Sous-titres -> Assemblage (orchestration prête à brancher APIs réelles).</p>
+    </div>
+
+    <form id="jobForm" class="card">
+      <label>Image source (PNG/JPG/WEBP)
+        <input type="file" name="image" accept="image/png,image/jpeg,image/webp" required />
+      </label>
+      <label>Directive
+        <textarea name="directive" rows="3" placeholder="Ex: Luigzy traverse la ruelle, plan large" required></textarea>
+      </label>
+      <label>Dialogue
+        <textarea name="dialogue" rows="2" placeholder="Texte prononcé"></textarea>
+      </label>
+      <div class="row">
+        <label>Voix
+          <input name="voice_name" value="Valkyrie" />
+        </label>
+        <label>Provider image
+          <select name="image_provider">
+            <option>openai_gpt_image_1</option><option>gemini_flash_image</option><option>flux_kontext</option>
+          </select>
+        </label>
+      </div>
+      <div class="row">
+        <label>Provider vidéo
+          <select name="video_provider">
+            <option>kling</option><option>runway_gen4</option><option>hailuo_minimax</option>
+          </select>
+        </label>
+        <label>Provider voix
+          <select name="voice_provider">
+            <option>elevenlabs</option><option>xtts</option><option>f5_tts</option>
+          </select>
+        </label>
+      </div>
+      <label>Provider lip-sync
+        <select name="lipsync_provider">
+          <option>musetalk</option><option>wav2lip</option><option>sadtalker</option><option>kling_lipsync</option>
+        </select>
+      </label>
+      <button type="submit">Lancer le rendu</button>
+      <p id="submitMsg" class="muted"></p>
+    </form>
+
+    <div class="card">
+      <h2>Jobs</h2>
+      <button id="refreshBtn" type="button">Actualiser</button>
+      <div id="jobs"></div>
+    </div>
+  </div>
+
+  <script>
+    const jobsEl = document.getElementById('jobs');
+    const submitMsg = document.getElementById('submitMsg');
+
+    async function loadJobs() {
+      const res = await fetch('/api/jobs');
+      const data = await res.json();
+      if (!data.jobs.length) {
+        jobsEl.innerHTML = '<p class="muted">Aucun job.</p>';
+        return;
+      }
+      jobsEl.innerHTML = data.jobs.map(j => {
+        const files = Object.entries(j.artifacts || {}).map(([k, v]) =>
+          `<li>${k}: <a href="/api/jobs/${j.job_id}/files/${v}" target="_blank">${v}</a></li>`
+        ).join('');
+        return `
+          <div style="border:1px solid #2a2f3b; border-radius:8px; padding:10px; margin-top:10px;">
+            <strong>${j.job_id}</strong> · <em>${j.status}</em><br>
+            <span class="muted">${j.request.directive}</span>
+            <pre>${(j.log || []).join('\n')}</pre>
+            ${files ? `<ul>${files}</ul>` : ''}
+            ${j.error ? `<p style="color:#ff8080">Erreur: ${j.error}</p>` : ''}
+          </div>
+        `;
+      }).join('');
+    }
+
+    document.getElementById('jobForm').addEventListener('submit', async (e) => {
+      e.preventDefault();
+      submitMsg.textContent = 'Envoi...';
+      const fd = new FormData(e.target);
+      const res = await fetch('/api/jobs', { method: 'POST', body: fd });
+      const data = await res.json();
+      if (!res.ok) {
+        submitMsg.textContent = 'Erreur: ' + (data.detail || 'envoi impossible');
+        return;
+      }
+      submitMsg.textContent = 'Job lancé: ' + data.job_id;
+      e.target.reset();
+      await loadJobs();
+    });
+
+    document.getElementById('refreshBtn').addEventListener('click', loadJobs);
+    setInterval(loadJobs, 2500);
+    loadJobs();
+  </script>
+</body>
+</html>

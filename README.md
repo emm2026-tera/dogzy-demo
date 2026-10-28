@@ -28,3 +28,7 @@ demo/
 ## Notes
 - Prices/balances are in-game (off-chain) tokens. Starting balance: 250. "Reset demo" restores it.
 - Nothing is deployed anywhere.
+
+## Valkyrie Creator Tool (custom)
+A dedicated personal orchestration tool is available in `/home/runner/work/dogzy-demo/dogzy-demo/valkyrie-tool`.
+See `/home/runner/work/dogzy-demo/dogzy-demo/valkyrie-tool/README.md` for setup and usage.
